@@ -1,6 +1,3 @@
-//  Created by Alfonso Cartes.
-//  Copyright © Alfonso Cartes. All rights reserved.
-
 import React from "react";
 import Link from "next/link";
 import Logo from "../Logo";

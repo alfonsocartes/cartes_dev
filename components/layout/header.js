@@ -3,6 +3,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Logo from "../Logo";
 
 export default function Header() {
   return (
@@ -10,7 +11,9 @@ export default function Header() {
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900 dark:text-gray-200">
           <Link href="/">
-            <span className="ml-3 text-xl">{"</> cartes.dev"}</span>
+            <div className="text-3xl p-10 font-bold">
+              <Logo />
+            </div>
           </Link>
         </div>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">

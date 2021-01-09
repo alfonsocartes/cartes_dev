@@ -1,6 +1,17 @@
 {
-  "name": "cartes_dev",
+  "name": "cartes.dev",
+  "description": "cartes.dev website.",
   "version": "2.0.0",
+  "author": {
+    "name": "Alfonso Cartes",
+    "email": "info@cartes.dev",
+    "url": "https://www.cartes.dev"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfonsocartes/cartes_dev.git"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",

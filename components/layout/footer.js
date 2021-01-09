@@ -4,7 +4,7 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="body-font ">
-      <div className="frosted bg-opacity-20 border-white border-opacity-20 border-t rounded-t-lg shadow-lg bg-gray-100 dark:bg-white-800">
+      <div className="frosted bg-opacity-20 bg-gray-400 dark:bg-white-800 border-white border-opacity-20 border-t top-inner-shadow">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <p className="text-sm sm:ml-6 sm:mt-0 mt-4">
             © {new Date().getFullYear()} Alfonso Cartes —

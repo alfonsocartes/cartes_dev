@@ -38,7 +38,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="frosted bg-opacity-20 border-white border-opacity-20 border-b rounded-b-lg shadow-lg bg-gray-100 dark:bg-white-800 sticky top-0 z-10 mb-4">
+    <header className="frosted bg-opacity-40 border-white border-opacity-20 border-b shadow-lg bg-gray-100 dark:bg-white-800 sticky top-0 z-10 mb-4">
       <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <div className="text-3xl p-10 font-bold">
           <Link href="/">

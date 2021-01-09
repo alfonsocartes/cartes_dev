@@ -6,6 +6,7 @@ export default function Index() {
     <>
       <Layout title="Cartes Development | Full-Stack Web Development / Mobile Development">
         <EmailNewsletter />
+        <EmailNewsletter />
       </Layout>
     </>
   );

@@ -3,78 +3,10 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-        <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-          <div className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-            <span className="ml-3 text-xl">cartes.dev</span>
-          </div>
-          <p className="mt-2 text-sm text-gray-500">Software Development</p>
-          <p className="mt-2 text-sm text-gray-500">
-            Full-Stack Web Development
-          </p>
-          <p className="mt-2 text-sm text-gray-500">Mobile Development</p>
-        </div>
-        <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-          <div className="lg:w-1/2 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-              CATEGORIES
-            </h2>
-            <nav className="list-none mb-10">
-              <li>
-                <div className="text-gray-600 hover:text-gray-800">
-                  <Link href="/">First Link</Link>
-                </div>
-              </li>
-              <li>
-                <div className="text-gray-600 hover:text-gray-800">
-                  <Link href="/">Second Link</Link>
-                </div>
-              </li>
-              <li>
-                <div className="text-gray-600 hover:text-gray-800">
-                  <Link href="/">Third Link</Link>
-                </div>
-              </li>
-              <li>
-                <div className="text-gray-600 hover:text-gray-800">
-                  <Link href="/">Forth Link</Link>
-                </div>
-              </li>
-            </nav>
-          </div>
-          <div className="lg:w-1/2 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-              CATEGORIES
-            </h2>
-            <nav className="list-none mb-10">
-              <li>
-                <div className="text-gray-600 hover:text-gray-800">
-                  <Link href="/">First Link</Link>
-                </div>
-              </li>
-              <li>
-                <div className="text-gray-600 hover:text-gray-800">
-                  <Link href="/">Second Link</Link>
-                </div>
-              </li>
-              <li>
-                <div className="text-gray-600 hover:text-gray-800">
-                  <Link href="/">Third Link</Link>
-                </div>
-              </li>
-              <li>
-                <div className="text-gray-600 hover:text-gray-800">
-                  <Link href="/">Forth Link</Link>
-                </div>
-              </li>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div className="bg-gray-100">
+    <footer className="body-font ">
+      <div className="frosted bg-opacity-20 border-white border-opacity-20 border-t rounded-t-lg shadow-lg bg-gray-100 dark:bg-white-800">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-          <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
+          <p className="text-sm sm:ml-6 sm:mt-0 mt-4">
             © {new Date().getFullYear()} Alfonso Cartes —
             <a
               href="https://twitter.com/cartes_dev"
@@ -85,7 +17,7 @@ export default function Footer() {
             </a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-            <div className="pl-4 text-gray-500">
+            <div className="pl-4">
               <a
                 href="https://twitter.com/cartes_dev"
                 target="_blank"
@@ -105,7 +37,7 @@ export default function Footer() {
                 </div>
               </a>
             </div>
-            <div className="pl-4 text-gray-500">
+            <div className="pl-4 ">
               <a
                 href="https://www.linkedin.com/company/cartesdev"
                 target="_blank"
@@ -130,7 +62,7 @@ export default function Footer() {
                 </div>
               </a>
             </div>
-            <div className="pl-4 text-gray-500">
+            <div className="pl-4 ">
               <Link
                 href="https://www.facebook.com/cartes.dev"
                 target="_blank"

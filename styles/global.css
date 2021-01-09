@@ -14,6 +14,9 @@
 
 /* Your own custom utilities */
 
-.frosted {
-  backdrop-filter: blur(10px);
+/* applies semi-transparent background for browsers that support backdrop-filter */
+@supports (backdrop-filter: none) {
+  .frosted {
+    backdrop-filter: blur(8px);
+  }
 }

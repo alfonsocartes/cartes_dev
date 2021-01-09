@@ -8,6 +8,7 @@
     "url": "https://www.cartes.dev"
   },
   "license": "MIT",
+  "additional": "LICENSE.txt",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alfonsocartes/cartes_dev.git"

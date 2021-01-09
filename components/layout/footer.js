@@ -19,7 +19,6 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-300 ml-1"
-            target="_blank"
           >
             @cartes_dev
           </a>

@@ -26,7 +26,6 @@ export default function Header() {
       setTheme("dark");
       localStorage.theme = "dark";
     }
-    console.log("Theme selected: ", theme);
   }
 
   // After mounting, we have access to the theme

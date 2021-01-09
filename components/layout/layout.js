@@ -6,7 +6,7 @@ import Container from "./Container";
 
 export default function Layout({ title, children }) {
   return (
-    <div className="bg-gradient-to-r from-teal-300 to-blue-200">
+    <div className="bg-blue-900 dark:bg-gray-800">
       <Head>
         <title>{title}</title>
       </Head>

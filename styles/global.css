@@ -13,3 +13,7 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+
+.frosted {
+  backdrop-filter: blur(10px);
+}

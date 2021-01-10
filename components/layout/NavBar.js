@@ -17,7 +17,7 @@ const NavBar = () => (
       <Link href="/">About</Link>
     </div>
     <div className="m-2 hover:text-gray-900">
-      <Link href="/">Contact</Link>
+      <Link href="/contact">Contact</Link>
     </div>
     <DarkModeToggle />
   </nav>

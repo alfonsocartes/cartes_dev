@@ -4,19 +4,19 @@ import DarkModeToggle from "./DarkModeToggle";
 
 const NavBar = () => (
   <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-    <div className="m-2 hover:text-gray-900">
+    <div className=" hover:frosted hover:bg-opacity-40 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600  py-2 px-3">
       <Link href="/">Home</Link>
     </div>
-    <div className="m-2 hover:text-gray-900">
+    <div className=" hover:frosted hover:bg-opacity-40 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600  py-2 px-3">
       <Link href="/">Portfolio</Link>
     </div>
-    <div className="m-2 hover:text-gray-900">
+    <div className=" hover:frosted hover:bg-opacity-40 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600  py-2 px-3">
       <Link href="/">Blog</Link>
     </div>
-    <div className="m-2 hover:text-gray-900">
+    <div className=" hover:frosted hover:bg-opacity-40 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600  py-2 px-3">
       <Link href="/about">About</Link>
     </div>
-    <div className="m-2 hover:text-gray-900">
+    <div className=" hover:frosted hover:bg-opacity-40 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600  py-2 px-3">
       <Link href="/contact">Contact</Link>
     </div>
     <DarkModeToggle />

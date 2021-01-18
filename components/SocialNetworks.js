@@ -2,9 +2,9 @@ import React from "react";
 
 const SocialNetworks = () => (
   <section>
-    <div className="container mx-auto flex pb-8 items-center justify-center flex-col text-gray-500">
+    <div className="container mx-auto flex pb-8 items-center justify-center flex-col ">
       <span className="inline-flex text-xl">
-        <div className="pl-4">
+        <div className="pl-4 text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
           <a
             href="https://twitter.com/cartes_dev"
             target="_blank"
@@ -24,7 +24,7 @@ const SocialNetworks = () => (
             </div>
           </a>
         </div>
-        <div className="pl-4 ">
+        <div className="pl-4 text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
           <a
             href="https://www.linkedin.com/company/cartesdev"
             target="_blank"
@@ -49,7 +49,7 @@ const SocialNetworks = () => (
             </div>
           </a>
         </div>
-        <div className="pl-4 ">
+        <div className="pl-4 text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
           <a
             href="https://www.facebook.com/cartes.dev"
             target="_blank"

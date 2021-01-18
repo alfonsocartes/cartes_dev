@@ -8,9 +8,9 @@ const About = () => (
       <section className="body-font">
         <div className="container flex flex-wrap mx-auto items-center">
           <div className="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
-            <h1 className="sm:text-3xl text-2xl font-bold title-font mb-6">
+            <h2 className="sm:text-3xl text-2xl font-bold title-font mb-6">
               Expertise
-            </h1>
+            </h2>
             <div className="leading-relaxed text-base">
               <p>
                 Consultancy about the technologies to impliment acording to your
@@ -29,9 +29,9 @@ const About = () => (
             </div>
           </div>
           <div className="md:w-1/2 md:pl-12 md:py-8 mb-10 md:mb-0 pb-10">
-            <h1 className="sm:text-3xl text-2xl font-bold title-font mb-6">
+            <h2 className="sm:text-3xl text-2xl font-bold title-font mb-6">
               Technologies
-            </h1>
+            </h2>
             <div className="leading-relaxed text-base">
               <ul>
                 <li>ReactJS</li>

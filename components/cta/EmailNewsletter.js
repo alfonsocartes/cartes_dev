@@ -4,7 +4,7 @@ const EmailNewsletter = () => (
   <section className="body-font">
     <div className="container p-5 mx-auto">
       <div className="flex flex-col text-center w-full mb-12">
-        <h4 className="sm:text-2xl text-xl font-medium title-font mb-4">
+        <h4 className="sm:text-2xl text-lg font-medium title-font mb-4">
           Subscribe to the Newsletter
         </h4>
         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">

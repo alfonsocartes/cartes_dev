@@ -24,7 +24,7 @@ export default function Index() {
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium ">
                 Alfonso Cartes
               </h1>
-              <h2 className="title-font sm:text-xl text-xl mb-8 font-medium">
+              <h2 className="title-font sm:text-2xl text-lg mb-8 font-medium">
                 Full-Stack Web Developer | Software Engineer
               </h2>
               <p className="mb-8 leading-relaxed">

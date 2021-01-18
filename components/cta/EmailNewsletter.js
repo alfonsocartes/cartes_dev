@@ -2,11 +2,11 @@ import React from "react";
 
 const EmailNewsletter = () => (
   <section className="body-font">
-    <div className="container px-5 py-24 mx-auto">
+    <div className="container p-5 mx-auto">
       <div className="flex flex-col text-center w-full mb-12">
-        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4">
+        <h4 className="sm:text-2xl text-xl font-medium title-font mb-4">
           Subscribe to the Newsletter
-        </h1>
+        </h4>
         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
           We will just send you interesting info and the blog posts we publish.
         </p>

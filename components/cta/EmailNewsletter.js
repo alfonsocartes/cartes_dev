@@ -1,7 +1,7 @@
 import React from "react";
 
 const EmailNewsletter = () => (
-  <section className="body-font">
+  <section className="body-font py-10">
     <div className="container p-5 mx-auto">
       <div className="flex flex-col text-center w-full mb-12">
         <h4 className="sm:text-2xl text-lg font-medium title-font mb-4">

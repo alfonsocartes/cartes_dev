@@ -3,10 +3,10 @@ import Layout from "../components/layout/Layout";
 
 const Contact = () => (
   <Layout>
-    <section className="body-font relative">
-      <div className="container px-5 py-24 mx-auto">
+    <section className="body-font">
+      <div className="container mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
-          <h2 className="sm:text-3xl text-2xl font-medium title-font mb-8">
+          <h2 className="sm:text-3xl text-2xl font-bold title-font mb-6">
             Contact
           </h2>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base ">

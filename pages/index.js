@@ -8,13 +8,8 @@ export default function Index() {
     <>
       <Layout title="Cartes Development | Full-Stack Web Development / Mobile Development">
         <section className="body-font">
-          <div className="container mx-auto flex p-20 items-center justify-center flex-col">
-            {/* <img
-              className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
-              alt="hero"
-              src="https://dummyimage.com/720x600"
-            /> */}
-            <div className="w-20 h-20 relative mb-4">
+          <div className="container mx-auto flex py-10 items-center justify-center flex-col">
+            <div className="w-28 h-28 relative mb-4">
               <div className="group w-full h-full rounded-full overflow-hidden shadow-inner text-center bg-purple table cursor-pointer">
                 <Image
                   src="https://avatars1.githubusercontent.com/u/3504951?s=460&u=6fd136fb3de88e86ae2cd8741b0e48d524fcb9d1&v=4"

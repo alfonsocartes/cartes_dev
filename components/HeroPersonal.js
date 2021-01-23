@@ -17,10 +17,10 @@ const HeroPersonal = () => (
           </div>
         </div>
         <div className="text-center lg:w-2/3 w-full">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium ">
+          <h1 className="title-font sm:text-4xl text-3xl m-4 font-medium text-indigo-600 dark:text-indigo-400">
             Alfonso Cartes
           </h1>
-          <h2 className="title-font sm:text-2xl text-lg mb-8 font-medium">
+          <h2 className="title-font sm:text-2xl text-lg m-8 font-medium">
             Full-Stack Web Developer | Software Engineer
           </h2>
           <p className="mb-8 leading-relaxed">

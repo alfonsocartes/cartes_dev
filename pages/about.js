@@ -3,7 +3,7 @@ import ContactUs from "../components/cta/ContactUs";
 import Layout from "../components/layout/Layout";
 
 const About = () => (
-  <Layout>
+  <Layout title="About | Cartes Development | Full-Stack Web Development / Mobile Development">
     <section className="body-font">
       <div className="container flex flex-wrap mx-auto items-center">
         <div className="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">

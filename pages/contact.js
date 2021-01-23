@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout/Layout";
 
 const Contact = () => (
-  <Layout>
+  <Layout title="Contact | Cartes Development | Full-Stack Web Development / Mobile Development">
     <section className="body-font">
       <div className="container mx-auto">
         <div className="flex flex-col text-center w-full mb-12">

@@ -8,16 +8,16 @@ const NavBar = () => (
       <Link href="/">Home</Link>
     </div>
     <div className=" hover:frosted hover:bg-opacity-40 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600  py-2 px-3">
-      <Link href="/">Portfolio</Link>
+      <Link href="portfolio">Portfolio</Link>
     </div>
     {/* <div className=" hover:frosted hover:bg-opacity-40 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600  py-2 px-3">
       <Link href="/">Blog</Link>
     </div> */}
     <div className=" hover:frosted hover:bg-opacity-40 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600  py-2 px-3">
-      <Link href="/about">About</Link>
+      <Link href="about">About</Link>
     </div>
     <div className=" hover:frosted hover:bg-opacity-40 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600  py-2 px-3">
-      <Link href="/contact">Contact</Link>
+      <Link href="contact">Contact</Link>
     </div>
     <DarkModeToggle />
   </nav>

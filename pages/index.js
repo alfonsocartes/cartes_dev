@@ -3,7 +3,7 @@ import HeroPersonal from "../components/HeroPersonal";
 import EmailNewsletter from "../components/cta/EmailNewsletter";
 import TechStack from "../components/TechStack";
 
-export default function Index() {
+const Index = () => {
   return (
     <>
       <Layout title="Cartes Development | Full-Stack Web Development / Mobile Development">
@@ -13,4 +13,6 @@ export default function Index() {
       </Layout>
     </>
   );
-}
+};
+
+export default Index;

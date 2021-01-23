@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 // import Image from "next/image";
 
@@ -8,7 +9,9 @@ const Logo = () => (
   //   width={1394}
   //   src="/static/images/logo_cartes_dev.png"
   // />
-  <span>{"</> cartes.dev"}</span>
+  <Link href="/">
+    <span>{"</> cartes.dev"}</span>
+  </Link>
 );
 
 export default Logo;

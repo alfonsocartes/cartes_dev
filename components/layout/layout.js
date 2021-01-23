@@ -6,7 +6,6 @@ import Container from "./Container";
 
 export default function Layout({ title, children }) {
   return (
-    // <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200 flex flex-col min-h-screen ">
     <div className="bg-white dark:bg-gray-900 text-black dark:text-gray-200 flex flex-col min-h-screen ">
       <Head>
         <title>{title}</title>

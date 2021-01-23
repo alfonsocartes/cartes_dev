@@ -24,9 +24,12 @@ const HeroPersonal = () => (
           <h2 className="title-font sm:text-2xl text-lg m-8 font-medium">
             Full-Stack Developer | Software Engineer
           </h2>
-          <p className="mb-8 leading-relaxed">
+          <p className="leading-relaxed">
             I work at <a href="about">cartes.dev</a> bringing your ideas to
             life.
+          </p>
+          <p className="mb-8 leading-relaxed">
+            I design and develop experiences that enrich people's lives{" "}
           </p>
         </div>
       </div>

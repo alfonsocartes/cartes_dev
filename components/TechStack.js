@@ -3,9 +3,9 @@ import React from "react";
 
 const TechStack = () => (
   <section className="body-font border-b border-gray-200">
-    <div className="container px-5 py-24 mx-auto">
-      <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-        <h2 className="sm:text-3xl text-2xl font-medium title-font mb-2">
+    <div className="container px-5 py-20 mx-auto">
+      <div className="flex flex-wrap w-full mb-10 flex-col items-center text-center">
+        <h2 className="sm:text-2xl text-xl font-medium title-font mb-2">
           Current Main Tech Stack
         </h2>
       </div>

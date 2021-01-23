@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
-import Footer from "./Footer";
-import Header from "./Header";
-import Container from "./Container";
+import Footer from "./layout/Footer";
+import Header from "./layout/Header";
+import Container from "./layout/Container";
 
 export default function Layout({ title, children }) {
   return (

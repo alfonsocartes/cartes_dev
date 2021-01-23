@@ -1,6 +1,6 @@
 import React from "react";
 import ContactUs from "../components/cta/ContactUs";
-import Layout from "../components/layout/Layout";
+import Layout from "../components/Layout";
 
 const About = () => (
   <Layout title="About | Cartes Development | Full-Stack Web Development / Mobile Development">

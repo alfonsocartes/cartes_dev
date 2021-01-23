@@ -1,4 +1,4 @@
-import Layout from "../components/layout/Layout";
+import Layout from "../components/Layout";
 import HeroPersonal from "../components/HeroPersonal";
 // import EmailNewsletter from "../components/cta/EmailNewsletter";
 import TechStack from "../components/TechStack";

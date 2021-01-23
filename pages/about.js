@@ -7,7 +7,7 @@ const About = () => (
     <section className="body-font">
       <div className="flex flex-wrap mx-auto items-start">
         <div className="mx-auto md:w-1/2 px-14 md:py-8 md:mb-0 mb-10 pb-10 md:border-r md:border-b-0 border-b border-gray-200 flex flex-col items-center justify-center">
-          <h2 className="sm:text-3xl text-2xl font-bold title-font mb-6">
+          <h2 className="sm:text-3xl text-2xl font-bold title-font mb-10">
             Expertise
           </h2>
           <div className="leading-relaxed text-base">
@@ -28,7 +28,7 @@ const About = () => (
           </div>
         </div>
         <div className="mx-auto md:w-1/2 px-14 md:pl-12  md:py-8 mb-10 md:mb-0 pb-10 flex flex-col items-center justify-center">
-          <h2 className="sm:text-3xl text-2xl font-bold title-font mb-6">
+          <h2 className="sm:text-3xl text-2xl font-bold title-font mb-10">
             Technologies
           </h2>
           <div className="leading-relaxed text-base">

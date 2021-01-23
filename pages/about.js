@@ -5,8 +5,8 @@ import Layout from "../components/Layout";
 const About = () => (
   <Layout title="About | Cartes Development | Full-Stack Web Development / Mobile Development">
     <section className="body-font">
-      <div className="container flex flex-wrap mx-auto items-center">
-        <div className="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
+      <div className="flex flex-wrap mx-auto items-start">
+        <div className="mx-auto md:w-1/2 px-14 md:py-8 md:mb-0 mb-10 pb-10 md:border-r md:border-b-0 border-b border-gray-200 flex flex-col items-center justify-center">
           <h2 className="sm:text-3xl text-2xl font-bold title-font mb-6">
             Expertise
           </h2>
@@ -27,7 +27,7 @@ const About = () => (
             </p>
           </div>
         </div>
-        <div className="md:w-1/2 md:pl-12 md:py-8 mb-10 md:mb-0 pb-10">
+        <div className="mx-auto md:w-1/2 px-14 md:pl-12  md:py-8 mb-10 md:mb-0 pb-10 flex flex-col items-center justify-center">
           <h2 className="sm:text-3xl text-2xl font-bold title-font mb-6">
             Technologies
           </h2>

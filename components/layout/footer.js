@@ -16,7 +16,7 @@ export default function Footer() {
             </a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-            <div className="pl-4">
+            <div className="pl-4 hover:text-gray-500">
               <a
                 href="https://twitter.com/cartes_dev"
                 target="_blank"
@@ -36,7 +36,7 @@ export default function Footer() {
                 </div>
               </a>
             </div>
-            <div className="pl-4 ">
+            <div className="pl-4 hover:text-gray-500">
               <a
                 href="https://www.linkedin.com/company/cartesdev"
                 target="_blank"
@@ -61,7 +61,7 @@ export default function Footer() {
                 </div>
               </a>
             </div>
-            <div className="pl-4 ">
+            <div className="pl-4 hover:text-gray-500">
               <a
                 href="https://www.facebook.com/cartes.dev"
                 target="_blank"

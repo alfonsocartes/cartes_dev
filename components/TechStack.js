@@ -2,17 +2,17 @@ import Link from "next/link";
 import React from "react";
 
 const TechStack = () => (
-  <section className="text-gray-600 body-font border-b border-gray-200">
+  <section className="body-font border-b border-gray-200">
     <div className="container px-5 py-24 mx-auto">
       <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-        <h2 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+        <h2 className="sm:text-3xl text-2xl font-medium title-font mb-2">
           Current Main Tech Stack
         </h2>
       </div>
       <div className="flex flex-wrap -m-4">
         <div className="xl:w-1/3 md:w-1/2 p-4">
           <div className="border border-gray-200 p-6 rounded-lg">
-            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4 bg-indigo-100 hover:bg-indigo-300 dark:bg-indigo-200 dark:hover:bg-indigo-100 text-indigo-600 hover:text-indigo-800 dark:text-indigo-600">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -25,7 +25,7 @@ const TechStack = () => (
                 <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
               </svg>
             </div>
-            <h2 className="text-lg font-medium title-font mb-2  text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
+            <h2 className="text-lg font-medium title-font mb-2  text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-200">
               <a
                 href="https://reactjs.org/"
                 target="_blank"
@@ -43,7 +43,7 @@ const TechStack = () => (
         </div>
         <div className="xl:w-1/3 md:w-1/2 p-4">
           <div className="border border-gray-200 p-6 rounded-lg">
-            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4 bg-indigo-100 hover:bg-indigo-300 dark:bg-indigo-200 dark:hover:bg-indigo-100 text-indigo-600 hover:text-indigo-800 dark:text-indigo-600">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -76,7 +76,7 @@ const TechStack = () => (
         </div>
         <div className="xl:w-1/3 md:w-1/2 p-4">
           <div className="border border-gray-200 p-6 rounded-lg">
-            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4 bg-indigo-100 hover:bg-indigo-300 dark:bg-indigo-200 dark:hover:bg-indigo-100 text-indigo-600 hover:text-indigo-800 dark:text-indigo-600">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -107,7 +107,7 @@ const TechStack = () => (
         </div>
         <div className="xl:w-1/3 md:w-1/2 p-4">
           <div className="border border-gray-200 p-6 rounded-lg">
-            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4 bg-indigo-100 hover:bg-indigo-300 dark:bg-indigo-200 dark:hover:bg-indigo-100 text-indigo-600 hover:text-indigo-800 dark:text-indigo-600">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -137,7 +137,7 @@ const TechStack = () => (
         </div>
         <div className="xl:w-1/3 md:w-1/2 p-4">
           <div className="border border-gray-200 p-6 rounded-lg">
-            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4 bg-indigo-100 hover:bg-indigo-300 dark:bg-indigo-200 dark:hover:bg-indigo-100 text-indigo-600 hover:text-indigo-800 dark:text-indigo-600">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -167,7 +167,7 @@ const TechStack = () => (
         </div>
         <div className="xl:w-1/3 md:w-1/2 p-4">
           <div className="border border-gray-200 p-6 rounded-lg">
-            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4 bg-indigo-100 hover:bg-indigo-300 dark:bg-indigo-200 dark:hover:bg-indigo-100 text-indigo-600 hover:text-indigo-800 dark:text-indigo-600">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -193,7 +193,7 @@ const TechStack = () => (
       <Link href="portfolio">
         <button
           type="button"
-          className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+          className="flex mx-auto mt-16 text-white py-2 px-8 focus:outline-none text-lg bg-transparent rounded-lg shadow-lg bg-indigo-600 hover:bg-indigo-400 dark:bg-indigo-600 dark:hover:bg-indigo-900"
         >
           Portfolio
         </button>

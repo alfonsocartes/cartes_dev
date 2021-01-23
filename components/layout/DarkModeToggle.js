@@ -37,7 +37,7 @@ const DarkModeToggle = () => {
     <button
       aria-label="Toggle Dark Mode"
       type="button"
-      className="frosted bg-opacity-40 border-white border-opacity-20 border rounded-lg shadow-lg bg-gray-300 hover:bg-gray-500 dark:hover:bg-gray-300  text-gray-600  hover:text-gray-300 dark:text-gray-300 dark:hover:text-yellow-500 pl-2 h-8 w-8 m-4"
+      className=" bg-opacity-40 border-white border-opacity-20 border rounded-lg shadow-lg bg-gray-300 hover:bg-gray-500 dark:hover:bg-gray-300 text-gray-600  hover:text-gray-300 dark:text-gray-300 dark:hover:text-yellow-500 pl-2 h-8 w-8 m-4"
       onClick={toggleDarkMode}
     >
       {mounted && (

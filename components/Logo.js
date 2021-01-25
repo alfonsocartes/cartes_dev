@@ -9,9 +9,9 @@ const Logo = () => (
   //   width={1394}
   //   src="/static/images/logo_cartes_dev.png"
   // />
-  <Link href="/">
-    <span>{"</> cartes.dev"}</span>
-  </Link>
+  <h1>
+    <Link href="/">{"</> cartes.dev"}</Link>
+  </h1>
 );
 
 export default Logo;

@@ -19,7 +19,7 @@ const HeroPersonal = () => (
         </div>
         <div className="text-center lg:w-2/3 w-full">
           <h1 className="title-font sm:text-4xl text-3xl m-8 font-medium text-indigo-700 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
-            <Link href="about">Alfonso Cartes</Link>
+            <Link href="/about">Alfonso Cartes</Link>
           </h1>
           <h2 className="title-font sm:text-2xl text-lg m-8 font-medium">
             Full-Stack Developer | Software Engineer

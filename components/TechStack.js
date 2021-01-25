@@ -181,7 +181,7 @@ const TechStack = () => (
               </svg>
             </div>
             <h2 className="text-lg font-medium title-font mb-2  text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
-              <Link href="about">Others</Link>
+              <Link href="/about">Others</Link>
             </h2>
             <p className="leading-relaxed text-base">
               Others. MAYBE I CAN MAKE A PAGE FOR EACH TECHNOLOGY TO EXPLAIN

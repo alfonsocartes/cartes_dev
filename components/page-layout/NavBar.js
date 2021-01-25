@@ -9,7 +9,7 @@ const NavBar = () => (
         Home
       </div>
     </Link>
-    {/* <Link href="solutions">
+    {/* <Link href="/solutions">
       <div className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
         Solutions
       </div>
@@ -19,17 +19,17 @@ const NavBar = () => (
         Portfolio
       </div>
     </Link>
-    <Link href="about">
+    <Link href="/about">
       <div className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
         About
       </div>
     </Link>
-    <Link href="contact">
+    <Link href="/contact">
       <div className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
         Contact
       </div>
     </Link>
-    {/* <Link href="blog">
+    {/* <Link href="/blog">
       <div className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
         Blog
       </div>

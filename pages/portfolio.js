@@ -25,7 +25,7 @@ const Portfolio = () => (
                 Using technologies like NextJS, TailwindCSS, Wordpress and so
                 much more.
               </p>
-              <Link href="web-portfolio">
+              <Link href="/web-portfolio">
                 <button
                   type="button"
                   // className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded"
@@ -50,7 +50,7 @@ const Portfolio = () => (
                 Extense experience developing and publishing multiplatform state
                 of the art apps.
               </p>
-              <Link href="mobile-portfolio">
+              </mobile-portfolio">
                 <button
                   type="button"
                   // className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded"

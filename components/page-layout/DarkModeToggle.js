@@ -1,37 +1,45 @@
+/* eslint-disable no-unused-expressions */
 import React, { useState, useEffect } from "react";
 
 const DarkModeToggle = () => {
   // const [mounted, setMounted] = useState(false);
-  const [theme, setTheme] = useState("light");
+  const [themeState, setThemeState] = useState("light");
 
-  function setInitialTheme() {
-    if (typeof window !== "undefined") {
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        document.querySelector("html").classList.add("dark");
-        setTheme("dark");
-      } else {
-        document.querySelector("html").classList.remove("dark");
-        setTheme("light");
-      }
+  function setTheme(theme) {
+    if (theme === "light") {
+      setThemeState("light");
+      document.querySelector("html").classList.remove("dark");
+    } else {
+      setThemeState("dark");
+      document.querySelector("html").classList.add("dark");
     }
   }
 
-  function toggleDarkMode() {
-    if (theme === "dark") {
-      setTheme("light");
-      localStorage.theme = "light";
-      document.querySelector("html").classList.remove("dark");
-    } else {
-      setTheme("dark");
-      localStorage.theme = "dark";
-      document.querySelector("html").classList.add("dark");
+  function setInitialTheme() {
+    if (typeof window !== "undefined") {
+      if ("theme" in localStorage) {
+        setTheme(localStorage.theme);
+      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        setTheme("dark");
+      }
     }
   }
 
   // After mounting, we have access to the theme
   useEffect(() => {
     setInitialTheme();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  function toggleDarkMode() {
+    if (themeState === "dark") {
+      localStorage.theme = "light";
+      setTheme("light");
+    } else {
+      localStorage.theme = "dark";
+      setTheme("dark");
+    }
+  }
 
   return (
     <button
@@ -47,7 +55,7 @@ const DarkModeToggle = () => {
         stroke="currentColor"
         className="h-4 w-4"
       >
-        {theme === "dark" ? (
+        {themeState === "dark" ? (
           <path
             strokeLinecap="round"
             strokeLinejoin="round"

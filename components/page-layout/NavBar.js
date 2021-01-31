@@ -29,11 +29,11 @@ const NavBar = () => (
         Contact
       </a>
     </Link> */}
-    {/* <Link href="/blog">
+    <Link href="/blog">
       <a className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
         Blog
       </a>
-    </Link> */}
+    </Link>
     <DarkModeToggle />
   </nav>
 );

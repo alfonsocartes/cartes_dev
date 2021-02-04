@@ -10,7 +10,7 @@ const Alert = ({ type, title, message }) => {
           <p>{message}</p>
         </div>
       );
-    case "LOADING":
+    case "WARNING":
       return (
         <div
           className="mt-4 px-4 py-3 leading-normal text-yellow-700 bg-yellow-100 rounded-lg"

@@ -1,8 +1,18 @@
+/* eslint-disable no-console */
+import { useState } from "react";
+
 import emailjs from "emailjs-com";
+import Alert from "../Alert";
 
 const ContactForm = () => {
+  const [alert, setAlert] = useState(<div />);
+
   const sendMessage = (e) => {
     e.preventDefault();
+
+    setAlert(
+      <Alert type="WARNING" title="Loading..." message="Please wait." />
+    );
 
     emailjs
       .sendForm(
@@ -11,16 +21,26 @@ const ContactForm = () => {
         e.target,
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("Sent!");
-        },
-        (error) => {
-          console.log(error.text);
-          alert("Error!");
-        }
-      );
+      .then((result) => {
+        setAlert(
+          <Alert
+            type="SUCCESS"
+            title="Sent successfully!"
+            message="Thank you, I will try to get back to you as soon as possible."
+          />
+        );
+        console.log(result.text);
+      })
+      .catch((error) => {
+        setAlert(
+          <Alert
+            type="ERROR"
+            title="Error"
+            message="There was an error sending the message. Please try again."
+          />
+        );
+        console.error(error.text);
+      });
   };
 
   return (
@@ -71,7 +91,11 @@ const ContactForm = () => {
               />
             </div>
           </div>
-          <div className="p-2 w-full">
+          <div className="p-2 w-full text-center">
+            <div
+              className="g-recaptcha inline-block"
+              data-sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+            />
             <button
               type="submit"
               className="flex mx-auto text-white bg-transparent rounded-lg shadow-lg bg-indigo-600 hover:bg-indigo-400 dark:bg-indigo-600 dark:hover:bg-indigo-900 py-2 px-8 sm:mt-4 focus:outline-none text-lg"
@@ -79,6 +103,7 @@ const ContactForm = () => {
               Send
             </button>
           </div>
+          {alert}
           <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
             <p className="leading-normal my-5">London, United Kingdom.</p>
           </div>

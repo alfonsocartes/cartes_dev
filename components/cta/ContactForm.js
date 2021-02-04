@@ -103,7 +103,7 @@ const ContactForm = () => {
               Send
             </button>
           </div>
-          {alert}
+          <div className="flex flex-col text-center w-full">{alert}</div>
           <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
             <p className="leading-normal my-5">London, United Kingdom.</p>
           </div>

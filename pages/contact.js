@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 
 const Contact = () => (
   <Layout title="Contact | Cartes Development | Full-Stack Web Development / Mobile Development">
+    <script src="https://www.google.com/recaptcha/api.js" async defer />
     <section className="body-font">
       <div className="container mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
@@ -13,7 +14,12 @@ const Contact = () => (
             Tell me about your project.
           </p>
         </div>
+        {/* <div
+          className="g-recaptcha"
+          data-sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+        > */}
         <ContactForm />
+        {/* </div> */}
       </div>
     </section>
   </Layout>

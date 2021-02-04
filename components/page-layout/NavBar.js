@@ -24,16 +24,16 @@ const NavBar = () => (
         About
       </a>
     </Link>
-    <Link href="/contact">
+    {/* <Link href="/contact">
       <a className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
         Contact
       </a>
-    </Link>
-    {/* <Link href="/blog">
+    </Link> */}
+    <Link href="/blog">
       <a className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
         Blog
       </a>
-    </Link> */}
+    </Link>
     <DarkModeToggle />
   </nav>
 );

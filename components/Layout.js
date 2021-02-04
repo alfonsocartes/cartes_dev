@@ -1,8 +1,6 @@
-import React from "react";
 import Head from "next/head";
 import Footer from "./page-layout/Footer";
 import Header from "./page-layout/Header";
-import Container from "./page-layout/Container";
 
 export default function Layout({ title, children }) {
   return (
@@ -11,9 +9,7 @@ export default function Layout({ title, children }) {
         <title>{title}</title>
       </Head>
       <Header />
-      <Container>
-        <div className="px-5 py-10">{children}</div>
-      </Container>
+      <main className="container mx-auto px-5 py-10 flex-grow">{children}</main>
       <Footer />
     </div>
   );

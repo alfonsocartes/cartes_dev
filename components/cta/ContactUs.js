@@ -7,12 +7,14 @@ const ContactUs = () => (
         <h4 className="flex-grow sm:pr-16 sm:text-2xl text-lg font-medium title-font">
           Tell me about your project.
         </h4>
-        <button
-          type="button"
-          className="flex-shrink-0 mt-4 text-white bg-transparent rounded-lg shadow-lg bg-indigo-600 hover:bg-indigo-400 dark:bg-indigo-600 dark:hover:bg-indigo-900 py-2 px-8 focus:outline-none text-lg"
-        >
-          <Link href="/contact">Contact</Link>
-        </button>
+        <Link href="/contact">
+          <button
+            type="button"
+            className="flex-shrink-0 mt-4 text-white bg-transparent rounded-lg shadow-lg bg-indigo-600 hover:bg-indigo-400 dark:bg-indigo-600 dark:hover:bg-indigo-900 py-2 px-8 focus:outline-none text-lg"
+          >
+            Contact
+          </button>
+        </Link>
       </div>
     </div>
   </section>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import DarkModeToggle from "./DarkModeToggle";
-import BurgerButton from "../BurgerButton";
+import BurgerButton from "./BurgerButton";
 
 const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);

@@ -1,18 +1,27 @@
 import { useState } from "react";
 import Link from "next/link";
+
+import Logo from "../Logo";
 import DarkModeToggle from "./DarkModeToggle";
 import BurgerButton from "./BurgerButton";
 
 const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <nav className="sm:ml-auto flex flex-wrap items-center">
+    <nav className="flex flex-row items-center">
+      <div className="mr-auto text-lg sm:text-2xl text-black dark:text-white font-bold">
+        <Logo />
+      </div>
       <div
-        className={`lg:flex flex-grow items-center${
-          navbarOpen ? " flex" : " hidden"
+        className={`flex flex-row items-center ${
+          navbarOpen ? "flex-col-reverse" : ""
         }`}
       >
-        <ul className="flex flex-col lg:flex-row list-none lg:ml-auto mr-4">
+        <ul
+          className={`${
+            navbarOpen ? "flex flex-col" : "sm:flex flex-row hidden"
+          }`}
+        >
           <Link href="/">
             <li className="nav-item my-3">
               <a className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
@@ -43,9 +52,18 @@ const NavBar = () => {
             </li>
           </Link>
         </ul>
+        <div className="flex flex-row">
+          <div className="md:hidden">
+            <BurgerButton
+              navbarOpen={navbarOpen}
+              toggleFunction={() => setNavbarOpen(!navbarOpen)}
+            />
+          </div>
+          <div className="ml-4">
+            <DarkModeToggle />
+          </div>
+        </div>
       </div>
-      <BurgerButton toggleFunction={() => setNavbarOpen(!navbarOpen)} />
-      <DarkModeToggle />
     </nav>
   );
 };

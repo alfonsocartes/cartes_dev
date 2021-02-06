@@ -5,7 +5,7 @@ const BurgerButton = ({ navbarOpen, toggleFunction }) => (
     onClick={toggleFunction}
   >
     {navbarOpen ? (
-      <span className="font-medium pr-2 pb-2">x</span>
+      <span className="font-mesium pr-2 pb-3">X</span>
     ) : (
       <svg
         xmlns="http://www.w3.org/2000/svg"

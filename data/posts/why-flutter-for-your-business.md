@@ -1,13 +1,18 @@
 ---
-title: "Preview Mode for Static Generation"
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
-coverImage: "/assets/blog/preview/cover.jpg"
-date: "2020-02-16T05:35:07.322Z"
-author:
-  name: Joe Haddad
-  picture: "/assets/blog/authors/joe.jpeg"
+title: "Why use Flutter for your Business?"
+excerpt: "5 reasons to pick Flutter for your business.
+Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase."
+coverImage: 
+  url: "/static/assets/blog/why-flutter-for-your-business/flutter-cover.jpg"
+  width: 800
+  height: 311
 ogImage:
-  url: "/assets/blog/preview/cover.jpg"
+  url: "/static/assets/blog/why-flutter-for-your-business/flutter-cover.jpg"
+date: "2020-05-20T05:35:07.322Z"
+author:
+  name: Alfonso Cartes
+  picture: "/static/assets/blog/authors/alfonso-cartes.jpeg"
+
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.

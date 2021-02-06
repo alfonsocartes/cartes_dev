@@ -7,13 +7,12 @@ const HeroPersonal = () => (
     <section className="body-font">
       <div className="container mx-auto flex py-8 items-center justify-center flex-col">
         <div className="w-28 h-28 relative mb-4">
-          <div className="group w-full h-full rounded-full overflow-hidden shadow-lg text-center bg-purple table cursor-pointer">
+          <div className="w-full h-full rounded-full visible object-cover object-center overflow-hidden shadow-lg">
             <Image
-              src="https://avatars1.githubusercontent.com/u/3504951?s=460&u=6fd136fb3de88e86ae2cd8741b0e48d524fcb9d1&v=4"
-              height={460}
-              width={460}
+              src="/static/images/alfonso-cartes.jpeg"
+              height={700}
+              width={700}
               alt="Alfonso Cartes"
-              className="object-cover object-center w-full h-full visible group-hover:hidden"
             />
           </div>
         </div>
@@ -29,7 +28,7 @@ const HeroPersonal = () => (
             life.
           </p>
           <p className="mb-8 leading-relaxed">
-            I design and develop experiences that enrich people's lives{" "}
+            I design and develop experiences that enrich people&apos;s lives
           </p>
         </div>
       </div>

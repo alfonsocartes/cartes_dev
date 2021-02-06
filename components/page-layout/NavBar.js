@@ -22,35 +22,34 @@ const NavBar = () => {
             navbarOpen ? "flex flex-col" : "sm:flex flex-row hidden"
           }`}
         >
-          <Link href="/">
-            <li className="nav-item my-3">
+          <li className="nav-item my-3">
+            <Link href="/">
               <a className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
                 Home
               </a>
-            </li>
-          </Link>
-          <Link href="/portfolio">
-            <li className="nav-item my-3">
+            </Link>
+          </li>
+          <li className="nav-item my-3">
+            <Link href="/portfolio">
               <a className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
                 Portfolio
               </a>
-            </li>
-          </Link>
-
-          <Link href="/about">
-            <li className="nav-item my-3">
+            </Link>
+          </li>
+          <li className="nav-item my-3">
+            <Link href="/about">
               <a className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
                 About
               </a>
-            </li>
-          </Link>
-          <Link href="/blog">
-            <li className="nav-item my-3">
+            </Link>
+          </li>
+          <li className="nav-item my-3">
+            <Link href="/blog">
               <a className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
                 Blog
               </a>
-            </li>
-          </Link>
+            </Link>
+          </li>
         </ul>
         <div className="flex flex-row">
           <div className="md:hidden">

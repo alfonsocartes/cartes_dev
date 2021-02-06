@@ -5,9 +5,9 @@ export default function Avatar({ name, picture }) {
     <div className="flex items-center">
       <div className="w-12 h-12">
         <Image
-          src={picture}
-          width={700}
-          height={700}
+          src={picture.url}
+          width={picture.width}
+          height={picture.height}
           alt={name}
           className="object-cover object-center rounded-full visible group-hover:hidden"
         />

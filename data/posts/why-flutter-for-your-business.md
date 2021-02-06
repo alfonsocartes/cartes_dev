@@ -11,7 +11,10 @@ ogImage:
 date: "2020-05-20T05:35:07.322Z"
 author:
   name: Alfonso Cartes
-  picture: "/static/assets/blog/authors/alfonso-cartes.jpeg"
+  picture: 
+    url: "/static/assets/blog/authors/alfonso-cartes.jpeg"
+    width: 700
+    height: 700
 
 ---
 

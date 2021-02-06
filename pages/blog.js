@@ -1,21 +1,16 @@
 import React from "react";
 import Layout from "../components/Layout";
+import PostListItem from "../components/blog/PostListItem";
 import { getAllPosts } from "../lib/api";
 
 const Blog = ({ allPosts }) => {
   return (
-    <Layout title="Contact | Cartes Development | Full-Stack Web Development / Mobile Development">
+    <Layout title="Blog | Cartes Development">
       {allPosts.map((post) => {
         return (
-          <section key={post.slug}>
-            <h2>{post.title}</h2>
-            <p>{post.date}</p>
-            <p>{post.slug}</p>
-            <p>{post.author.name}</p>
-            <p>{post.author.picture}</p>
-            <p>{post.coverImage}</p>
-            <p>{post.excerpt}</p>
-          </section>
+          <div className="mb-8" key={post.slug}>
+            <PostListItem post={post} />
+          </div>
         );
       })}
     </Layout>

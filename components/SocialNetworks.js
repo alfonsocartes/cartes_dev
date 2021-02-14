@@ -4,7 +4,7 @@ const SocialNetworks = () => (
   <section>
     <div className="container mx-auto flex pb-8 items-center justify-center flex-col ">
       <span className="inline-flex text-xl">
-        <div className="pl-4 text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
+        <div className="pl-4 text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600 transform hover:scale-110 ease-in">
           <a
             href="https://github.com/alfonsocartes"
             target="_blank"
@@ -24,7 +24,7 @@ const SocialNetworks = () => (
             </div>
           </a>
         </div>
-        <div className="pl-4 text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
+        <div className="pl-4 text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600 transform hover:scale-110 ease-in">
           <a
             href="https://twitter.com/cartes_dev"
             target="_blank"
@@ -44,7 +44,7 @@ const SocialNetworks = () => (
             </div>
           </a>
         </div>
-        <div className="pl-4 text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
+        <div className="pl-4 text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600 transform hover:scale-110 ease-in">
           <a
             href="https://www.linkedin.com/company/cartesdev"
             target="_blank"
@@ -69,7 +69,7 @@ const SocialNetworks = () => (
             </div>
           </a>
         </div>
-        <div className="pl-4 text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
+        <div className="pl-4 text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600 transform hover:scale-110 ease-in">
           <a
             href="https://www.facebook.com/cartes.dev"
             target="_blank"

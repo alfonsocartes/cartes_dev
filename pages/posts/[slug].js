@@ -32,12 +32,7 @@ export default function Post({ mdxSource, frontMatter }) {
         </title>
         <meta property="og:image" content={post.ogImage.url} />
       </Head> */}
-        <PostHeader
-          title={frontMatter.title}
-          coverImage={frontMatter.coverImage}
-          date={frontMatter.date}
-          author={frontMatter.author}
-        />
+        <PostHeader frontMatter={frontMatter} />
         <PostBody content={content} />
       </article>
       <ContactUs />

@@ -21,6 +21,7 @@
     "lint-fix": "eslint ./components/** ./pages/** -c .eslintrc.json --fix --ext js,jsx"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.4.0",
     "date-fns": "2.16.1",
     "emailjs-com": "^2.6.4",
     "gray-matter": "^4.0.2",

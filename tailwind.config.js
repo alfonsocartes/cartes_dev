@@ -1,6 +1,10 @@
 module.exports = {
   purge: ["./components/**/*.js", "./pages/**/*.js"],
   darkMode: "class",
+  plugins: [
+    require("@tailwindcss/typography"),
+    // ...
+  ],
 };
 
 /*

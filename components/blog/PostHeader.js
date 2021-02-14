@@ -17,7 +17,7 @@ export default function PostHeader({ title, coverImage, date, author }) {
         <div className="block md:hidden mb-6">
           <Avatar name={author.name} picture={author.picture} />
         </div>
-        <div className="mb-6 text-lg text-gray-500">
+        <div className="mb-10 text-gray-500">
           <DateFormatter dateString={date} />
         </div>
       </div>

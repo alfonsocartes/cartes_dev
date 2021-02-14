@@ -1,5 +1,10 @@
 // import markdownStyles from "./markdown-styles.module.css";
 
 export default function PostBody({ content }) {
-  return <div dangerouslySetInnerHTML={{ __html: content }} />;
+  return (
+    <div
+      className="prose dark:prose-dark max-w-none w-full"
+      dangerouslySetInnerHTML={{ __html: content }}
+    />
+  );
 }

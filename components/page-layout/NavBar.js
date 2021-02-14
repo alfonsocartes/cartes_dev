@@ -9,8 +9,14 @@ const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <nav className="flex flex-row items-center">
-      <div className="mr-auto text-lg sm:text-2xl text-black dark:text-white font-bold">
-        <Logo />
+      <div className="mr-auto text-lg sm:text-3xl text-black dark:text-white font-bold transform ease-in duration-200 hover:scale-110">
+        <div
+          className={`transform ease-in duration-200 ${
+            navbarOpen ? "scale-150 translate-x-10" : ""
+          }`}
+        >
+          <Logo navbarOpen={navbarOpen} />
+        </div>
       </div>
       <div
         className={`flex flex-row items-center ${
@@ -52,7 +58,7 @@ const NavBar = () => {
           </li>
         </ul>
         <div className="flex flex-row">
-          <div className="md:hidden">
+          <div className="sm:hiddens">
             <BurgerButton
               navbarOpen={navbarOpen}
               toggleFunction={() => setNavbarOpen(!navbarOpen)}

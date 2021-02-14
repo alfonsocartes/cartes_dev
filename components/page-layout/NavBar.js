@@ -42,6 +42,13 @@ const NavBar = () => {
               </a>
             </Link>
           </li>
+          {/* <li className="nav-item my-3">
+            <Link href="/solutions">
+              <a className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
+                Solutions
+              </a>
+            </Link>
+          </li> */}
           <li className="nav-item my-3">
             <Link href="/about">
               <a className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
@@ -49,13 +56,13 @@ const NavBar = () => {
               </a>
             </Link>
           </li>
-          <li className="nav-item my-3">
+          {/* <li className="nav-item my-3">
             <Link href="/blog">
               <a className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
                 Blog
               </a>
             </Link>
-          </li>
+          </li> */}
         </ul>
         <div className="flex flex-row">
           <div className="sm:hidden">

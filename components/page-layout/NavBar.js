@@ -58,7 +58,7 @@ const NavBar = () => {
           </li>
         </ul>
         <div className="flex flex-row">
-          <div className="sm:hiddens">
+          <div className="sm:hidden">
             <BurgerButton
               navbarOpen={navbarOpen}
               toggleFunction={() => setNavbarOpen(!navbarOpen)}

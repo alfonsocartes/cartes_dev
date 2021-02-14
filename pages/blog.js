@@ -3,19 +3,15 @@ import Layout from "../components/Layout";
 import PostListItem from "../components/blog/PostListItem";
 import { getAllPosts } from "../lib/api";
 
-const Blog = ({ allPosts }) => {
-  return (
-    <Layout title="Blog | Cartes Development">
-      {allPosts.map((post) => {
-        return (
-          <div className="mb-8" key={post.slug}>
-            <PostListItem post={post} />
-          </div>
-        );
-      })}
-    </Layout>
-  );
-};
+const Blog = ({ allPosts }) => (
+  <Layout title="Blog | Cartes Development">
+    {allPosts.map((post) => (
+      <div className="mb-8" key={post.slug}>
+        <PostListItem post={post} />
+      </div>
+    ))}
+  </Layout>
+);
 
 export async function getStaticProps() {
   const allPosts = getAllPosts([

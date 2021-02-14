@@ -28,13 +28,6 @@ export default function Post({ post }) {
           date={post.date}
           author={post.author}
         />
-        {/* <h2>{post.title}</h2>
-        <p>{post.date}</p>
-        <p>{post.slug}</p>
-        <p>{post.author.name}</p>
-        <p>{post.author.picture}</p>
-        <p>{post.coverImage}</p>
-        <p>{post.excerpt}</p> */}
         <PostBody content={post.content} />
       </article>
     </Layout>
@@ -51,6 +44,7 @@ export async function getStaticProps({ params }) {
     "ogImage",
     "coverImage",
   ]);
+
   const content = await markdownToHtml(post.content || "");
 
   return {
@@ -67,13 +61,11 @@ export async function getStaticPaths() {
   const posts = getAllPosts(["slug"]);
 
   return {
-    paths: posts.map((post) => {
-      return {
-        params: {
-          slug: post.slug,
-        },
-      };
-    }),
+    paths: posts.map((post) => ({
+      params: {
+        slug: post.slug,
+      },
+    })),
     fallback: false,
   };
 }

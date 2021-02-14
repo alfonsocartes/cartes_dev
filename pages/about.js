@@ -21,7 +21,7 @@ const About = () => (
           </div>
         </div>
         <div className="text-center lg:w-2/3 w-full">
-          <h1 className="title-font sm:text-4xl text-3xl m-2 font-medium">
+          <h1 className="sm:text-3xl text-2xl font-bold title-font text-center">
             Alfonso Cartes
           </h1>
           <h2 className="sm:text-xl text-md m-4">

@@ -5,10 +5,10 @@ const Portfolio = () => (
   <>
     <Layout title="Portfolio | Cartes Development | Full-Stack Web Development / Mobile Development">
       <section className="body-font">
-        <div className="container px-5 py-10 mx-auto">
-          {/* <h1 className=" px-5 pb-16 mx-auto text-center sm:text-3xl text-2xl font-bold title-font">
+        <div className="container mx-auto">
+          <h1 className="sm:text-3xl text-2xl font-bold title-font mb-16 text-center">
             Portfolio
-          </h1> */}
+          </h1>
           <div className="flex flex-wrap -mx-4 -mb-10 text-center">
             <div className="sm:w-1/2 mb-10 px-4">
               <div className="rounded-lg h-64 overflow-hidden">

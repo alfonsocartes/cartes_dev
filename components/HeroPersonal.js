@@ -13,6 +13,7 @@ const HeroPersonal = () => (
               height={700}
               width={700}
               alt="Alfonso Cartes"
+              priority
             />
           </div>
         </div>

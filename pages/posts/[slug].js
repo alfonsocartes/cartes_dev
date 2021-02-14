@@ -25,7 +25,7 @@ export default function Post({ mdxSource, frontMatter }) {
   // console.log("frontMatter", JSON.stringify(frontMatter, null, 2));
   return (
     <Layout title={`${frontMatter.title} | Cartes Development`}>
-      <article className="max-w-2xl mx-auto mb-32">
+      <article className="max-w-2xl mx-auto">
         {/* <Head>
         <title>
           {post.title} | Next.js Blog Example with {CMS_NAME}

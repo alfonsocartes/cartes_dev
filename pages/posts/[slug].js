@@ -3,7 +3,7 @@ import ErrorPage from "next/error";
 import hydrate from "next-mdx-remote/hydrate";
 
 import { getFiles, getFileBySlug } from "../../lib/mdx";
-// import markdownToHtml from "../../lib/markdownToHtml";
+
 import MDXComponents from "../../components/MDXComponents";
 
 import Layout from "../../components/Layout";
@@ -11,43 +11,18 @@ import PostHeader from "../../components/blog/PostHeader";
 import PostBody from "../../components/blog/PostBody";
 import ContactUs from "../../components/cta/ContactUs";
 
-// export default function Post({ post }) {
-//   const router = useRouter();
-//   if (!router.isFallback && !post?.slug) {
-//     return <ErrorPage statusCode={404} />;
-//   }
-//   return (
-//     <Layout title={`${post.title} | Cartes Development`}>
-//       <article className="max-w-2xl mx-auto mb-32">
-//         {/* <Head>
-//           <title>
-//             {post.title} | Next.js Blog Example with {CMS_NAME}
-//           </title>
-//           <meta property="og:image" content={post.ogImage.url} />
-//         </Head> */}
-//         <PostHeader
-//           title={post.title}
-//           coverImage={post.coverImage}
-//           date={post.date}
-//           author={post.author}
-//         />
-//         <PostBody content={post.content} />
-//       </article>
-//     </Layout>
-//   );
-// }
-
 export default function Post({ mdxSource, frontMatter }) {
+  // To add JSX components to the MDX post, we had to add them to the MDXComponents file
   const content = hydrate(mdxSource, {
     components: MDXComponents,
   });
 
-  // const router = useRouter();
-  // if (!router.isFallback && !post?.slug) {
-  //   return <ErrorPage statusCode={404} />;
-  // }
+  const router = useRouter();
+  if (!router.isFallback && !frontMatter?.slug) {
+    return <ErrorPage statusCode={404} />;
+  }
 
-  console.log("frontMatter", JSON.stringify(frontMatter, null, 2));
+  // console.log("frontMatter", JSON.stringify(frontMatter, null, 2));
   return (
     <Layout title={`${frontMatter.title} | Cartes Development`}>
       <article className="max-w-2xl mx-auto mb-32">
@@ -70,14 +45,6 @@ export default function Post({ mdxSource, frontMatter }) {
   );
 }
 
-// export default function Blog({ mdxSource, frontMatter }) {
-//   const content = hydrate(mdxSource, {
-//     components: MDXComponents,
-//   });
-
-//   return <BlogLayout frontMatter={frontMatter}>{content}</BlogLayout>;
-// }
-
 export async function getStaticPaths() {
   const posts = await getFiles("posts");
 
@@ -96,39 +63,3 @@ export async function getStaticProps({ params }) {
 
   return { props: post };
 }
-
-// export async function getStaticProps({ params }) {
-//   const post = getPostBySlug(params.slug, [
-//     "title",
-//     "date",
-//     "slug",
-//     "author",
-//     "content",
-//     "ogImage",
-//     "coverImage",
-//   ]);
-
-//   const content = await markdownToHtml(post.content || "");
-
-//   return {
-//     props: {
-//       post: {
-//         ...post,
-//         content,
-//       },
-//     },
-//   };
-// }
-
-// export async function getStaticPaths() {
-//   const posts = getAllPosts(["slug"]);
-
-//   return {
-//     paths: posts.map((post) => ({
-//       params: {
-//         slug: post.slug,
-//       },
-//     })),
-//     fallback: false,
-//   };
-// }

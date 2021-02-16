@@ -45,7 +45,7 @@ const PostHeader = ({ frontMatter }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {"Edit on GitHub"}
+            Edit on GitHub
           </a>
         </div>
       </div>

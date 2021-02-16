@@ -12,7 +12,13 @@ export default function CoverImage({ title, coverImage, slug }) {
     />
   );
   return (
-    <div className="sm:mx-0">
+    <div
+      className="mx-auto"
+      style={{
+        width: coverImage.containerWidth,
+        height: coverImage.containerHeight,
+      }}
+    >
       {slug ? (
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a aria-label={title}>{image}</a>

@@ -7,7 +7,7 @@ const ProjectListItem = ({ post }) => {
   return (
     <section>
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+        <div className="flex items-center mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
           <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
             <div
               className="rounded-lg visible object-cover object-center overflow-hidden"
@@ -28,6 +28,11 @@ const ProjectListItem = ({ post }) => {
             </h2>
 
             <p className="leading-relaxed text-base">{excerpt}</p>
+
+            <p>
+              TODO: tags: FLUTTER, GOOGLE MAPS, LOCATION, RESTFUL API, GITHUB
+            </p>
+
             <Link href={`/portfolio/projects/${slug}`}>
               <a className="mt-3 text-indigo-500 inline-flex items-center">
                 Learn More

@@ -13,7 +13,7 @@ export default function CoverImage({ title, coverImage, slug }) {
   );
   return (
     <div
-      className="mx-auto"
+      className="mx-auto rounded-xl visible object-cover object-center overflow-hidden"
       style={{
         width: coverImage.containerWidth,
         height: coverImage.containerHeight,

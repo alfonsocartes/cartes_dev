@@ -1,0 +1,54 @@
+---
+title: "Overview Webcams (version 1)"
+excerpt: "Version 1 of Overview Webcams. Take a look at how it was made, what technologies where used and why..."
+coverImage: 
+  url: "/static/assets/projects/overview-webcams/overview-webcams-icon.png"
+  width: 1024
+  height: 1024
+  containerWidth: 256
+  containerHeight: 256
+ogImage:
+  url: "/static/assets/projects/overview-webcams/overview-webcams-icon.png"
+date: "2020-05-20T05:35:07.322Z"
+author:
+  name: Alfonso Cartes
+  picture: 
+    url: "/static/assets/blog/authors/alfonso-cartes.jpeg"
+    width: 700
+    height: 700
+
+---
+
+# Overview Webcams (version 1)
+
+<AppStoreButton url="http://www.apple.com"/>
+<PlayStoreButton url=""/>
+
+Overview webcams is an app made with Flutter for iOS and Android devices.
+
+I used MaterialUI as the design framework for unification between iOS and Android.
+
+<!-- ** Take a look at the [AnyLeft website](https://anyleft.cartes.dev) -->
+
+## Why a webcams app?
+
+There is a constant in my interests: **digital maps**. I have always been facinated with learning about different places and specially having access to them with a digital map in the palm of my hand.
+
+One of the steps was to see places all over the world in real or almost real time so i decided it would be a great project.
+
+The market for the apps are a lot of apps that are not really well made or really expensive and focused on one part of the world. I wan to have access to as many webcam providers as I can and offer the users an easy and affordable way of accessing them.
+
+## Why Flutter?
+
+I picked Flutter because at the time I was really exited about learning a new framework. Even though this was my second Flutter app (the fist one was [AnyLeft]()), I wanted to make a simple app that used a Rest API and a Map Widget with markes that where shown depending on the region shown in the screen of the user's device.
+
+The great thing about Flutter is that you can write one code base and deploy it as a compiled native app in iOS and Android.
+
+## Why no permanent storage?
+
+The app uses a Rest API to get the webcams information.
+
+There is no backend for this version because I just display the information that I get from the API.  
+
+I only save the user's last position. That way it's centered in it the next time the user opens the app.
+

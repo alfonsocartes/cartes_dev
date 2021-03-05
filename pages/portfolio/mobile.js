@@ -5,7 +5,7 @@ import ProjectListItem from "../../components/projects/ProjectListItem";
 
 const Mobile = ({ allPosts }) => (
   <Layout title="Mobile Portfolio | Cartes Development">
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-4xl mx-auto">
       <h1 className="sm:text-3xl text-2xl font-bold title-font text-center">
         Mobile Portfolio
       </h1>

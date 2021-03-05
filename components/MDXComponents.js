@@ -3,6 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import ContactUs from "./cta/ContactUs";
+import AppStoreButton from "./cta/AppStoreButton";
+import PlayStoreButton from "./cta/PlayStoreButton";
 
 const CustomLink = (props) => {
   const { href } = props;
@@ -23,6 +25,8 @@ const MDXComponents = {
   Image,
   a: CustomLink,
   ContactUs,
+  AppStoreButton,
+  PlayStoreButton,
 };
 
 export default MDXComponents;

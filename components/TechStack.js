@@ -3,14 +3,14 @@ import React from "react";
 
 const TechStack = () => (
   <section className="body-font border-b border-gray-200">
-    <div className="container px-5 py-20 mx-auto">
+    <div className="container px-5 py-20 mx-auto max-w-4xl">
       <div className="flex flex-wrap w-full mb-10 flex-col items-center text-center">
         <h2 className="sm:text-2xl text-xl font-medium title-font mb-2">
           Current Main Tech Stack
         </h2>
       </div>
-      <div className="flex flex-wrap -m-4">
-        <div className="xl:w-1/3 md:w-1/2 p-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="p-4">
           <div className="border border-gray-200 p-6 rounded-lg">
             <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4 bg-indigo-100 hover:bg-indigo-300 dark:bg-indigo-200 dark:hover:bg-indigo-100 text-indigo-600 hover:text-indigo-800 dark:text-indigo-600">
               <svg
@@ -41,7 +41,7 @@ const TechStack = () => (
             </p>
           </div>
         </div>
-        <div className="xl:w-1/3 md:w-1/2 p-4">
+        <div className="p-4">
           <div className="border border-gray-200 p-6 rounded-lg">
             <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4 bg-indigo-100 hover:bg-indigo-300 dark:bg-indigo-200 dark:hover:bg-indigo-100 text-indigo-600 hover:text-indigo-800 dark:text-indigo-600">
               <svg
@@ -74,7 +74,7 @@ const TechStack = () => (
             </p>
           </div>
         </div>
-        <div className="xl:w-1/3 md:w-1/2 p-4">
+        <div className="p-4">
           <div className="border border-gray-200 p-6 rounded-lg">
             <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4 bg-indigo-100 hover:bg-indigo-300 dark:bg-indigo-200 dark:hover:bg-indigo-100 text-indigo-600 hover:text-indigo-800 dark:text-indigo-600">
               <svg
@@ -105,7 +105,7 @@ const TechStack = () => (
             </p>
           </div>
         </div>
-        <div className="xl:w-1/3 md:w-1/2 p-4">
+        <div className="p-4">
           <div className="border border-gray-200 p-6 rounded-lg">
             <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4 bg-indigo-100 hover:bg-indigo-300 dark:bg-indigo-200 dark:hover:bg-indigo-100 text-indigo-600 hover:text-indigo-800 dark:text-indigo-600">
               <svg
@@ -135,7 +135,7 @@ const TechStack = () => (
             </p>
           </div>
         </div>
-        <div className="xl:w-1/3 md:w-1/2 p-4">
+        <div className="p-4">
           <div className="border border-gray-200 p-6 rounded-lg">
             <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4 bg-indigo-100 hover:bg-indigo-300 dark:bg-indigo-200 dark:hover:bg-indigo-100 text-indigo-600 hover:text-indigo-800 dark:text-indigo-600">
               <svg
@@ -165,7 +165,7 @@ const TechStack = () => (
             </p>
           </div>
         </div>
-        <div className="xl:w-1/3 md:w-1/2 p-4">
+        <div className="p-4">
           <div className="border border-gray-200 p-6 rounded-lg">
             <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4 bg-indigo-100 hover:bg-indigo-300 dark:bg-indigo-200 dark:hover:bg-indigo-100 text-indigo-600 hover:text-indigo-800 dark:text-indigo-600">
               <svg

@@ -21,11 +21,9 @@ export default function Project({ mdxSource, frontMatter }) {
   if (!router.isFallback && !frontMatter?.slug) {
     return <ErrorPage statusCode={404} />;
   }
-
-  // console.log("frontMatter", JSON.stringify(frontMatter, null, 2));
   return (
     <Layout title={`${frontMatter.title} | Cartes Development`}>
-      <article className="max-w-2xl mx-auto">
+      <article className="max-w-3xl mx-auto">
         {/* <Head>
         <title>
           {post.title} | Next.js Blog Example with {CMS_NAME}

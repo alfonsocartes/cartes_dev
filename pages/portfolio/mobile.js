@@ -9,6 +9,7 @@ const Mobile = ({ allPosts }) => (
       <h1 className="sm:text-3xl text-2xl font-bold title-font text-center mb-10">
         Mobile Portfolio
       </h1>
+      {/* TODO: order by date */}
       {allPosts.map((post) => (
         <div className="mb-10" key={post.slug}>
           <ProjectListItem post={post} />

@@ -11,6 +11,7 @@ const Blog = ({ allPosts }) => (
       <h1 className="sm:text-3xl text-2xl font-bold title-font mb-16 text-center">
         Blog
       </h1>
+      {/* TODO: order by date */}
       {allPosts.map((post) => (
         <div className="mb-10" key={post.slug}>
           <PostListItem post={post} />

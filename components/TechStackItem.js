@@ -5,7 +5,7 @@ const TechStackItem = ({ title, imageUrl, url, children }) => (
     <div className="px-6 border border-gray-200 rounded-lg">
       {/* <div className="flex flex-col md:flex-row items-center"> */}
       <div className="grid grid-flow-row md:grid-flow-col items-center">
-        <figure className="text-center mr-10 p-4 dark:bg-gray-500 rounded-xl">
+        <figure className="text-center m-4 px-4 dark:bg-gray-500 rounded-xl">
           <Image src={imageUrl} width={175} height={175} />
         </figure>
         <div className="">

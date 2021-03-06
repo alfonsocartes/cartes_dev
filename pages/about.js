@@ -40,18 +40,18 @@ const About = () => (
           </h3>
           <div className="leading-relaxed text-base">
             <p>
-              Consultancy about the technologies to impliment acording to your
-              business model and needs.
+              Software Engineer with a passion for Web and Mobile development.
             </p>
             <br />
             <p>
-              Full- Stack Web Development, Mobile Development and complete
-              project management.
+              I have experience working in large and small companies building
+              software solutions including Websites and E-commerce stores
+              focused on conversion and SEO.
             </p>
             <br />
             <p>
-              Analyze your project requirements, with quality assurance and
-              scalability in mind.
+              I also have solid expertise in business development, customer
+              service, tech support, and retail.
             </p>
           </div>
         </div>
@@ -61,17 +61,16 @@ const About = () => (
           </h3>
           <div className="leading-relaxed text-base">
             <ul>
-              <li>ReactJS</li>
               <li>React Native / Expo </li>
               <li>NextJS (SSR – SSG - ISR)</li>
-              <li>Headless CMS</li>
+              <li>React</li>
+              <li>HTML / CSS / Javascript</li>
               <li>ExpressJS / NodeJS</li>
               <li>MongoDB / Mongoose / SQL</li>
+              <li>Headless CMS</li>
               <li>RESTful APIs / GraphQL APIs</li>
-              <li>HTML / CSS / Javascript</li>
               <li>TailWind CSS / Bootstrap</li>
               <li>Serverless Deployment</li>
-              <li>Linux Server Deployment</li>
             </ul>
           </div>
         </div>

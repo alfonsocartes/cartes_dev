@@ -11,6 +11,7 @@ const Mobile = ({ allPosts }) => (
       </h1>
       {allPosts.map((post) => (
         <div className="mb-10" key={post.slug}>
+          {/* TODO: Quizas puedo usar el TeckStackItem */}
           <ProjectListItem post={post} />
         </div>
       ))}

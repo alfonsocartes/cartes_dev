@@ -4,11 +4,11 @@ const TechStackItem = ({ title, imageUrl, url, children }) => (
   <article className="p-4">
     <div className="px-6 border border-gray-200 rounded-lg">
       <div className="grid grid-flow-row md:grid-flow-col items-center">
-        <figure className="text-center m-4 px-4 dark:bg-gray-500 rounded-xl">
+        <figure className="w-40 h-40 dark:bg-gray-500 items-center text-center m-4 p-4 rounded-xl overflow-hidden">
           <Image
             src={imageUrl}
-            width={175}
-            height={175}
+            width={256}
+            height={256}
             alt={`${title} logo image`}
           />
         </figure>

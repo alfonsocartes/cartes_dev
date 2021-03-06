@@ -29,7 +29,7 @@ const ProjectListItem = ({ post }) => {
                 <Tag key={i} tag={tag} />
               ))}
             </div>
-            <Link href={`/portfolio/projects/${slug}`}>
+            {/* <Link href={`/portfolio/projects/${slug}`}>
               <a className="mt-3 text-indigo-500 inline-flex items-center">
                 Learn More
                 <svg
@@ -44,7 +44,7 @@ const ProjectListItem = ({ post }) => {
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </a>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

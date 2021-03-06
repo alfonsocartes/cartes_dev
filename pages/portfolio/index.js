@@ -1,5 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
+
 import Layout from "../../components/Layout";
+import CoverImage from "../../components/blog/CoverImage";
 
 const Portfolio = () => (
   <>
@@ -11,19 +14,27 @@ const Portfolio = () => (
           </h1>
           <div className="flex flex-wrap -mx-4 -mb-10 text-center">
             <div className="sm:w-1/2 mb-10 px-4">
-              <div className="rounded-lg h-64 overflow-hidden">
-                <img
-                  alt="web development"
-                  className="object-cover object-center h-full w-full"
-                  src="https://dummyimage.com/1200x500"
-                />
+              <div className="mb-8 md:mb-16 sm:mx-0">
+                <div className="mx-auto rounded-xl visible object-cover object-center overflow-hidden">
+                  <Link href="/web-portfolio">
+                    <a aria-label="web development">
+                      <Image
+                        layout="responsive"
+                        src="/static/images/web-portfolio.jpg"
+                        width={930}
+                        height={620}
+                        alt="web development sample image"
+                      />
+                    </a>
+                  </Link>
+                </div>
               </div>
-              <h2 className="title-font text-2xl font-medium  mt-6 mb-3 text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-200">
+              <h2 className="title-font text-2xl font-medium mt-6 mb-3 text-indigo-600 dark:text-indigo-400">
                 Web Development
               </h2>
               <p className="leading-relaxed text-base px-10 py-5">
-                Using technologies like NextJS, TailwindCSS, Wordpress and so
-                much more.
+                Using technologies like React, Next.js, TailwindCSS, Node.js and
+                so much more.
               </p>
               <Link href="/web-portfolio">
                 <button
@@ -36,14 +47,22 @@ const Portfolio = () => (
               </Link>
             </div>
             <div className="sm:w-1/2 mb-10 px-4">
-              <div className="rounded-lg h-64 overflow-hidden">
-                <img
-                  alt="mobile development"
-                  className="object-cover object-center h-full w-full"
-                  src="https://dummyimage.com/1200x500"
-                />
+              <div className="mb-8 md:mb-16 sm:mx-0">
+                <div className="mx-auto rounded-xl visible object-cover object-center overflow-hidden">
+                  <Link href="/web-portfolio">
+                    <a aria-label="mobile development">
+                      <Image
+                        layout="responsive"
+                        src="/static/images/mobile-portfolio.jpg"
+                        width={930}
+                        height={620}
+                        alt="mobile development sample image"
+                      />
+                    </a>
+                  </Link>
+                </div>
               </div>
-              <h2 className="title-font text-2xl font-medium mt-6 mb-3 text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-200">
+              <h2 className="title-font text-2xl font-medium mt-6 mb-3 text-indigo-600 dark:text-indigo-400">
                 Mobile Development
               </h2>
               <p className="leading-relaxed text-base px-10 py-5">

@@ -6,8 +6,6 @@ import Tag from "../Tag";
 
 const ProjectListItem = ({ post }) => {
   const { title, slug, excerpt, coverImage, tags } = post;
-  console.log(JSON.stringify(post, null, 2));
-
   return (
     <article className="p-4">
       <div className="px-6 border border-gray-200 rounded-lg">
@@ -23,9 +21,7 @@ const ProjectListItem = ({ post }) => {
           </figure>
           <div className="">
             <h2 className="text-center md:text-left text-2xl font-medium title-font mb-2  text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
-              <a href={slug} target="_blank" rel="noopener noreferrer">
-                {title}
-              </a>
+              <Link href={`/portfolio/projects/${slug}`}>{title}</Link>
             </h2>
             <p className="leading-relaxed text-base">{excerpt}</p>
             <div className="mt-4 flex flex-wrap">

@@ -22,37 +22,6 @@ const TechStack = () => (
                 className="w-6 h-6"
                 viewBox="0 0 24 24"
               >
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-              </svg>
-            </div>
-            <h2 className="text-lg font-medium title-font mb-2  text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-200">
-              <a
-                href="https://reactjs.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                React
-              </a>
-            </h2>
-            <p className="leading-relaxed text-base">
-              React JS React JS React JS React JS React JS React JS React JS
-              React JS React JS React JS React JS. MAYBE I CAN MAKE A PAGE FOR
-              EACH TECHNOLOGY TO EXPLAIN WHAT IT IS AND HOW I USE IT
-            </p>
-          </div>
-        </div>
-        <div className="p-4">
-          <div className="border border-gray-200 p-6 rounded-lg">
-            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4 bg-indigo-100 hover:bg-indigo-300 dark:bg-indigo-200 dark:hover:bg-indigo-100 text-indigo-600 hover:text-indigo-800 dark:text-indigo-600">
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="w-6 h-6"
-                viewBox="0 0 24 24"
-              >
                 <circle cx="6" cy="6" r="3" />
                 <circle cx="6" cy="18" r="3" />
                 <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" />
@@ -67,10 +36,27 @@ const TechStack = () => (
                 React Native
               </a>
             </h2>
+            <svg
+              aria-hidden="true"
+              className=""
+              data-reactid="266"
+              fill="none"
+              height="24"
+              stroke="#606F7B"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+            {/* TODO: Probaby add a hidden class depending on a useState? */}
             <p className="leading-relaxed text-base">
-              Expo Expo Expo Expo Expo Expo Expo Expo Expo Expo Expo Expo Expo
-              Expo Expo. MAYBE I CAN MAKE A PAGE FOR EACH TECHNOLOGY TO EXPLAIN
-              WHAT IT IS AND HOW I USE IT
+              React Native is an open-source mobile application framework. It is
+              used to develop applications for Android, Android TV, iOS, macOS,
+              tvOS, Web, Windows and UWP.
             </p>
           </div>
         </div>
@@ -100,8 +86,12 @@ const TechStack = () => (
               </a>
             </h2>
             <p className="leading-relaxed text-base">
-              Next.JS Serverless SSG SSR ISR. MAYBE I CAN MAKE A PAGE FOR EACH
-              TECHNOLOGY TO EXPLAIN WHAT IT IS AND HOW I USE IT
+              Next.js is an open-source React front-end development web
+              framework that enables functionality such as server-side rendering
+              and generating static websites for React based web applications.
+              It is a production-ready framework that allows developers to
+              quickly create static and dynamic JAMstack websites and is used
+              widely by many large companies.
             </p>
           </div>
         </div>
@@ -117,21 +107,21 @@ const TechStack = () => (
                 className="w-6 h-6"
                 viewBox="0 0 24 24"
               >
-                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7" />
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
               </svg>
             </div>
-            <h2 className="text-lg font-medium title-font mb-2  text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
+            <h2 className="text-lg font-medium title-font mb-2  text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-200">
               <a
-                href="https://tailwindcss.com/"
+                href="https://reactjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Tailwind CSS
+                React
               </a>
             </h2>
             <p className="leading-relaxed text-base">
-              Tailwind CSS. MAYBE I CAN MAKE A PAGE FOR EACH TECHNOLOGY TO
-              EXPLAIN WHAT IT IS AND HOW I USE IT
+              React is an open-source, front end, JavaScript library for
+              building user interfaces or UI components.
             </p>
           </div>
         </div>
@@ -160,8 +150,47 @@ const TechStack = () => (
               </a>
             </h2>
             <p className="leading-relaxed text-base">
-              Express JS. MAYBE I CAN MAKE A PAGE FOR EACH TECHNOLOGY TO EXPLAIN
-              WHAT IT IS AND HOW I USE IT
+              {`Node.js is an open-source, cross-platform, back-end JavaScript
+              runtime environment that runs on the V8 engine and executes
+              JavaScript code outside a web browser. Node.js lets developers use
+              JavaScript to write command line tools and for server-side
+              scripting—running scripts server-side to produce dynamic web page
+              content before the page is sent to the user's web browser.
+              Consequently, Node.js represents a "JavaScript everywhere"
+              paradigm, unifying web-application development around a single
+              programming language, rather than different languages for
+              server-side and client-side scripts.`}
+            </p>
+          </div>
+        </div>
+        <div className="p-4">
+          <div className="border border-gray-200 p-6 rounded-lg">
+            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full mb-4 bg-indigo-100 hover:bg-indigo-300 dark:bg-indigo-200 dark:hover:bg-indigo-100 text-indigo-600 hover:text-indigo-800 dark:text-indigo-600">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                className="w-6 h-6"
+                viewBox="0 0 24 24"
+              >
+                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7" />
+              </svg>
+            </div>
+            <h2 className="text-lg font-medium title-font mb-2  text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
+              <a
+                href="https://tailwindcss.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tailwind CSS
+              </a>
+            </h2>
+            <p className="leading-relaxed text-base">
+              A utility-first CSS framework packed with classes like flex, pt-4,
+              text-center and rotate-90 that can be composed to build any
+              design, directly in your markup.
             </p>
           </div>
         </div>

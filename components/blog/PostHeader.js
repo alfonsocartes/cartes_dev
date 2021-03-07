@@ -4,7 +4,9 @@ import CoverImage from "./CoverImage";
 // import PostTitle from "./PostTitle";
 
 const PostHeader = ({ frontMatter }) => {
-  const { title, coverImage, date, author, readingTime } = frontMatter;
+  const { title, coverImage, date, author, readingTime, type } = frontMatter;
+
+  const enableInfo = type === "blog-post" || type === "mobile-project";
   // console.log("frontMatter", JSON.stringify(frontMatter, null, 2));
 
   // const editUrl = (slug) =>
@@ -23,16 +25,17 @@ const PostHeader = ({ frontMatter }) => {
         <CoverImage title={title} coverImage={coverImage} />
       </div>
 
-      <div className="max-w-2xl mx-auto mb-16 text-sm text-gray-700 dark:text-gray-300">
-        <div className="mb-2">
-          <Avatar name={author.name} picture={author.picture} />
-        </div>
-        <div className="mb-2">
-          <DateFormatter dateString={date} />
-        </div>
-        <p className="mb-2 min-w-32">{readingTime.text}</p>
-        <div className="">
-          {/* <a
+      {enableInfo && (
+        <div className="max-w-2xl mx-auto mb-16 text-sm text-gray-700 dark:text-gray-300">
+          <div className="mb-2">
+            <Avatar name={author.name} picture={author.picture} />
+          </div>
+          <div className="mb-2">
+            <DateFormatter dateString={date} />
+          </div>
+          <p className="mb-2 min-w-32">{readingTime.text}</p>
+          <div className="">
+            {/* <a
             href={discussUrl(frontMatter.slug)}
             target="_blank"
             rel="noopener noreferrer"
@@ -40,15 +43,16 @@ const PostHeader = ({ frontMatter }) => {
             {"Discuss on Twitter"}
           </a>
           {` • `} */}
-          {/* <a
+            {/* <a
             href={editUrl(frontMatter.slug)}
             target="_blank"
             rel="noopener noreferrer"
           >
             Edit on GitHub
           </a> */}
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 };

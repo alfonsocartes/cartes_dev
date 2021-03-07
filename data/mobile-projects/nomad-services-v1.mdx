@@ -1,0 +1,66 @@
+---
+title: "Nomad Services"
+excerpt: "Nomad Services. An app for sharing services information for traveles by travelers. Take a look at how it was made, what technologies where used and why..."
+coverImage: 
+  url: "/static/assets/projects/nomad-services/nomad-services-icon.jpg"
+  width: 1024
+  height: 1024
+  containerWidth: 256
+  containerHeight: 256
+tags: ["iOS", "ANDROID", "FLUTTER", "MAPS", "LOCATION", "FIREBASE"]
+ogImage:
+  url: "/static/assets/projects/nomad-services/nomad-services-icon.jpg"
+date: "2020-07-30"
+author:
+  name: Alfonso Cartes
+  picture: 
+    url: "/static/assets/blog/authors/alfonso-cartes.jpeg"
+    width: 700
+    height: 700
+---
+
+Nomad Services is an app made with **Flutter** for iOS and Android devices.
+
+I used Material UI as the design framework for unification between iOS and Android.
+
+The app uses a colour scheme found in the *constants.dart* file.
+
+<!-- ** Take a look at the [AnyLeft website](https://anyleft.cartes.dev) -->
+
+## Why a Nomad Services?
+
+I've been travelling al around Europe for two years and there are some services that travellers need because they don't know the city. 
+
+Even though there are some apps for getting information on wifi, toilets, and other services, it's hard to get real feedback from the actual users, especially travellers on those services.
+
+The app lets travellers not only add new places but also rate them. They cannot add comments or photos because I don't want to do any kind of moderation.
+
+I use Firestore from Firebase to store the data for each place and the collection of places. You can find the implementation in the files that end in *_data.dart* in the *model* folder
+
+## Why Flutter?
+
+I picked Flutter because I wanted to make a simple app that used Firestore and a Map Widget. It takes a lot of code from the [AnyLeft project]()
+
+The great thing about Flutter is that you can write one code base and deploy it as a compiled native app in iOS and Android.
+
+<!--## Code explanation
+
+[Take a look at the code on GitHub](https.//www.github.com)-->
+
+### How the project is structured
+
+The app has four main folders: services, model, screens, widgets (going from backend to frontend).
+
+#### Services
+
+The services folder contains the files necessary for location, networking, shared preferences, and other interactions with APIs and system services via Flutter Packages.
+
+#### Model
+
+This is the folder where the classes of each type of service are. Also, the implementation of the Firestore data handling can be found in the files that end in *_data.dart* 
+
+#### Screens
+
+The screens are stored in this folder. They are divided into a details screen for each service and a homepage screen.
+
+#### Widgets

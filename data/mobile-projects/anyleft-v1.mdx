@@ -1,0 +1,66 @@
+---
+title: "AnyLeft"
+excerpt: "AnyLeft. An app for sharing food and donating various items to people in need. Take a look at how it was made, what technologies where used and why..."
+coverImage: 
+  url: "/static/assets/projects/anyleft/anyleft-icon.jpg"
+  width: 1024
+  height: 1024
+  containerWidth: 256
+  containerHeight: 256
+tags: ["iOS", "ANDROID", "FLUTTER", "MAPS", "LOCATION", "FIREBASE"]
+ogImage:
+  url: "/static/assets/projects/anyleft/anyleft-icon.jpg"
+date: "2020-05-20"
+author:
+  name: Alfonso Cartes
+  picture: 
+    url: "/static/assets/blog/authors/alfonso-cartes.jpeg"
+    width: 700
+    height: 700
+---
+
+AnyLeft is an app made with **Flutter** for iOS and Android devices.
+
+I used Material UI as the design framework for unification between iOS and Android.
+
+The app uses Google Maps to display different places and Firebase to store those places. Each place has a details screen.
+
+<!-- ** Take a look at the [AnyLeft website](https://anyleft.cartes.dev) -->
+
+## Why AnyLeft?
+
+The idea behind AnyLeft is a utility to help people donate to other people in need. They can see in a map placer where different donations like clothes, food, books, toys, and other items are available.
+
+Every user can add a new place to the map that will be available to all users.
+
+## Why Flutter?
+
+The main reason is the ability to make the app available to as many devices as possible, especially older devices. The great thing about Flutter is that you can write one code base and deploy it as a compiled native app in iOS and Android.
+
+I wanted to make a simple app that used Firestore and a Map Widget.
+
+<!--## Code explanation
+
+[Take a look at the code on GitHub](https.//www.github.com)-->
+
+When a user adds a place in the map using the map button controllers, the map controllers are changed to a target icon where the user can centre the map in a specific place. Then the detail screen opens and the user can select anything. Every Flutter Stateful Widget card in that screen is handled via local state the state of the compiled items is handled through the Provider State Management package. Once the user taps the saved button, the app calls the model that uses the Firebase API to add the place in the Firestore database.
+
+### How the project is structured
+
+The app has four main folders: services, model, screens, widgets (going from backend to frontend).
+
+#### Services
+
+The services folder contains the files necessary for location, networking, shared preferences, and other interactions with APIs and system services via Flutter Packages.
+
+#### Model
+
+This is the folder where the classes of each type of service are. Also, the implementation of the Firestore data handling can be found in the files that end in *_data.dart* 
+
+#### Screens
+
+The screens are stored in this folder. They are divided into a details screen for each service and a homepage screen.
+
+#### Widgets
+
+These are the widgets used by the screens, a map widget for each service and some functional widgets used by some detail screens.

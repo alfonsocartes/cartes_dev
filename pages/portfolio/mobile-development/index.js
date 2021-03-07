@@ -7,7 +7,7 @@ const MobilePortfolio = ({ allPosts }) => (
   <Layout title="Mobile Portfolio | Cartes Development">
     <div className="max-w-4xl mx-auto">
       <h1 className="sm:text-3xl text-2xl font-bold title-font text-center mb-10">
-        Mobile Portfolio
+        Mobile Development Portfolio
       </h1>
       {/* TODO: order by date */}
       {allPosts.map((post) => (

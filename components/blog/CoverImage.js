@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function CoverImage({ title, coverImage, slug }) {
+  if (!coverImage) return null;
   const image = (
     <Image
       src={coverImage.url}

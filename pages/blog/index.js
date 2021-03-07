@@ -1,9 +1,9 @@
 import React from "react";
 
-import { getAllFilesFrontMatter } from "../lib/mdx";
+import { getAllFilesFrontMatter } from "../../lib/mdx";
 
-import Layout from "../components/Layout";
-import PostListItem from "../components/blog/PostListItem";
+import Layout from "../../components/Layout";
+import PostListItem from "../../components/blog/PostListItem";
 
 const Blog = ({ allPosts }) => {
   const sortedPosts = allPosts.sort(

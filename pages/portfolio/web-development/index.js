@@ -1,26 +1,21 @@
+import Layout from "../../../components/Layout";
+import ProjectList from "../../../components/projects/ProjectList";
 import { getAllFilesFrontMatter } from "../../../lib/mdx";
 
-import Layout from "../../../components/Layout";
-import ProjectListItem from "../../../components/projects/ProjectListItem";
-
-const WebPortfolio = ({ allPosts }) => (
-  <Layout title="Web Portfolio | Cartes Development">
-    <div className="max-w-4xl mx-auto">
-      <h1 className="sm:text-3xl text-2xl font-bold title-font text-center mb-10">
-        Web Development Portfolio
-      </h1>
-      {/* TODO: order by date */}
-      {allPosts.map((post) => (
-        <div className="mb-4" key={post.slug}>
-          <ProjectListItem
-            post={post}
-            path="/portfolio/web-development/web-projects"
-          />
-        </div>
-      ))}
-    </div>
-  </Layout>
-);
+const WebPortfolio = ({ allPosts }) => {
+  const sortedPosts = allPosts.sort(
+    (a, b) => Number(new Date(b.date)) - Number(new Date(a.date))
+  );
+  return (
+    <Layout title="Web Portfolio | Cartes Development">
+      <ProjectList
+        title="Web Development Portfolio"
+        path="/portfolio/web-development/web-projects"
+        allPosts={sortedPosts}
+      />
+    </Layout>
+  );
+};
 
 export async function getStaticProps() {
   const allPosts = await getAllFilesFrontMatter("web-projects");

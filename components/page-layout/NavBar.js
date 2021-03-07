@@ -9,9 +9,9 @@ const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <nav className="flex flex-row items-center">
-      <div className="mr-auto text-lg sm:text-3xl text-black dark:text-white font-bold md:transform ease-in duration-200 hover:scale-110">
+      <div className="mr-auto text-lg sm:text-3xl text-black dark:text-white font-bold md:transform-none transform ease-in duration-200 hover:scale-110">
         <div
-          className={`transform ease-in duration-200 ${
+          className={`md:transform-none transform ease-in duration-200 ${
             navbarOpen ? "scale-150 translate-x-10" : ""
           }`}
         >

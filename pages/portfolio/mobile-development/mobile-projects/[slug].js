@@ -2,14 +2,14 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import hydrate from "next-mdx-remote/hydrate";
 
-import { getFiles, getFileBySlug } from "../../../lib/mdx";
+import { getFiles, getFileBySlug } from "../../../../lib/mdx";
 
-import MDXComponents from "../../../components/MDXComponents";
+import MDXComponents from "../../../../components/MDXComponents";
 
-import Layout from "../../../components/Layout";
-import PostHeader from "../../../components/blog/PostHeader";
-import PostBody from "../../../components/blog/PostBody";
-import ContactUs from "../../../components/cta/ContactUs";
+import Layout from "../../../../components/Layout";
+import PostHeader from "../../../../components/blog/PostHeader";
+import PostBody from "../../../../components/blog/PostBody";
+import ContactUs from "../../../../components/cta/ContactUs";
 
 export default function Project({ mdxSource, frontMatter }) {
   // To add JSX components to the MDX post, we had to add them to the MDXComponents file
@@ -39,7 +39,7 @@ export default function Project({ mdxSource, frontMatter }) {
 }
 
 export async function getStaticPaths() {
-  const posts = await getFiles("projects");
+  const posts = await getFiles("mobile-projects");
 
   return {
     paths: posts.map((p) => ({
@@ -52,7 +52,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const post = await getFileBySlug("projects", params.slug);
+  const post = await getFileBySlug("mobile-projects", params.slug);
 
   return { props: post };
 }

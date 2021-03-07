@@ -1,9 +1,9 @@
-import { getAllFilesFrontMatter } from "../../lib/mdx";
+import { getAllFilesFrontMatter } from "../../../lib/mdx";
 
-import Layout from "../../components/Layout";
-import ProjectListItem from "../../components/projects/ProjectListItem";
+import Layout from "../../../components/Layout";
+import MobileProjectListItem from "../../../components/projects/MobileProjectListItem";
 
-const Mobile = ({ allPosts }) => (
+const MobilePortfolio = ({ allPosts }) => (
   <Layout title="Mobile Portfolio | Cartes Development">
     <div className="max-w-4xl mx-auto">
       <h1 className="sm:text-3xl text-2xl font-bold title-font text-center mb-10">
@@ -12,7 +12,7 @@ const Mobile = ({ allPosts }) => (
       {/* TODO: order by date */}
       {allPosts.map((post) => (
         <div className="mb-10" key={post.slug}>
-          <ProjectListItem post={post} />
+          <MobileProjectListItem post={post} />
         </div>
       ))}
     </div>
@@ -20,9 +20,9 @@ const Mobile = ({ allPosts }) => (
 );
 
 export async function getStaticProps() {
-  const allPosts = await getAllFilesFrontMatter("projects");
+  const allPosts = await getAllFilesFrontMatter("mobile-projects");
 
   return { props: { allPosts } };
 }
 
-export default Mobile;
+export default MobilePortfolio;

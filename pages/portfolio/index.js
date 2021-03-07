@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Layout from "../../components/Layout";
-import CoverImage from "../../components/blog/CoverImage";
 
 const Portfolio = () => (
   <>
@@ -49,7 +48,7 @@ const Portfolio = () => (
             <div className="sm:w-1/2 mb-10 px-4">
               <div className="mb-8 md:mb-16 sm:mx-0">
                 <div className="mx-auto rounded-xl visible object-cover object-center overflow-hidden">
-                  <Link href="/web-portfolio">
+                  <Link href="/portfolio/mobile-development">
                     <a aria-label="mobile development">
                       <Image
                         layout="responsive"
@@ -69,7 +68,7 @@ const Portfolio = () => (
                 Extense experience developing and publishing multiplatform state
                 of the art apps.
               </p>
-              <Link href="/portfolio/mobile">
+              <Link href="/portfolio/mobile-development">
                 <button
                   type="button"
                   // className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded"

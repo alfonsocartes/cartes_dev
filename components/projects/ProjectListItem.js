@@ -11,7 +11,7 @@ const ProjectListItem = ({ post, path }) => {
       <div className="p-4 border border-gray-200 rounded-lg">
         <div className="grid grid-flow-row md:grid-flow-col items-center">
           {coverImage && (
-            <figure className="w-40 h-40 dark:bg-gray-500 items-center text-center m-8 rounded-xl overflow-hidden">
+            <figure className="justify-self-center w-40 h-40 dark:bg-gray-500 m-8 rounded-xl overflow-hidden">
               <Image
                 src={coverImage.url}
                 layout="responsive"

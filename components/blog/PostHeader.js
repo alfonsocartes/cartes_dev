@@ -1,7 +1,7 @@
 import Avatar from "./Avatar";
 import DateFormatter from "./DateFormatter";
 import CoverImage from "./CoverImage";
-import PostTitle from "./PostTitle";
+// import PostTitle from "./PostTitle";
 
 const PostHeader = ({ frontMatter }) => {
   const { title, coverImage, date, author, readingTime } = frontMatter;
@@ -17,7 +17,7 @@ const PostHeader = ({ frontMatter }) => {
 
   return (
     <>
-      <PostTitle>{title}</PostTitle>
+      {/* <PostTitle>{title}</PostTitle> */}
 
       <div className="mb-8 md:mb-16 sm:mx-0">
         <CoverImage title={title} coverImage={coverImage} />

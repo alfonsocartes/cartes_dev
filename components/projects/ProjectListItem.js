@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import Tag from "../Tag";
 
-const MobileProjectListItem = ({ post }) => {
+const ProjectListItem = ({ post, path }) => {
   const { title, slug, excerpt, coverImage, tags } = post;
   return (
     <article className="p-4">
@@ -21,11 +21,7 @@ const MobileProjectListItem = ({ post }) => {
           </figure>
           <div className="">
             <h2 className="text-center md:text-left text-2xl font-medium title-font mb-2  text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
-              <Link
-                href={`/portfolio/mobile-development/mobile-projects/${slug}`}
-              >
-                {title}
-              </Link>
+              <Link href={`${path}/${slug}`}>{title}</Link>
             </h2>
             <p className="leading-relaxed text-base">{excerpt}</p>
             <div className="mt-4 flex flex-wrap">
@@ -40,4 +36,4 @@ const MobileProjectListItem = ({ post }) => {
   );
 };
 
-export default MobileProjectListItem;
+export default ProjectListItem;

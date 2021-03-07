@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 
 const Contact = () => (
   <Layout
-    title="Contact | Cartes Development | Full-Stack Web Development / Mobile Development"
+    title="Contact | Cartes Development | Full-Stack Web Development | Mobile Development"
     optionalScript={
       <script src="https://www.google.com/recaptcha/api.js" async defer />
     }

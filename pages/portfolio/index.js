@@ -5,7 +5,7 @@ import Layout from "../../components/Layout";
 
 const Portfolio = () => (
   <>
-    <Layout title="Portfolio | Cartes Development | Full-Stack Web Development / Mobile Development">
+    <Layout title="Portfolio | Cartes Development | Full-Stack Web Development | Mobile Development">
       <section className="body-font">
         <div className="container mx-auto">
           <h1 className="sm:text-3xl text-2xl font-bold title-font mb-16 text-center">

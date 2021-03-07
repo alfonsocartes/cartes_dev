@@ -5,7 +5,7 @@ import TechStack from "../components/TechStack";
 
 const Index = () => (
   <>
-    <Layout title="Cartes Development | Full-Stack Web Development / Mobile Development">
+    <Layout title="Cartes Development | Full-Stack Web Development | Mobile Development">
       <HeroPersonal />
       <TechStack />
       {/* <EmailNewsletter /> */}

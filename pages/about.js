@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 import SocialNetworks from "../components/SocialNetworks";
 
 const About = () => (
-  <Layout title="About | Cartes Development | Full-Stack Web Development / Mobile Development">
+  <Layout title="About | Cartes Development | Full-Stack Web Development | Mobile Development">
     <section className="body-font">
       <div className="container mx-auto flex py-8 items-center justify-center flex-col">
         <div className="w-28 h-28 relative mb-4">

@@ -15,7 +15,7 @@ const Portfolio = () => (
             <div className="sm:w-1/2 mb-10 px-4">
               <div className="mb-8 md:mb-16 sm:mx-0">
                 <div className="mx-auto rounded-xl visible object-cover object-center overflow-hidden">
-                  <Link href="/web-portfolio">
+                  <Link href="/portfolio/web-development">
                     <a aria-label="web development">
                       <Image
                         layout="responsive"
@@ -28,14 +28,16 @@ const Portfolio = () => (
                   </Link>
                 </div>
               </div>
+
               <h2 className="title-font text-2xl font-medium mt-6 mb-3 text-indigo-600 dark:text-indigo-400">
-                Web Development
+                <Link href="/portfolio/web-development">Web Development</Link>
               </h2>
+
               <p className="leading-relaxed text-base px-10 py-5">
                 Using technologies like React, Next.js, TailwindCSS, Node.js and
                 so much more.
               </p>
-              <Link href="/web-portfolio">
+              <Link href="/portfolio/web-development">
                 <button
                   type="button"
                   // className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded"
@@ -62,7 +64,9 @@ const Portfolio = () => (
                 </div>
               </div>
               <h2 className="title-font text-2xl font-medium mt-6 mb-3 text-indigo-600 dark:text-indigo-400">
-                Mobile Development
+                <Link href="/portfolio/mobile-development">
+                  Mobile Development
+                </Link>
               </h2>
               <p className="leading-relaxed text-base px-10 py-5">
                 Extense experience developing and publishing multiplatform state

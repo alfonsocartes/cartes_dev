@@ -1,6 +1,10 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
+  cloudflareBeacon = JSON.stringify({
+    token: process.env.CLOUDFLARE_ANALYTICS,
+  });
+
   render() {
     return (
       <Html lang="en">
@@ -41,6 +45,12 @@ class MyDocument extends Document {
         content=""
         name="google-site-verification"
       /> */}
+
+          <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon={this.cloudflareBeacon}
+          />
         </Head>
         <body>
           <Main />

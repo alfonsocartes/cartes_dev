@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -15,6 +16,9 @@ export default function Footer() {
               @cartes_dev
             </a>
           </p>
+          <span className="inline-flex text-sm sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+            <Link href="/privacy-policy">Privacy Policy</Link>
+          </span>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
             <div className="pl-4 hover:text-gray-500">
               <a

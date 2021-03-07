@@ -1,24 +1,14 @@
-import { getAllFilesFrontMatter } from "../../../lib/mdx";
-
 import Layout from "../../../components/Layout";
-import ProjectListItem from "../../../components/projects/ProjectListItem";
+import ProjectList from "../../../components/projects/ProjectList";
+import { getAllFilesFrontMatter } from "../../../lib/mdx";
 
 const MobilePortfolio = ({ allPosts }) => (
   <Layout title="Mobile Portfolio | Cartes Development">
-    <div className="max-w-4xl mx-auto">
-      <h1 className="sm:text-3xl text-2xl font-bold title-font text-center mb-10">
-        Mobile Development Portfolio
-      </h1>
-      {/* TODO: order by date */}
-      {allPosts.map((post) => (
-        <div className="mb-4" key={post.slug}>
-          <ProjectListItem
-            post={post}
-            path="/portfolio/mobile-development/mobile-projects"
-          />
-        </div>
-      ))}
-    </div>
+    <ProjectList
+      title="Mobile Development Portfolio"
+      path="/portfolio/mobile-development/mobile-projects"
+      allPosts={allPosts}
+    />
   </Layout>
 );
 

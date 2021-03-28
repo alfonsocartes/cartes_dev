@@ -22,7 +22,13 @@ export default function Project({ mdxSource, frontMatter }) {
     return <ErrorPage statusCode={404} />;
   }
   return (
-    <Layout title={`${frontMatter.title} | Cartes Development`}>
+    <Layout
+      title={`${frontMatter.title} | Mobile Portfolio | Cartes Development`}
+      description={frontMatter.summary}
+      image={`https://www.cartes.dev${frontMatter.image}`}
+      date={new Date(frontMatter.date).toISOString()}
+      type="article"
+    >
       <article className="max-w-3xl mx-auto">
         {/* <Head>
         <title>

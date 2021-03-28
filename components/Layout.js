@@ -16,12 +16,14 @@ export default function Layout({ children, ...customMeta }) {
     ...customMeta,
   };
 
+  console.log();
+
   return (
     <div className="bg-white dark:bg-black text-black dark:text-gray-200 flex flex-col min-h-screen ">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
-        <meta content={meta.description} name="description" />
+        <meta name="description" content={meta.description} />
         <meta
           property="og:url"
           content={`https://www.cartes.dev${router.asPath}`}

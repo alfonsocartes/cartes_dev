@@ -26,7 +26,7 @@ export default function Post({ mdxSource, frontMatter }) {
   return (
     <Layout
       title={`${frontMatter.title} | Blog | Cartes Development`}
-      description={frontMatter.summary}
+      description={frontMatter.excerpt}
       image={`https://www.cartes.dev${frontMatter.image}`}
       date={new Date(frontMatter.date).toISOString()}
       type="article"

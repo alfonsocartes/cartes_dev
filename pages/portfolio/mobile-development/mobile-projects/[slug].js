@@ -21,10 +21,11 @@ export default function Project({ mdxSource, frontMatter }) {
   if (!router.isFallback && !frontMatter?.slug) {
     return <ErrorPage statusCode={404} />;
   }
+
   return (
     <Layout
       title={`${frontMatter.title} | Mobile Portfolio | Cartes Development`}
-      description={frontMatter.summary}
+      description={frontMatter.excerpt}
       image={`https://www.cartes.dev${frontMatter.image}`}
       date={new Date(frontMatter.date).toISOString()}
       type="article"

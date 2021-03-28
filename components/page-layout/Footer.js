@@ -6,27 +6,30 @@ export default function Footer() {
     <footer className="body-font ">
       <div className="frosted bg-opacity-20 bg-gray-200 dark:bg-white-800 border-white border-opacity-20 border-t p-4 top-inner-shadow">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-          <p className="text-sm sm:ml-6 sm:mt-0 mt-4">
+          <p className="text-sm sm:ml-6 sm:mt-0 mt-4 p-4">
             © {new Date().getFullYear()} Alfonso Cartes —
             <a
               href="https://twitter.com/cartes_dev"
               target="_blank"
               rel="noopener noreferrer"
             >
-              @cartes_dev
+              <span className="p-4">@cartes_dev</span>
             </a>
           </p>
           <span className="inline-flex text-sm sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/privacy-policy">
+              <span className="p-4">Privacy Policy</span>
+            </Link>
           </span>
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-            <div className="pl-4 hover:text-gray-500">
+          <span className="flex flex-wrap sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+            <div className="hover:text-gray-500">
               <a
                 href="https://github.com/alfonsocartes"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub"
               >
-                <div>
+                <div className="p-4">
                   <svg
                     fill="currentColor"
                     strokeLinecap="round"
@@ -40,13 +43,14 @@ export default function Footer() {
                 </div>
               </a>
             </div>
-            <div className="pl-4 hover:text-gray-500">
+            <div className="hover:text-gray-500">
               <a
                 href="https://twitter.com/cartes_dev"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Twitter"
               >
-                <div>
+                <div className="p-4">
                   <svg
                     fill="currentColor"
                     strokeLinecap="round"
@@ -60,13 +64,14 @@ export default function Footer() {
                 </div>
               </a>
             </div>
-            <div className="pl-4 hover:text-gray-500">
+            <div className="hover:text-gray-500">
               <a
                 href="https://www.linkedin.com/company/cartesdev"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
               >
-                <div>
+                <div className="p-4">
                   <svg
                     fill="currentColor"
                     stroke="currentColor"
@@ -85,13 +90,14 @@ export default function Footer() {
                 </div>
               </a>
             </div>
-            <div className="pl-4 hover:text-gray-500">
+            <div className="hover:text-gray-500">
               <a
                 href="https://www.facebook.com/cartes.dev"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Facebook"
               >
-                <div>
+                <div className="p-4">
                   <svg
                     fill="currentColor"
                     strokeLinecap="round"

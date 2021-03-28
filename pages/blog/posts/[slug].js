@@ -24,7 +24,13 @@ export default function Post({ mdxSource, frontMatter }) {
 
   // console.log("frontMatter", JSON.stringify(frontMatter, null, 2));
   return (
-    <Layout title={`${frontMatter.title} | Cartes Development`}>
+    <Layout
+      title={`${frontMatter.title} | Blog | Cartes Development`}
+      description={frontMatter.excerpt}
+      image={`https://www.cartes.dev${frontMatter.image}`}
+      date={new Date(frontMatter.date).toISOString()}
+      type="article"
+    >
       <article className="max-w-2xl mx-auto">
         {/* <Head>
         <title>

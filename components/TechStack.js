@@ -5,7 +5,7 @@ import React from "react";
 import TechStackItem from "./TechStackItem";
 
 const TechStack = () => (
-  <section className="body-font border-b border-gray-200">
+  <section className="body-font">
     <div className="container px-5 py-20 mx-auto max-w-4xl">
       <div className="flex flex-wrap w-full mb-10 flex-col items-center text-center">
         <h2 className="sm:text-2xl text-xl font-medium title-font mb-2">
@@ -16,7 +16,7 @@ const TechStack = () => (
         <TechStackItem
           title="React Native"
           url="https://reactnative.dev/"
-          imageUrl="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+          imageUrl="/static/assets/technologies/reactjs-logo.svg"
         >
           React Native is an open-source mobile application framework. It is
           used to develop applications for Android, Android TV, iOS, macOS,
@@ -25,16 +25,27 @@ const TechStack = () => (
         <TechStackItem
           title="Next.js"
           url="https://nextjs.org/"
-          imageUrl="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
+          imageUrl="/static/assets/technologies/nextjs-logo.svg"
         >
           Next.js is an open-source React front-end development web framework
           that enables functionality such as server-side rendering and
           generating static websites for React based web applications.
         </TechStackItem>
         <TechStackItem
+          title="TailwindCSS"
+          url="https://tailwindcss.com/"
+          imageUrl="/static/assets/technologies/tailwindcss-logo.svg"
+        >
+          <p>
+            TailwindCSS is an utility-first CSS framework packed with classes
+            like <i>flex, pt-4, text-center</i> and <i>rotate-90</i> that can be
+            composed to build any design, directly in your markup.
+          </p>
+        </TechStackItem>
+        <TechStackItem
           title="Node.js"
           url="https://nodejs.org/"
-          imageUrl="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+          imageUrl="/static/assets/technologies/nodejs-logo.svg"
         >
           Node.js is an open-source, cross-platform, back-end JavaScript runtime
           environment and executes JavaScript code outside a web browser.

@@ -9,6 +9,7 @@ const SocialNetworks = () => (
             href="https://github.com/alfonsocartes"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub"
           >
             <div>
               <svg
@@ -29,6 +30,7 @@ const SocialNetworks = () => (
             href="https://twitter.com/cartes_dev"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Twitter"
           >
             <div>
               <svg
@@ -49,6 +51,7 @@ const SocialNetworks = () => (
             href="https://www.linkedin.com/company/cartesdev"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
             <div>
               <svg
@@ -74,6 +77,7 @@ const SocialNetworks = () => (
             href="https://www.facebook.com/cartes.dev"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Facebook"
           >
             <div>
               <svg

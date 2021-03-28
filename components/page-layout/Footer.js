@@ -27,6 +27,7 @@ export default function Footer() {
                 href="https://github.com/alfonsocartes"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub"
               >
                 <div className="p-4">
                   <svg
@@ -47,6 +48,7 @@ export default function Footer() {
                 href="https://twitter.com/cartes_dev"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Twitter"
               >
                 <div className="p-4">
                   <svg
@@ -67,6 +69,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/cartesdev"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
               >
                 <div className="p-4">
                   <svg
@@ -92,6 +95,7 @@ export default function Footer() {
                 href="https://www.facebook.com/cartes.dev"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Facebook"
               >
                 <div className="p-4">
                   <svg

@@ -18,16 +18,18 @@ const Portfolio = () => (
                   <Link href="/portfolio/mobile-development">
                     <a aria-label="mobile development">
                       <Image
-                        layout="responsive"
                         src="/static/images/mobile-portfolio.jpg"
                         width={930}
                         height={620}
                         alt="mobile development sample image"
+                        layout="responsive"
+                        priority
                       />
                     </a>
                   </Link>
                 </div>
               </div>
+
               <h2 className="title-font text-2xl font-medium mt-6 mb-3 text-indigo-600 dark:text-indigo-400">
                 <Link href="/portfolio/mobile-development">
                   Mobile Development
@@ -53,11 +55,11 @@ const Portfolio = () => (
                   <Link href="/portfolio/web-development">
                     <a aria-label="web development">
                       <Image
-                        layout="responsive"
                         src="/static/images/web-portfolio.jpg"
                         width={930}
                         height={620}
                         alt="web development sample image"
+                        layout="responsive"
                       />
                     </a>
                   </Link>

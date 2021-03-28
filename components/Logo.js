@@ -8,9 +8,8 @@ const Logo = ({ navbarOpen }) => (
       className={`flex sm:flex-row ${navbarOpen && "flex-col"} cursor-pointer`}
     >
       <div className="self-center pr-2">
-        <h1>{"</>"}</h1>
+        <h1>{"<cartes/>"}</h1>
       </div>
-      <h1>cartes.dev</h1>
     </div>
   </Link>
 );

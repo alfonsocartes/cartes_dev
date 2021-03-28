@@ -14,10 +14,10 @@ const ProjectListItem = ({ post, path }) => {
             <figure className="justify-self-center w-40 h-40 dark:bg-gray-500 m-8 rounded-xl overflow-hidden">
               <Image
                 src={coverImage.url}
-                layout="responsive"
                 width={coverImage.width}
                 height={coverImage.height}
                 alt={`Cover Image for ${title}`}
+                layout="responsive"
               />
             </figure>
           )}

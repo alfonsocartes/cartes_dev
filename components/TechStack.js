@@ -11,6 +11,15 @@ const TechStack = () => (
         <h2 className="sm:text-2xl text-xl font-medium title-font mb-2">
           Current Main Tech Stack
         </h2>
+        <a
+          href="https://github.com/alfonsocartes/cartes_dev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="inline-flex text-lg font-semibold py-8 text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600 transform hover:scale-105 ease-in-out">
+            Take a look at the code
+          </span>
+        </a>
       </div>
       <div className="grid grid-cols-1">
         <TechStackItem

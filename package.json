@@ -17,8 +17,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ./components/** ./pages/** -c .eslintrc.json --ext js,jsx",
-    "lint-fix": "eslint ./components/** ./pages/** -c .eslintrc.json --fix --ext js,jsx"
+    "lint": "next lint"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.0",
@@ -37,6 +36,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.0.0",
     "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-next": "^11.0.1",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",

@@ -29,7 +29,6 @@ const ContactForm = () => {
             message="Thank you, I will try to get back to you as soon as possible."
           />
         );
-        console.log(result.text);
       })
       .catch((error) => {
         setAlert(

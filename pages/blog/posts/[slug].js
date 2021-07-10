@@ -22,7 +22,6 @@ export default function Post({ mdxSource, frontMatter }) {
     return <ErrorPage statusCode={404} />;
   }
 
-  // console.log("frontMatter", JSON.stringify(frontMatter, null, 2));
   return (
     <Layout
       title={`${frontMatter.title} | Blog | Cartes Development`}
@@ -32,12 +31,6 @@ export default function Post({ mdxSource, frontMatter }) {
       type="article"
     >
       <article className="max-w-2xl mx-auto">
-        {/* <Head>
-        <title>
-          {post.title} | Next.js Blog Example with {CMS_NAME}
-        </title>
-        <meta property="og:image" content={post.ogImage.url} />
-      </Head> */}
         <PostHeader frontMatter={frontMatter} />
         <PostBody content={content} />
       </article>

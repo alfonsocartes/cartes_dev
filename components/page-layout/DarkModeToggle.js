@@ -1,8 +1,6 @@
-/* eslint-disable no-unused-expressions */
 import React, { useState, useEffect } from "react";
 
 const DarkModeToggle = () => {
-  // const [mounted, setMounted] = useState(false);
   const [themeState, setThemeState] = useState("light");
 
   function setTheme(theme) {

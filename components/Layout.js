@@ -16,8 +16,6 @@ export default function Layout({ children, ...customMeta }) {
     ...customMeta,
   };
 
-  console.log();
-
   return (
     <div className="bg-white dark:bg-black text-black dark:text-gray-200 flex flex-col min-h-screen ">
       <Head>

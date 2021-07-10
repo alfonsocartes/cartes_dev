@@ -3,6 +3,9 @@ import Image from "next/image";
 
 import Layout from "../../components/Layout";
 
+import mobilePortfolioImage from "../../public/static/images/mobile-portfolio.jpg"
+import webPortfolioImage from "../../public/static/images/web-portfolio.jpg"
+
 const Portfolio = () => (
   <>
     <Layout title="Portfolio | Cartes Development | Full-Stack Web Development | Mobile Development">
@@ -18,12 +21,12 @@ const Portfolio = () => (
                   <Link href="/portfolio/mobile-development">
                     <a aria-label="mobile development">
                       <Image
-                        src="/static/images/mobile-portfolio.jpg"
+                        src={mobilePortfolioImage}
                         width={930}
                         height={620}
                         alt="mobile development sample image"
                         layout="responsive"
-                        priority
+                        placeholder="blur"
                       />
                     </a>
                   </Link>
@@ -42,7 +45,6 @@ const Portfolio = () => (
               <Link href="/portfolio/mobile-development" passHref>
                 <button
                   type="button"
-                  // className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded"
                   className="flex-shrink-0 mt-4 text-white bg-transparent rounded-lg shadow-lg bg-indigo-600 hover:bg-indigo-400 dark:bg-indigo-600 dark:hover:bg-indigo-900 py-2 px-8 focus:outline-none text-lg"
                 >
                   Mobile
@@ -55,11 +57,12 @@ const Portfolio = () => (
                   <Link href="/portfolio/web-development">
                     <a aria-label="web development">
                       <Image
-                        src="/static/images/web-portfolio.jpg"
+                        src={webPortfolioImage}
                         width={930}
                         height={620}
                         alt="web development sample image"
                         layout="responsive"
+                        placeholder="blur"
                       />
                     </a>
                   </Link>
@@ -77,7 +80,6 @@ const Portfolio = () => (
               <Link href="/portfolio/web-development" passHref>
                 <button
                   type="button"
-                  // className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded"
                   className="flex-shrink-0 mt-4 text-white bg-transparent rounded-lg shadow-lg bg-indigo-600 hover:bg-indigo-400 dark:bg-indigo-600 dark:hover:bg-indigo-900 py-2 px-8 focus:outline-none text-lg"
                 >
                   Web

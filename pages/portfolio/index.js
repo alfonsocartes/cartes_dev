@@ -39,7 +39,7 @@ const Portfolio = () => (
                 Extense experience developing and publishing multiplatform state
                 of the art apps.
               </p>
-              <Link href="/portfolio/mobile-development">
+              <Link href="/portfolio/mobile-development" passHref>
                 <button
                   type="button"
                   // className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded"
@@ -74,7 +74,7 @@ const Portfolio = () => (
                 Using technologies like React, Next.js, TailwindCSS, Node.js and
                 so much more.
               </p>
-              <Link href="/portfolio/web-development">
+              <Link href="/portfolio/web-development" passHref>
                 <button
                   type="button"
                   // className="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded"

@@ -60,7 +60,7 @@ const TechStack = () => (
           environment and executes JavaScript code outside a web browser.
         </TechStackItem>
       </div>
-      <Link href="/portfolio">
+      <Link href="/portfolio" passHref>
         <button
           type="button"
           className="flex mx-auto mt-16 text-white py-2 px-8 focus:outline-none text-lg bg-transparent rounded-lg shadow-lg bg-indigo-600 hover:bg-indigo-400 dark:bg-indigo-600 dark:hover:bg-indigo-900"

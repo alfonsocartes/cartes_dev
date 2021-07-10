@@ -3,7 +3,7 @@ import React from "react";
 // import Image from "next/image";
 
 const Logo = ({ navbarOpen }) => (
-  <Link href="/">
+  <Link href="/" passHref>
     <div
       className={`flex sm:flex-row ${navbarOpen && "flex-col"} cursor-pointer`}
     >

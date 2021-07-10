@@ -17,8 +17,8 @@ export default function Footer() {
             </a>
           </p>
           <span className="inline-flex text-sm sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-            <Link href="/privacy-policy">
-              <span className="p-4">Privacy Policy</span>
+            <Link href="/privacy-policy" passHref>
+              <a className="p-4">Privacy Policy</a>
             </Link>
           </span>
           <span className="flex flex-wrap sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">

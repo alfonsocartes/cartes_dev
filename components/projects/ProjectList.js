@@ -15,7 +15,7 @@ const ProjectList = ({ title, path, allPosts }) => (
         </div>
       ))}
     </div>
-    <Link href="/portfolio">
+    <Link href="/portfolio" passHref>
       <button
         type="button"
         className="flex mx-auto text-white py-2 px-8 focus:outline-none text-lg bg-transparent rounded-lg shadow-lg bg-indigo-600 hover:bg-indigo-400 dark:bg-indigo-600 dark:hover:bg-indigo-900"

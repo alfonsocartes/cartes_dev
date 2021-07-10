@@ -1,9 +1,9 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
-  cloudflareBeacon = JSON.stringify({
-    token: process.env.CLOUDFLARE_ANALYTICS,
-  });
+  // cloudflareBeacon = JSON.stringify({
+  //   token: process.env.CLOUDFLARE_ANALYTICS,
+  // });
 
   render() {
     return (
@@ -40,17 +40,11 @@ class MyDocument extends Document {
             content="/static/favicons/browserconfig.xml"
             name="msapplication-config"
           />
-          {/* <meta content="" name="yandex-verification" /> */}
-          {/* <meta
-        content=""
-        name="google-site-verification"
-      /> */}
-
-          <script
+          {/* <script
             defer
             src="https://static.cloudflareinsights.com/beacon.min.js"
             data-cf-beacon={this.cloudflareBeacon}
-          />
+          /> */}
         </Head>
         <body>
           <Main />

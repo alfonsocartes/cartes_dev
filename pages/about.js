@@ -45,9 +45,11 @@ const About = () => (
             <br />
             <p>
               I have experience working in large and small companies building
-              software solutions including Websites and E-commerce stores
-              focused on conversion and SEO.
+              software solutions including Web apps, Mobile apps and e-commerce
+              stores.
             </p>
+            <br />
+            <p>Strong focus on user experience, SEO and performance</p>
             <br />
             <p>
               I also have solid expertise in business development, customer
@@ -61,15 +63,17 @@ const About = () => (
           </h3>
           <div className="leading-relaxed text-base">
             <ul>
+              <li>React</li>
               <li>React Native / Expo </li>
               <li>NextJS (SSR – SSG - ISR)</li>
-              <li>React</li>
               <li>HTML / CSS / Javascript</li>
+              <li>TailWind CSS / Bootstrap</li>
+              <li>RESTful APIs / GraphQL APIs</li>
+              <li>AWS Amplify / Firebase</li>
               <li>ExpressJS / NodeJS</li>
               <li>MongoDB / Mongoose / SQL</li>
               <li>Headless CMS</li>
-              <li>RESTful APIs / GraphQL APIs</li>
-              <li>TailWind CSS / Bootstrap</li>
+              <li>SEO / ASO / Core Web Vitals</li>
               <li>Serverless Deployment</li>
             </ul>
           </div>

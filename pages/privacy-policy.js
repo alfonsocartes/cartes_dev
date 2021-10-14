@@ -2,14 +2,14 @@ import ContactUs from "../components/cta/ContactUs";
 import Layout from "../components/Layout";
 
 const PrivacyPolicy = () => (
-  <Layout title="Privacy Policy | Cartes Development  | Full-Stack Web Development | Mobile Development">
+  <Layout title="Privacy Policy | Cartes Development | Full-Stack Web Development | Mobile Development">
     <section className="body-font">
       <h1 className="my-10 sm:text-3xl text-2xl font-bold text-center">
         CARTES.DEV PRIVACY POLICY
       </h1>
       <p className="mb-4">
-        Alfonso Cartes built cartes.dev as a commercial website. This SERVICE is
-        provided by Alfonso Cartes and is intended for use as is.
+        Cartes Ltd. built cartes.dev as a commercial website. This SERVICE is
+        provided by Cartes Ltd. and is intended for use as is.
       </p>
       <p className="mb-4">
         This page is used to inform visitors regarding my policies with the

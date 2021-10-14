@@ -5,7 +5,7 @@ const ContactUs = () => (
     <div className="container mt-10 mx-auto">
       <div className="lg:w-2/3 flex flex-col sm:flex-row items-center mx-auto w-full pt-8 mt-8 border-t border-gray-200 text-center">
         <p className="flex-grow sm:pr-16 sm:text-2xl text-lg font-medium title-font">
-          Tell me about your project.
+          Tell us about your project.
         </p>
         <Link href="/contact" passHref>
           <button

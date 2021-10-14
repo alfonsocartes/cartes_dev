@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="frosted bg-opacity-20 bg-gray-200 dark:bg-white-800 border-white border-opacity-20 border-t p-4 top-inner-shadow">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <p className="text-sm sm:ml-6 sm:mt-0 mt-4 p-4">
-            © {new Date().getFullYear()} Alfonso Cartes —
+            © {new Date().getFullYear()} Cartes Ltd. —
             <a
               href="https://twitter.com/cartes_dev"
               target="_blank"

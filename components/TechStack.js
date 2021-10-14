@@ -17,7 +17,7 @@ const TechStack = () => (
           rel="noopener noreferrer"
         >
           <span className="inline-flex text-lg font-semibold py-8 text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600 transform hover:scale-105 ease-in-out">
-            Take a look at the code
+            Take a look at the code for this website
           </span>
         </a>
       </div>

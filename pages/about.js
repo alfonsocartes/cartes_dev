@@ -17,6 +17,7 @@ const About = () => (
             alt="Alfonso Cartes profile picture"
             layout="responsive"
             priority
+            placeholder="blur"
           />
         </figure>
         <div className="text-center lg:w-2/3 w-full">

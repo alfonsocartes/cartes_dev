@@ -16,10 +16,10 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        process.env.EMAILJS_SERVICE_ID,
+        process.env.EMAILJS_TEMPLATE_ID,
         e.target,
-        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+        process.env.EMAILJS_USER_ID
       )
       .then((result) => {
         setAlert(
@@ -93,7 +93,7 @@ const ContactForm = () => {
           <div className="p-2 w-full text-center">
             <div
               className="g-recaptcha inline-block"
-              data-sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+              data-sitekey={process.env.RECAPTCHA_SITE_KEY}
             />
             <button
               type="submit"

@@ -3,8 +3,8 @@ import Image from "next/image";
 
 import Layout from "../../components/Layout";
 
-import mobilePortfolioImage from "../../public/static/images/mobile-portfolio.jpg"
-import webPortfolioImage from "../../public/static/images/web-portfolio.jpg"
+import mobilePortfolioImage from "../../public/static/images/mobile-portfolio.jpg";
+import webPortfolioImage from "../../public/static/images/web-portfolio.jpg";
 
 const Portfolio = () => (
   <>
@@ -16,21 +16,18 @@ const Portfolio = () => (
           </h1>
           <div className="flex flex-wrap -mx-4 -mb-10 text-center">
             <div className="sm:w-1/2 mb-10 px-4">
-              <div className="mb-8 md:mb-16 sm:mx-0">
-                <div className="mx-auto rounded-xl visible object-cover object-center overflow-hidden">
-                  <Link href="/portfolio/mobile-development">
-                    <a aria-label="mobile development">
-                      <Image
-                        src={mobilePortfolioImage}
-                        width={930}
-                        height={620}
-                        alt="mobile development sample image"
-                        layout="responsive"
-                        placeholder="blur"
-                      />
-                    </a>
-                  </Link>
-                </div>
+              <div className="mb-8 md:mb-16 sm:mx-0 mx-auto rounded-xl visible object-cover object-center overflow-hidden">
+                <Link href="/portfolio/mobile-development">
+                  <a aria-label="mobile development">
+                    <Image
+                      src={mobilePortfolioImage}
+                      alt="mobile development sample image"
+                      layout="responsive"
+                      placeholder="blur"
+                      priority
+                    />
+                  </a>
+                </Link>
               </div>
 
               <h2 className="title-font text-2xl font-medium mt-6 mb-3 text-indigo-600 dark:text-indigo-400">
@@ -52,21 +49,17 @@ const Portfolio = () => (
               </Link>
             </div>
             <div className="sm:w-1/2 mb-10 px-4">
-              <div className="mb-8 md:mb-16 sm:mx-0">
-                <div className="mx-auto rounded-xl visible object-cover object-center overflow-hidden">
-                  <Link href="/portfolio/web-development">
-                    <a aria-label="web development">
-                      <Image
-                        src={webPortfolioImage}
-                        width={930}
-                        height={620}
-                        alt="web development sample image"
-                        layout="responsive"
-                        placeholder="blur"
-                      />
-                    </a>
-                  </Link>
-                </div>
+              <div className="mb-8 md:mb-16 sm:mx-0 mx-auto rounded-xl visible object-cover object-center overflow-hidden">
+                <Link href="/portfolio/web-development">
+                  <a aria-label="web development">
+                    <Image
+                      src={webPortfolioImage}
+                      alt="web development sample image"
+                      layout="responsive"
+                      placeholder="blur"
+                    />
+                  </a>
+                </Link>
               </div>
 
               <h2 className="title-font text-2xl font-medium mt-6 mb-3 text-indigo-600 dark:text-indigo-400">

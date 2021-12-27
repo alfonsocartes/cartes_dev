@@ -5,21 +5,20 @@ import ContactUs from "../components/cta/ContactUs";
 import Layout from "../components/Layout";
 import SocialNetworks from "../components/SocialNetworks";
 
+import ProfilePicture from "../public/static/images/alfonso-cartes.jpeg";
+
 const About = () => (
   <Layout title="About | Cartes Development | Full-Stack Web Development | Mobile Development">
     <section className="body-font">
       <div className="container mx-auto flex py-8 items-center justify-center flex-col">
-        <div className="w-28 h-28 relative mb-4">
-          <div className="w-full h-full rounded-full visible object-cover object-center overflow-hidden shadow-lg">
-            <Image
-              src="/static/images/alfonso-cartes.jpeg"
-              height={700}
-              width={700}
-              alt="Alfonso Cartes"
-              priority
-            />
-          </div>
-        </div>
+        <figure className="w-28 h-28 mb-4 rounded-full visible object-cover object-center overflow-hidden shadow-lg">
+          <Image
+            src={ProfilePicture}
+            alt="Alfonso Cartes profile picture"
+            layout="responsive"
+            priority
+          />
+        </figure>
         <div className="text-center lg:w-2/3 w-full">
           <h1 className="sm:text-3xl text-2xl font-bold title-font text-center">
             Alfonso Cartes

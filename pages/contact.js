@@ -2,12 +2,7 @@ import ContactForm from "../components/cta/ContactForm";
 import Layout from "../components/Layout";
 
 const Contact = () => (
-  <Layout
-    title="Contact | Cartes Development | Full-Stack Web Development | Mobile Development"
-    optionalScript={
-      <script src="https://www.google.com/recaptcha/api.js" async defer />
-    }
-  >
+  <Layout title="Contact | Cartes Development | Full-Stack Web Development | Mobile Development">
     <section className="body-font">
       <div className="container mx-auto">
         <div className="flex flex-col text-center w-full mb-12">

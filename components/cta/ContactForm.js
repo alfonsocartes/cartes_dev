@@ -1,27 +1,31 @@
 /* eslint-disable no-console */
-import { useState } from "react";
+import { useState, useRef } from "react";
 
+import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "emailjs-com";
+
 import Alert from "../Alert";
 
 const ContactForm = () => {
   const [alert, setAlert] = useState(<div />);
 
-  const sendMessage = (e) => {
+  const sendMessage = async (e) => {
     e.preventDefault();
 
     setAlert(
       <Alert type="WARNING" title="Loading..." message="Please wait." />
     );
 
+    // To get them from vercel to .env.local: vercel env pull .env.local
+
     emailjs
       .sendForm(
-        process.env.EMAILJS_SERVICE_ID,
-        process.env.EMAILJS_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         e.target,
-        process.env.EMAILJS_USER_ID
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
       )
-      .then((result) => {
+      .then(() => {
         setAlert(
           <Alert
             type="SUCCESS"
@@ -31,14 +35,24 @@ const ContactForm = () => {
         );
       })
       .catch((error) => {
-        setAlert(
-          <Alert
-            type="ERROR"
-            title="Error"
-            message="There was an error sending the message. Please try again."
-          />
-        );
-        console.error(error.text);
+        console.error(error);
+        if (error.text.includes("recaptcha")) {
+          setAlert(
+            <Alert
+              type="ERROR"
+              title="Error"
+              message="Please validate the reCAPTCHA."
+            />
+          );
+        } else {
+          setAlert(
+            <Alert
+              type="ERROR"
+              title="Error"
+              message="There was an error sending the message. Please try again."
+            />
+          );
+        }
       });
   };
 
@@ -90,14 +104,11 @@ const ContactForm = () => {
               />
             </div>
           </div>
-          <div className="p-2 w-full text-center">
-            <div
-              className="g-recaptcha inline-block"
-              data-sitekey={process.env.RECAPTCHA_SITE_KEY}
-            />
+          <div className="p-2 w-full flex flex-col items-center">
+            <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} />
             <button
               type="submit"
-              className="flex mx-auto text-white bg-transparent rounded-lg shadow-lg bg-indigo-600 hover:bg-indigo-400 dark:bg-indigo-600 dark:hover:bg-indigo-900 py-2 px-8 sm:mt-4 focus:outline-none text-lg"
+              className="flex mx-auto mt-4 text-white bg-transparent rounded-lg shadow-lg bg-indigo-600 hover:bg-indigo-400 dark:bg-indigo-600 dark:hover:bg-indigo-900 py-2 px-8 sm:mt-4 focus:outline-none text-lg"
             >
               Send
             </button>

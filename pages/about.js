@@ -5,7 +5,7 @@ import ContactUs from "../components/cta/ContactUs";
 import Layout from "../components/Layout";
 import SocialNetworks from "../components/SocialNetworks";
 
-import ProfilePicture from "../public/static/images/alfonso-cartes.jpeg";
+import ProfilePicture from "../public/images/alfonso-cartes.jpeg";
 
 const About = () => (
   <Layout title="About | Cartes Development | Full-Stack Web Development | Mobile Development">

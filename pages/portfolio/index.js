@@ -3,8 +3,8 @@ import Image from "next/image";
 
 import Layout from "../../components/Layout";
 
-import mobilePortfolioImage from "../../public/static/images/mobile-portfolio.jpg";
-import webPortfolioImage from "../../public/static/images/web-portfolio.jpg";
+import mobilePortfolioImage from "../../public/images/mobile-portfolio.jpg";
+import webPortfolioImage from "../../public/images/web-portfolio.jpg";
 
 const Portfolio = () => (
   <>

@@ -25,7 +25,7 @@ const TechStack = () => (
         <TechStackItem
           title="React Native"
           url="https://reactnative.dev/"
-          imageUrl="/static/assets/technologies/reactjs-logo.svg"
+          imageUrl="/assets/technologies/reactjs-logo.svg"
         >
           React Native is an open-source mobile application framework. It is
           used to develop applications for Android, Android TV, iOS, macOS,
@@ -34,7 +34,7 @@ const TechStack = () => (
         <TechStackItem
           title="Next.js"
           url="https://nextjs.org/"
-          imageUrl="/static/assets/technologies/nextjs-logo.svg"
+          imageUrl="/assets/technologies/nextjs-logo.svg"
         >
           Next.js is an open-source React front-end development web framework
           that enables functionality such as server-side rendering and
@@ -43,7 +43,7 @@ const TechStack = () => (
         <TechStackItem
           title="TailwindCSS"
           url="https://tailwindcss.com/"
-          imageUrl="/static/assets/technologies/tailwindcss-logo.svg"
+          imageUrl="/assets/technologies/tailwindcss-logo.svg"
         >
           <p>
             TailwindCSS is an utility-first CSS framework packed with classes
@@ -54,7 +54,7 @@ const TechStack = () => (
         <TechStackItem
           title="Node.js"
           url="https://nodejs.org/"
-          imageUrl="/static/assets/technologies/nodejs-logo.svg"
+          imageUrl="/assets/technologies/nodejs-logo.svg"
         >
           Node.js is an open-source, cross-platform, back-end JavaScript runtime
           environment and executes JavaScript code outside a web browser.

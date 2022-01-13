@@ -11,7 +11,7 @@ export default function Layout({ children, ...customMeta }) {
       "cartes.dev | Cartes Development | Full-Stack Web Development | Mobile Development",
     description:
       "Cartes Development, Full-Stack Web Development, Mobile DevelopmentFront-end developer, JavaScript, React, and so much more...",
-    image: "https://www.cartes.dev/static/images/logo_cartes_dev.png",
+    image: "https://www.cartes.dev/images/logo_cartes_dev.png",
     type: "website",
     ...customMeta,
   };

@@ -22,12 +22,6 @@ const HeroPersonal = () => (
           <p className="mb-8 leading-relaxed">
             We design and develop experiences that enrich people&apos;s lives.
           </p>
-          <br />
-          <p className="mb-8 leading-relaxed text-lg font-bold text-indigo-700 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
-            <Link href="/contact">
-              We are currently fully booked for the moment.
-            </Link>
-          </p>
         </div>
       </div>
     </section>

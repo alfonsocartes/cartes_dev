@@ -40,7 +40,6 @@ export default function Layout({ children, ...customMeta }) {
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}
-        {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}

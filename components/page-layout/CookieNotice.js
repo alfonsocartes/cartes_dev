@@ -12,7 +12,6 @@ export const CookieNotice = () => {
 
   useEffect(() => {
     const cookieValue = Cookies.get("cookie-notice");
-    console.log("cookieValue", cookieValue);
     if (cookieValue != "accepted") {
       setShow(true);
     }

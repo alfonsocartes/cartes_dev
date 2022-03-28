@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
-import TechStackItem from "./TechStackItem";
+import { TechStackItem } from "./TechStackItem";
 
 const TechStack = () => (
   <section className="body-font">
@@ -27,18 +27,22 @@ const TechStack = () => (
           url="https://reactnative.dev/"
           imageUrl="/assets/technologies/reactjs-logo.svg"
         >
-          React Native is an open-source mobile application framework. It is
-          used to develop applications for Android, Android TV, iOS, macOS,
-          tvOS, Web, Windows and UWP.
+          <p>
+            React Native is an open-source mobile application framework. It is
+            used to develop applications for Android, Android TV, iOS, macOS,
+            tvOS, Web, Windows and UWP.
+          </p>
         </TechStackItem>
         <TechStackItem
           title="Next.js"
           url="https://nextjs.org/"
           imageUrl="/assets/technologies/nextjs-logo.svg"
         >
-          Next.js is an open-source React front-end development web framework
-          that enables functionality such as server-side rendering and
-          generating static websites for React based web applications.
+          <p>
+            Next.js is an open-source React front-end development web framework
+            that enables functionality such as server-side rendering and
+            generating static websites for React based web applications.
+          </p>
         </TechStackItem>
         <TechStackItem
           title="TailwindCSS"
@@ -56,8 +60,11 @@ const TechStack = () => (
           url="https://nodejs.org/"
           imageUrl="/assets/technologies/nodejs-logo.svg"
         >
-          Node.js is an open-source, cross-platform, back-end JavaScript runtime
-          environment and executes JavaScript code outside a web browser.
+          <p>
+            Node.js is an open-source, cross-platform, back-end JavaScript
+            runtime environment and executes JavaScript code outside a web
+            browser.
+          </p>
         </TechStackItem>
       </div>
       <Link href="/portfolio" passHref>

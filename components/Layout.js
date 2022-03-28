@@ -40,7 +40,8 @@ export default function Layout({ children, ...customMeta }) {
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}
-        <script
+        {/* Removed Google Analytics because I have to add a GDPR notice. Try a server side method */}
+        {/* <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
         />
@@ -55,7 +56,7 @@ export default function Layout({ children, ...customMeta }) {
             });
           `,
           }}
-        />
+        /> */}
       </Head>
       <Header />
       <main className="container mx-auto px-5 py-10 flex-grow">{children}</main>

@@ -5,7 +5,7 @@ const PrivacyPolicy = () => (
   <Layout title="Privacy Policy | Cartes Development | Full-Stack Web Development | Mobile Development">
     <section className="body-font">
       <div className="flex flex-col items-center">
-        <article className="prose">
+        <article className="prose dark:prose-invert">
           <h1>PRIVACY POLICY - TERMS OF USE</h1>
           <h2>INTRODUCTION</h2>
           <p>

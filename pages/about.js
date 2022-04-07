@@ -1,9 +1,7 @@
-/* eslint-disable jsx-a11y/accessible-emoji */
 import Image from "next/image";
-
-import ContactUs from "../components/cta/ContactUs";
-import Layout from "../components/Layout";
-import SocialNetworks from "../components/SocialNetworks";
+import { ContactUs } from "../components/cta/ContactUs";
+import { Layout } from "../components/Layout";
+import { SocialNetworks } from "../components/SocialNetworks";
 
 import ProfilePicture from "../public/images/alfonso-cartes.jpeg";
 

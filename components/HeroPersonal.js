@@ -1,7 +1,7 @@
 import Link from "next/link";
-import SocialNetworks from "./SocialNetworks";
+import { SocialNetworks } from "./SocialNetworks";
 
-const HeroPersonal = () => (
+export const HeroPersonal = () => (
   <div className="pb-10 border-b border-gray-200">
     <section className="body-font">
       <div className="container mx-auto flex py-8 items-center justify-center flex-col">
@@ -28,5 +28,3 @@ const HeroPersonal = () => (
     <SocialNetworks />
   </div>
 );
-
-export default HeroPersonal;

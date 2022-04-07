@@ -1,5 +1,5 @@
-import ContactForm from "../components/cta/ContactForm";
-import Layout from "../components/Layout";
+import { ContactForm } from "../components/cta/ContactForm";
+import { Layout } from "../components/Layout";
 
 const Contact = () => (
   <Layout title="Contact | Cartes Development | Full-Stack Web Development | Mobile Development">

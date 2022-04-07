@@ -4,12 +4,11 @@ import hydrate from "next-mdx-remote/hydrate";
 
 import { getFiles, getFileBySlug } from "../../../../lib/mdx";
 
-import MDXComponents from "../../../../components/MDXComponents";
-
-import Layout from "../../../../components/Layout";
-import PostHeader from "../../../../components/blog/PostHeader";
-import PostBody from "../../../../components/blog/PostBody";
-import ContactUs from "../../../../components/cta/ContactUs";
+import { MDXComponents } from "../../../../components/MDXComponents";
+import { Layout } from "../../../../components/Layout";
+import { PostHeader } from "../../../../components/blog/PostHeader";
+import { PostBody } from "../../../../components/blog/PostBody";
+import { ContactUs } from "../../../../components/cta/ContactUs";
 
 export default function Project({ mdxSource, frontMatter }) {
   // To add JSX components to the MDX post, we had to add them to the MDXComponents file

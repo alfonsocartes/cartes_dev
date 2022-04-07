@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import Layout from "../../components/Layout";
+import { Layout } from "../../components/Layout";
 
 import mobilePortfolioImage from "../../public/images/mobile-portfolio.jpg";
 import webPortfolioImage from "../../public/images/web-portfolio.jpg";

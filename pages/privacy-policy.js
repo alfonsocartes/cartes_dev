@@ -1,5 +1,5 @@
-import ContactUs from "../components/cta/ContactUs";
-import Layout from "../components/Layout";
+import { ContactUs } from "../components/cta/ContactUs";
+import { Layout } from "../components/Layout";
 
 const PrivacyPolicy = () => (
   <Layout title="Privacy Policy | Cartes Development | Full-Stack Web Development | Mobile Development">

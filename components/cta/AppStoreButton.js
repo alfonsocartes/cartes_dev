@@ -1,4 +1,4 @@
-const AppStoreButton = ({ url }) => (
+export const AppStoreButton = ({ url }) => (
   <a
     href={url}
     target="_blank"
@@ -25,5 +25,3 @@ const AppStoreButton = ({ url }) => (
     </button>
   </a>
 );
-
-export default AppStoreButton;

@@ -1,11 +1,10 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { CookieNotice } from "./page-layout/CookieNotice";
+import { Footer } from "./page-layout/Footer";
+import { Header } from "./page-layout/Header";
 
-import Footer from "./page-layout/Footer";
-import Header from "./page-layout/Header";
-
-export default function Layout({ children, ...customMeta }) {
+export const Layout = ({ children, ...customMeta }) => {
   const router = useRouter();
   const meta = {
     title:
@@ -64,4 +63,4 @@ export default function Layout({ children, ...customMeta }) {
       <Footer />
     </div>
   );
-}
+};

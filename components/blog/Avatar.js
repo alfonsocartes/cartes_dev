@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Avatar({ name, picture }) {
+export const Avatar = ({ name, picture }) => {
   return (
     <div className="flex items-center">
       <div className="w-8 h-8">
@@ -15,4 +15,4 @@ export default function Avatar({ name, picture }) {
       <div className="ml-4 text-lg font-bold">{name}</div>
     </div>
   );
-}
+};

@@ -1,10 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-
 import Link from "next/link";
 import Image from "next/image";
-import ContactUs from "./cta/ContactUs";
-import AppStoreButton from "./cta/AppStoreButton";
-import PlayStoreButton from "./cta/PlayStoreButton";
+import { ContactUs } from "./cta/ContactUs";
+import { AppStoreButton } from "./cta/AppStoreButton";
+import { PlayStoreButton } from "./cta/PlayStoreButton";
 
 const CustomLink = (props) => {
   const { href } = props;
@@ -21,12 +19,10 @@ const CustomLink = (props) => {
   return <a target="_blank" rel="noopener noreferrer" {...props} />;
 };
 
-const MDXComponents = {
+export const MDXComponents = {
   Image,
   a: CustomLink,
   ContactUs,
   AppStoreButton,
   PlayStoreButton,
 };
-
-export default MDXComponents;

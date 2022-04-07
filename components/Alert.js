@@ -1,4 +1,4 @@
-const Alert = ({ type, title, message }) => {
+export const Alert = ({ type, title, message }) => {
   switch (type) {
     case "SUCCESS":
       return (
@@ -34,5 +34,3 @@ const Alert = ({ type, title, message }) => {
       return null;
   }
 };
-
-export default Alert;

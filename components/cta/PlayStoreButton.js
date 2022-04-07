@@ -1,4 +1,4 @@
-const PlayStoreButton = ({ url }) => (
+export const PlayStoreButton = ({ url }) => (
   <a
     href={url}
     target="_blank"
@@ -24,5 +24,3 @@ const PlayStoreButton = ({ url }) => (
     </button>
   </a>
 );
-
-export default PlayStoreButton;

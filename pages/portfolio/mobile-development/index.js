@@ -1,6 +1,7 @@
-import Layout from "../../../components/Layout";
-import ProjectList from "../../../components/projects/ProjectList";
 import { getAllFilesFrontMatter } from "../../../lib/mdx";
+
+import { Layout } from "../../../components/Layout";
+import { ProjectList } from "../../../components/projects/ProjectList";
 
 const MobilePortfolio = ({ allPosts }) => {
   const sortedPosts = allPosts.sort(

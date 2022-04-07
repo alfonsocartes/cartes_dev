@@ -1,8 +1,7 @@
 import Link from "next/link";
+import { ProjectListItem } from "./ProjectListItem";
 
-import ProjectListItem from "./ProjectListItem";
-
-const ProjectList = ({ title, path, allPosts }) => (
+export const ProjectList = ({ title, path, allPosts }) => (
   <>
     <div className="max-w-4xl mx-auto">
       <h1 className="sm:text-3xl text-2xl font-bold title-font text-center mb-10">
@@ -25,5 +24,3 @@ const ProjectList = ({ title, path, allPosts }) => (
     </Link>
   </>
 );
-
-export default ProjectList;

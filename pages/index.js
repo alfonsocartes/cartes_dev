@@ -1,7 +1,7 @@
-import Layout from "../components/Layout";
-import HeroPersonal from "../components/HeroPersonal";
-// import EmailNewsletter from "../components/cta/EmailNewsletter";
-import TechStack from "../components/TechStack";
+import { Layout } from "../components/Layout";
+import { HeroPersonal } from "../components/HeroPersonal";
+import { TechStack } from "../components/TechStack";
+// import {EmailNewsletter} from "../components/cta/EmailNewsletter";
 
 const Index = () => (
   <>

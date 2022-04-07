@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const Logo = ({ navbarOpen }) => (
+export const Logo = ({ navbarOpen }) => (
   <Link href="/" passHref>
     <div
       className={`flex sm:flex-row ${navbarOpen && "flex-col"} cursor-pointer`}
@@ -12,5 +12,3 @@ const Logo = ({ navbarOpen }) => (
     </div>
   </Link>
 );
-
-export default Logo;

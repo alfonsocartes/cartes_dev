@@ -1,6 +1,4 @@
-import React from "react";
-
-const SocialNetworks = () => (
+export const SocialNetworks = () => (
   <section>
     <div className="container mx-auto flex pb-8 items-center justify-center flex-col ">
       <span className="inline-flex text-xl">
@@ -97,5 +95,3 @@ const SocialNetworks = () => (
     </div>
   </section>
 );
-
-export default SocialNetworks;

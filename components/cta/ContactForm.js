@@ -1,12 +1,9 @@
-/* eslint-disable no-console */
-import { useState, useRef } from "react";
-
+import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "emailjs-com";
+import { Alert } from "../Alert";
 
-import Alert from "../Alert";
-
-const ContactForm = () => {
+export const ContactForm = () => {
   const [alert, setAlert] = useState(<div />);
 
   const sendMessage = async (e) => {
@@ -122,5 +119,3 @@ const ContactForm = () => {
     </form>
   );
 };
-
-export default ContactForm;

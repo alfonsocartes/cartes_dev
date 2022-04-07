@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const ContactUs = () => (
+export const ContactUs = () => (
   <section className="body-font">
     <div className="container mt-10 mx-auto">
       <div className="lg:w-2/3 flex flex-col sm:flex-row items-center mx-auto w-full pt-8 mt-8 border-t border-gray-200 text-center">
@@ -19,5 +19,3 @@ const ContactUs = () => (
     </div>
   </section>
 );
-
-export default ContactUs;

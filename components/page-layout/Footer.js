@@ -1,7 +1,6 @@
 import Link from "next/link";
-import React from "react";
 
-export default function Footer() {
+export const Footer = () => {
   return (
     <footer className="body-font ">
       <div className="frosted bg-opacity-20 bg-gray-200 dark:bg-white-800 border-white border-opacity-20 border-t p-4 top-inner-shadow">
@@ -116,4 +115,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};

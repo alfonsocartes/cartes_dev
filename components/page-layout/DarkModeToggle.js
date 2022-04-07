@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
-const DarkModeToggle = () => {
+export const DarkModeToggle = () => {
   const [themeState, setThemeState] = useState("light");
 
   function setTheme(theme) {
@@ -72,5 +72,3 @@ const DarkModeToggle = () => {
     </button>
   );
 };
-
-export default DarkModeToggle;

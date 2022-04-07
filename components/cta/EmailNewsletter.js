@@ -1,6 +1,4 @@
-import React from "react";
-
-const EmailNewsletter = () => (
+export const EmailNewsletter = () => (
   <section className="body-font py-10">
     <div className="container p-5 mx-auto">
       <div className="flex flex-col text-center w-full mb-12">
@@ -41,5 +39,3 @@ const EmailNewsletter = () => (
     </div>
   </section>
 );
-
-export default EmailNewsletter;

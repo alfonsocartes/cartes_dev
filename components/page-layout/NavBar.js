@@ -1,11 +1,10 @@
 import { useState } from "react";
 import Link from "next/link";
+import { Logo } from "../Logo";
+import { DarkModeToggle } from "./DarkModeToggle";
+import { BurgerButton } from "./BurgerButton";
 
-import Logo from "../Logo";
-import DarkModeToggle from "./DarkModeToggle";
-import BurgerButton from "./BurgerButton";
-
-const NavBar = () => {
+export const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <nav className="flex flex-row items-center">
@@ -79,5 +78,3 @@ const NavBar = () => {
     </nav>
   );
 };
-
-export default NavBar;

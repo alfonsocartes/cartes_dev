@@ -1,10 +1,8 @@
-/* eslint-disable react/no-array-index-key */
 import Image from "next/image";
 import Link from "next/link";
+import { Tag } from "../Tag";
 
-import Tag from "../Tag";
-
-const ProjectListItem = ({ post, path }) => {
+export const ProjectListItem = ({ post, path }) => {
   const { title, slug, excerpt, coverImage, tags } = post;
   return (
     <article className="p-4">
@@ -37,5 +35,3 @@ const ProjectListItem = ({ post, path }) => {
     </article>
   );
 };
-
-export default ProjectListItem;

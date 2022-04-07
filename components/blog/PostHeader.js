@@ -1,8 +1,8 @@
-import Avatar from "./Avatar";
-import DateFormatter from "./DateFormatter";
-import CoverImage from "./CoverImage";
+import { Avatar } from "./Avatar";
+import { DateFormatter } from "./DateFormatter";
+import { CoverImage } from "./CoverImage";
 
-const PostHeader = ({ frontMatter }) => {
+export const PostHeader = ({ frontMatter }) => {
   const { title, coverImage, date, author, readingTime, type } = frontMatter;
 
   const enableInfo = type === "blog-post" || type === "mobile-project";
@@ -27,17 +27,15 @@ const PostHeader = ({ frontMatter }) => {
           <p className="mb-2 min-w-32">{readingTime.text}</p>
           <div className="">
             <a
-            href={editUrl(frontMatter.slug)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Edit on GitHub
-          </a>
+              href={editUrl(frontMatter.slug)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Edit on GitHub
+            </a>
           </div>
         </div>
       )}
     </>
   );
 };
-
-export default PostHeader;

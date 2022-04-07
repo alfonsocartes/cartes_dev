@@ -1,10 +1,7 @@
-/* eslint-disable react/jsx-wrap-multilines */
-
 import Link from "next/link";
-import React from "react";
 import { TechStackItem } from "./TechStackItem";
 
-const TechStack = () => (
+export const TechStack = () => (
   <section className="body-font">
     <div className="container px-5 py-20 mx-auto max-w-4xl">
       <div className="flex flex-wrap w-full mb-10 flex-col items-center text-center">
@@ -78,5 +75,3 @@ const TechStack = () => (
     </div>
   </section>
 );
-
-export default TechStack;

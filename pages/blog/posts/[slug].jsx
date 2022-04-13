@@ -1,23 +1,15 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-import hydrate from "next-mdx-remote/hydrate";
-
 import { getFiles, getFileBySlug } from "../../../lib/mdx";
-
 import { MDXComponents } from "../../../components/MDXComponents";
-
 import { Layout } from "../../../components/Layout";
 import { PostHeader } from "../../../components/blog/PostHeader";
-import { PostBody } from "../../../components/blog/PostBody";
 import { ContactUs } from "../../../components/cta/ContactUs";
+import { MDXRemote } from "next-mdx-remote";
 
 export default function Post({ mdxSource, frontMatter }) {
-  // To add JSX components to the MDX post, we had to add them to the MDXComponents file
-  const content = hydrate(mdxSource, {
-    components: MDXComponents,
-  });
-
   const router = useRouter();
+
   if (!router.isFallback && !frontMatter?.slug) {
     return <ErrorPage statusCode={404} />;
   }
@@ -32,7 +24,9 @@ export default function Post({ mdxSource, frontMatter }) {
     >
       <article className="max-w-2xl mx-auto">
         <PostHeader frontMatter={frontMatter} />
-        <PostBody content={content} />
+        <div className="prose dark:prose-invert">
+          <MDXRemote {...mdxSource} components={MDXComponents} />;
+        </div>
       </article>
       <ContactUs />
     </Layout>

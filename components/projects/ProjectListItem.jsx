@@ -6,10 +6,10 @@ export const ProjectListItem = ({ post, path }) => {
   const { title, slug, excerpt, coverImage, tags } = post;
   return (
     <article className="p-4">
-      <div className="p-4 border border-gray-200 rounded-lg">
-        <div className="grid grid-flow-row md:grid-flow-col items-center">
+      <div className="rounded-lg border border-gray-200 p-4">
+        <div className="grid grid-flow-row items-center md:grid-flow-col">
           {coverImage && (
-            <figure className="justify-self-center w-40 h-40 dark:bg-gray-500 m-8 rounded-xl overflow-hidden">
+            <figure className="m-8 h-40 w-40 justify-self-center overflow-hidden rounded-xl dark:bg-gray-500">
               <Image
                 src={coverImage.url}
                 width={coverImage.width}
@@ -20,10 +20,10 @@ export const ProjectListItem = ({ post, path }) => {
             </figure>
           )}
           <div className="">
-            <h2 className="text-center md:text-left text-2xl font-medium title-font mb-2  text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
+            <h2 className="title-font mb-2 text-center text-2xl font-medium text-indigo-600  hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600 md:text-left">
               <Link href={`${path}/${slug}`}>{title}</Link>
             </h2>
-            <p className="leading-relaxed text-base">{excerpt}</p>
+            <p className="text-base leading-relaxed">{excerpt}</p>
             <div className="mt-4 flex flex-wrap">
               {tags?.map((tag, i) => (
                 <Tag key={i} tag={tag} />

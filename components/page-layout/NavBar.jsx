@@ -8,10 +8,10 @@ export const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <nav className="flex flex-row items-center">
-      <div className="mr-auto text-lg sm:text-3xl text-black dark:text-white font-bold md:transform-none transform ease-in duration-200 hover:scale-110">
+      <div className="mr-auto transform text-lg font-bold text-black duration-200 ease-in hover:scale-110 dark:text-white sm:text-3xl md:transform-none">
         <div
-          className={`md:transform-none transform ease-in duration-200 ${
-            navbarOpen ? "scale-150 translate-x-10" : ""
+          className={`transform duration-200 ease-in md:transform-none ${
+            navbarOpen ? "translate-x-10 scale-150" : ""
           }`}
         >
           <Logo navbarOpen={navbarOpen} />
@@ -24,7 +24,7 @@ export const NavBar = () => {
       >
         <ul
           className={`${
-            navbarOpen ? "flex flex-col" : "sm:flex flex-row hidden"
+            navbarOpen ? "flex flex-col" : "hidden flex-row sm:flex"
           }`}
         >
           <li className="nav-item my-3">

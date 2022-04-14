@@ -22,7 +22,7 @@ export default function Project({ mdxSource, frontMatter }) {
       date={new Date(frontMatter.date).toISOString()}
       type="article"
     >
-      <article className="max-w-3xl mx-auto">
+      <article className="mx-auto max-w-3xl">
         {/* <Head>
         <title>
           {post.title} | Next.js Blog Example with {CMS_NAME}

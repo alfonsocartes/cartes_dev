@@ -43,7 +43,7 @@ export const DarkModeToggle = () => {
     <button
       aria-label="Toggle Dark Mode"
       type="button"
-      className="m-auto bg-opacity-40 border-white border-opacity-20 border rounded-lg shadow-lg bg-gray-300 dark:bg-gray-300 hover:bg-gray-500 dark:hover:bg-gray-300 text-gray-900  hover:text-gray-300 dark:text-gray-900 dark:hover:text-yellow-500 pl-2 h-8 w-8 mr-4"
+      className="m-auto mr-4 h-8 w-8 rounded-lg border border-white border-opacity-20 bg-gray-300 bg-opacity-40 pl-2 text-gray-900  shadow-lg hover:bg-gray-500 hover:text-gray-300 dark:bg-gray-300 dark:text-gray-900 dark:hover:bg-gray-300 dark:hover:text-yellow-500"
       onClick={toggleDarkMode}
     >
       <svg

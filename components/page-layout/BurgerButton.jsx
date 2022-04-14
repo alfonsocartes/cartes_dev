@@ -1,6 +1,6 @@
 export const BurgerButton = ({ navbarOpen, toggleFunction }) => (
   <button
-    className="bg-opacity-40 border-white border-opacity-20 border rounded-lg shadow-lg text-gray-900 bg-gray-300 hover:bg-gray-500 dark:bg-gray-300 dark:hover:bg-gray-500 pl-2 h-8 w-8"
+    className="h-8 w-8 rounded-lg border border-white border-opacity-20 bg-gray-300 bg-opacity-40 pl-2 text-gray-900 shadow-lg hover:bg-gray-500 dark:bg-gray-300 dark:hover:bg-gray-500"
     type="button"
     onClick={toggleFunction}
     aria-label="Burger menu"

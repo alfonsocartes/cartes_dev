@@ -17,7 +17,7 @@ export const Layout = ({ children, ...customMeta }) => {
   };
 
   return (
-    <div className="bg-white dark:bg-black text-black dark:text-gray-200 flex flex-col min-h-screen ">
+    <div className="flex min-h-screen flex-col bg-white text-black dark:bg-black dark:text-gray-200 ">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -58,7 +58,7 @@ export const Layout = ({ children, ...customMeta }) => {
         />
       </Head>
       <Header />
-      <main className="container mx-auto px-5 py-10 flex-grow">{children}</main>
+      <main className="container mx-auto flex-grow px-5 py-10">{children}</main>
       <CookieNotice />
       <Footer />
     </div>

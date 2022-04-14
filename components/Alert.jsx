@@ -3,7 +3,7 @@ export const Alert = ({ type, title, message }) => {
     case "SUCCESS":
       return (
         <div
-          className="mt-4 px-4 py-3 leading-normal text-green-700 bg-green-100 rounded-lg"
+          className="mt-4 rounded-lg bg-green-100 px-4 py-3 leading-normal text-green-700"
           role="alert"
         >
           <p className="font-bold">{title}</p>
@@ -13,7 +13,7 @@ export const Alert = ({ type, title, message }) => {
     case "WARNING":
       return (
         <div
-          className="mt-4 px-4 py-3 leading-normal text-yellow-700 bg-yellow-100 rounded-lg"
+          className="mt-4 rounded-lg bg-yellow-100 px-4 py-3 leading-normal text-yellow-700"
           role="alert"
         >
           <p className="font-bold">{title}</p>
@@ -23,7 +23,7 @@ export const Alert = ({ type, title, message }) => {
     case "ERROR":
       return (
         <div
-          className="mt-4 px-4 py-3 leading-normal text-red-700 bg-red-100 rounded-lg"
+          className="mt-4 rounded-lg bg-red-100 px-4 py-3 leading-normal text-red-700"
           role="alert"
         >
           <p className="font-bold">{title}</p>

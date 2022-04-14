@@ -8,8 +8,8 @@ import ProfilePicture from "../public/images/alfonso-cartes.jpeg";
 const About = () => (
   <Layout title="About | Cartes Development | Full-Stack Web Development | Mobile Development">
     <section className="body-font">
-      <div className="container mx-auto flex py-8 items-center justify-center flex-col">
-        <figure className="w-28 h-28 mb-4 rounded-full visible object-cover object-center overflow-hidden shadow-lg">
+      <div className="container mx-auto flex flex-col items-center justify-center py-8">
+        <figure className="visible mb-4 h-28 w-28 overflow-hidden rounded-full object-cover object-center shadow-lg">
           <Image
             src={ProfilePicture}
             alt="Alfonso Cartes profile picture"
@@ -18,25 +18,25 @@ const About = () => (
             placeholder="blur"
           />
         </figure>
-        <div className="text-center lg:w-2/3 w-full">
-          <h1 className="sm:text-3xl text-2xl font-bold title-font text-center">
+        <div className="w-full text-center lg:w-2/3">
+          <h1 className="title-font text-center text-2xl font-bold sm:text-3xl">
             Alfonso Cartes
           </h1>
-          <h2 className="sm:text-xl text-md m-4">
+          <h2 className="text-md m-4 sm:text-xl">
             Full-Stack Developer | Software Engineer
           </h2>
-          <span className="text-3xl wave">👋</span>
+          <span className="wave text-3xl">👋</span>
         </div>
       </div>
       <SocialNetworks />
     </section>
     <section className="body-font">
-      <div className="flex flex-wrap mx-auto items-start">
-        <div className="mx-auto md:w-1/2 px-14 md:py-8 md:mb-0 mb-10 pb-10 md:border-r md:border-b-0 border-b border-gray-200 flex flex-col items-center justify-center">
-          <h3 className="sm:text-3xl text-2xl font-bold title-font mb-10">
+      <div className="mx-auto flex flex-wrap items-start">
+        <div className="mx-auto mb-10 flex flex-col items-center justify-center border-b border-gray-200 px-14 pb-10 md:mb-0 md:w-1/2 md:border-r md:border-b-0 md:py-8">
+          <h3 className="title-font mb-10 text-2xl font-bold sm:text-3xl">
             Expertise
           </h3>
-          <div className="leading-relaxed text-base">
+          <div className="text-base leading-relaxed">
             <p>
               Software Engineer with a passion for Web and Mobile development.
             </p>
@@ -55,11 +55,11 @@ const About = () => (
             </p>
           </div>
         </div>
-        <div className="mx-auto md:w-1/2 px-14 md:pl-12  md:py-8 mb-10 md:mb-0 pb-10 flex flex-col items-center justify-center">
-          <h3 className="sm:text-3xl text-2xl font-bold title-font mb-10">
+        <div className="mx-auto mb-10 flex flex-col  items-center justify-center px-14 pb-10 md:mb-0 md:w-1/2 md:py-8 md:pl-12">
+          <h3 className="title-font mb-10 text-2xl font-bold sm:text-3xl">
             Technologies
           </h3>
-          <div className="leading-relaxed text-base">
+          <div className="text-base leading-relaxed">
             <ul>
               <li>React</li>
               <li>React Native / Expo </li>

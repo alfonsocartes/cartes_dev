@@ -5,11 +5,11 @@ const Contact = () => (
   <Layout title="Contact | Cartes Development | Full-Stack Web Development | Mobile Development">
     <section className="body-font">
       <div className="container mx-auto">
-        <div className="flex flex-col text-center w-full mb-12">
-          <h1 className="sm:text-3xl text-2xl font-bold title-font mb-6">
+        <div className="mb-12 flex w-full flex-col text-center">
+          <h1 className="title-font mb-6 text-2xl font-bold sm:text-3xl">
             Contact
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base ">
+          <p className="mx-auto text-base leading-relaxed lg:w-2/3 ">
             Tell me about your project.
           </p>
         </div>

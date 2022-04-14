@@ -2,14 +2,14 @@ import Link from "next/link";
 import { SocialNetworks } from "./SocialNetworks";
 
 export const HeroPersonal = () => (
-  <div className="pb-10 border-b border-gray-200">
+  <div className="border-b border-gray-200 pb-10">
     <section className="body-font">
-      <div className="container mx-auto flex py-8 items-center justify-center flex-col">
-        <div className="text-center lg:w-2/3 w-full">
-          <h1 className="title-font sm:text-4xl text-3xl m-8 font-medium text-indigo-700 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
+      <div className="container mx-auto flex flex-col items-center justify-center py-8">
+        <div className="w-full text-center lg:w-2/3">
+          <h1 className="title-font m-8 text-3xl font-medium text-indigo-700 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600 sm:text-4xl">
             <Link href="/about">{`<cartes/>`}</Link>
           </h1>
-          <h2 className="title-font text-xl m-8 font-bold">
+          <h2 className="title-font m-8 text-xl font-bold">
             Full-Stack Development | Software Engineering
           </h2>
           <p className="leading-relaxed">

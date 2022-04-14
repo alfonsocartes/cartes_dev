@@ -30,11 +30,11 @@ export const Carousel = ({ post }) => {
   }
 
   return (
-    <ul className="flex overflow-x-auto gap-6 snap-x snap-mandatory before:shrink-0 before:w-[30vw] after:shrink-0 after:w-[30vw] my-4">
+    <ul className="my-4 flex snap-x snap-mandatory gap-6 overflow-x-auto before:w-[30vw] before:shrink-0 after:w-[30vw] after:shrink-0">
       {images.map((image, index) => (
         <li
           key={index}
-          className="shrink-0 snap-center w-5/6 marker:text-transparent my-4"
+          className="my-4 w-5/6 shrink-0 snap-center marker:text-transparent"
         >
           <Image
             src={image.url}

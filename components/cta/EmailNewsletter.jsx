@@ -1,38 +1,38 @@
 export const EmailNewsletter = () => (
   <section className="body-font py-10">
-    <div className="container p-5 mx-auto">
-      <div className="flex flex-col text-center w-full mb-12">
-        <h4 className="sm:text-2xl text-lg font-medium title-font mb-4">
+    <div className="container mx-auto p-5">
+      <div className="mb-12 flex w-full flex-col text-center">
+        <h4 className="title-font mb-4 text-lg font-medium sm:text-2xl">
           Subscribe to the Newsletter
         </h4>
-        <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+        <p className="mx-auto text-base leading-relaxed lg:w-2/3">
           We will just send you interesting info and the blog posts we publish.
         </p>
       </div>
-      <div className="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
-        <div className="relative flex-grow w-full">
-          <label htmlFor="full-name" className="leading-7 text-sm">
+      <div className="mx-auto flex w-full flex-col items-end space-y-4 px-8 sm:flex-row sm:space-x-4 sm:space-y-0 sm:px-0 lg:w-2/3">
+        <div className="relative w-full flex-grow">
+          <label htmlFor="full-name" className="text-sm leading-7">
             Name
           </label>
           <input
             type="text"
             id="full-name"
             name="full-name"
-            className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-gray-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            className="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:border-gray-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200"
           />
         </div>
-        <div className="relative flex-grow w-full">
-          <label htmlFor="email" className="leading-7 text-sm">
+        <div className="relative w-full flex-grow">
+          <label htmlFor="email" className="text-sm leading-7">
             Email
           </label>
           <input
             type="email"
             id="email"
             name="email"
-            className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:gray-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            className="focus:gray-indigo-500 w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:bg-transparent focus:ring-2 focus:ring-indigo-200"
           />
         </div>
-        <button className=" text-white bg-transparent rounded-lg shadow-lg bg-indigo-600 hover:bg-indigo-400 dark:bg-indigo-600 dark:hover:bg-indigo-900 py-2 px-8 sm:mt-4 focus:outline-none text-lg">
+        <button className=" rounded-lg bg-transparent bg-indigo-600 py-2 px-8 text-lg text-white shadow-lg hover:bg-indigo-400 focus:outline-none dark:bg-indigo-600 dark:hover:bg-indigo-900 sm:mt-4">
           Subscribe
         </button>
       </div>

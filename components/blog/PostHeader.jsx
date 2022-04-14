@@ -12,19 +12,19 @@ export const PostHeader = ({ frontMatter }) => {
 
   return (
     <>
-      <div className="mb-8 md:mb-16 sm:mx-0">
+      <div className="mb-8 sm:mx-0 md:mb-16">
         <CoverImage title={title} coverImage={coverImage} />
       </div>
 
       {enableInfo && (
-        <div className="max-w-2xl mx-auto mb-16 text-sm text-gray-700 dark:text-gray-300">
+        <div className="mx-auto mb-16 max-w-2xl text-sm text-gray-700 dark:text-gray-300">
           <div className="mb-2">
             <Avatar name={author.name} picture={author.picture} />
           </div>
           <div className="mb-2">
             <DateFormatter dateString={date} />
           </div>
-          <p className="mb-2 min-w-32">{readingTime.text}</p>
+          <p className="min-w-32 mb-2">{readingTime.text}</p>
           <div className="">
             <a
               href={editUrl(frontMatter.slug)}

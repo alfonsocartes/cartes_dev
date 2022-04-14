@@ -3,9 +3,9 @@ import { TechStackItem } from "./TechStackItem";
 
 export const TechStack = () => (
   <section className="body-font">
-    <div className="container px-5 py-20 mx-auto max-w-4xl">
-      <div className="flex flex-wrap w-full mb-10 flex-col items-center text-center">
-        <h2 className="sm:text-2xl text-xl font-medium title-font mb-2">
+    <div className="container mx-auto max-w-4xl px-5 py-20">
+      <div className="mb-10 flex w-full flex-col flex-wrap items-center text-center">
+        <h2 className="title-font mb-2 text-xl font-medium sm:text-2xl">
           Current Main Tech Stack
         </h2>
         <a
@@ -13,7 +13,7 @@ export const TechStack = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className="inline-flex text-lg font-semibold py-8 text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600 transform hover:scale-105 ease-in-out">
+          <span className="inline-flex transform py-8 text-lg font-semibold text-indigo-600 ease-in-out hover:scale-105 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
             Take a look at the code for this website
           </span>
         </a>
@@ -67,7 +67,7 @@ export const TechStack = () => (
       <Link href="/portfolio" passHref>
         <button
           type="button"
-          className="flex mx-auto mt-16 text-white py-2 px-8 focus:outline-none text-lg bg-transparent rounded-lg shadow-lg bg-indigo-600 hover:bg-indigo-400 dark:bg-indigo-600 dark:hover:bg-indigo-900"
+          className="mx-auto mt-16 flex rounded-lg bg-transparent bg-indigo-600 py-2 px-8 text-lg text-white shadow-lg hover:bg-indigo-400 focus:outline-none dark:bg-indigo-600 dark:hover:bg-indigo-900"
         >
           Portfolio
         </button>

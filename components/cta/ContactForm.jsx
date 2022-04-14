@@ -55,11 +55,11 @@ export const ContactForm = () => {
 
   return (
     <form onSubmit={sendMessage}>
-      <div className="lg:w-1/2 md:w-2/3 mx-auto">
-        <div className="flex flex-wrap -m-2">
-          <div className="p-2 w-1/2">
+      <div className="mx-auto md:w-2/3 lg:w-1/2">
+        <div className="-m-2 flex flex-wrap">
+          <div className="w-1/2 p-2">
             <div className="relative">
-              <label htmlFor="from_name" className="leading-7 text-sm ">
+              <label htmlFor="from_name" className="text-sm leading-7 ">
                 Name
               </label>
               <input
@@ -68,13 +68,13 @@ export const ContactForm = () => {
                 name="from_name"
                 autoComplete="name"
                 required
-                className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-gray-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:border-gray-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200"
               />
             </div>
           </div>
-          <div className="p-2 w-1/2">
+          <div className="w-1/2 p-2">
             <div className="relative">
-              <label htmlFor="reply_to" className="leading-7 text-sm ">
+              <label htmlFor="reply_to" className="text-sm leading-7 ">
                 Email
               </label>
               <input
@@ -83,13 +83,13 @@ export const ContactForm = () => {
                 type="email"
                 autoComplete="email"
                 required
-                className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-gray-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:border-gray-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200"
               />
             </div>
           </div>
-          <div className="p-2 w-full">
+          <div className="w-full p-2">
             <div className="relative">
-              <label htmlFor="message" className="leading-7 text-sm ">
+              <label htmlFor="message" className="text-sm leading-7 ">
                 Message
               </label>
               <textarea
@@ -97,22 +97,22 @@ export const ContactForm = () => {
                 name="message"
                 type="text"
                 required
-                className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-gray-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                className="h-32 w-full resize-none rounded border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-6 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-gray-500 focus:bg-white focus:ring-2 focus:ring-indigo-200"
               />
             </div>
           </div>
-          <div className="p-2 w-full flex flex-col items-center">
+          <div className="flex w-full flex-col items-center p-2">
             <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} />
             <button
               type="submit"
-              className="flex mx-auto mt-4 text-white bg-transparent rounded-lg shadow-lg bg-indigo-600 hover:bg-indigo-400 dark:bg-indigo-600 dark:hover:bg-indigo-900 py-2 px-8 sm:mt-4 focus:outline-none text-lg"
+              className="mx-auto mt-4 flex rounded-lg bg-transparent bg-indigo-600 py-2 px-8 text-lg text-white shadow-lg hover:bg-indigo-400 focus:outline-none dark:bg-indigo-600 dark:hover:bg-indigo-900 sm:mt-4"
             >
               Send
             </button>
           </div>
-          <div className="flex flex-col text-center w-full">{alert}</div>
-          <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-            <p className="leading-normal my-5">London, United Kingdom.</p>
+          <div className="flex w-full flex-col text-center">{alert}</div>
+          <div className="mt-8 w-full border-t border-gray-200 p-2 pt-8 text-center">
+            <p className="my-5 leading-normal">London, United Kingdom.</p>
           </div>
         </div>
       </div>

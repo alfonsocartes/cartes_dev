@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 export const TechStackItem = ({ title, imageUrl, url, children }) => (
-  <article className="p-4 my-4 md:border border-gray-200 md:rounded-lg">
-    <div className="grid grid-flow-row md:grid-flow-col items-center ">
-      <figure className="justify-self-center w-40 h-40 dark:bg-gray-500 items-center text-center m-4 p-4 rounded-xl overflow-hidden">
+  <article className="my-4 border-gray-200 p-4 md:rounded-lg md:border">
+    <div className="grid grid-flow-row items-center md:grid-flow-col ">
+      <figure className="m-4 h-40 w-40 items-center justify-self-center overflow-hidden rounded-xl p-4 text-center dark:bg-gray-500">
         <Image
           src={imageUrl}
           width={256}
@@ -12,12 +12,12 @@ export const TechStackItem = ({ title, imageUrl, url, children }) => (
         />
       </figure>
       <div>
-        <h2 className="text-center md:text-left text-lg font-medium title-font mb-2  text-indigo-600 hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600">
+        <h2 className="title-font mb-2 text-center text-lg font-medium text-indigo-600  hover:text-indigo-400 dark:text-indigo-400 dark:hover:text-indigo-600 md:text-left">
           <a href={url} target="_blank" rel="noopener noreferrer">
             {title}
           </a>
         </h2>
-        <div className="leading-relaxed text-base">{children}</div>
+        <div className="text-base leading-relaxed">{children}</div>
       </div>
     </div>
   </article>

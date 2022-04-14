@@ -14,7 +14,7 @@ export const CoverImage = ({ title, coverImage, slug }) => {
   );
   return (
     <div
-      className="mx-auto rounded-xl visible object-cover object-center overflow-hidden"
+      className="visible mx-auto overflow-hidden rounded-xl object-cover object-center"
       style={{
         width: coverImage.containerWidth,
         height: coverImage.containerHeight,

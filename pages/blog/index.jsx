@@ -9,8 +9,8 @@ const Blog = ({ allPosts }) => {
   );
   return (
     <Layout title="Blog | Cartes Development">
-      <div className="max-w-2xl mx-auto">
-        <h1 className="sm:text-3xl text-2xl font-bold title-font mb-16 text-center">
+      <div className="mx-auto max-w-2xl">
+        <h1 className="title-font mb-16 text-center text-2xl font-bold sm:text-3xl">
           Blog
         </h1>
         {sortedPosts.map((post) => (

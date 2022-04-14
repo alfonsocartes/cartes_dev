@@ -23,7 +23,6 @@ export const Carousel = ({ post }) => {
   };
   */
   const images = getImagesForCarousel(post);
-  console.log("images: ", images);
 
   if (!images) {
     return null;

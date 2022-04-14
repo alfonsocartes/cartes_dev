@@ -61,22 +61,34 @@
     "slug": "anyleft-v1",
     "images": [
       {
-        "url": "/assets/projects/anyleft/anyleft-icon.jpg",
-        "alt": "anyleft-icon",
-        "width": "1024",
-        "height": "1024"
+        "url": "/assets/projects/anyleft-v1/screenshots/screenshot1.png",
+        "alt": "anyleft-v1-screenshot-1",
+        "width": "1242",
+        "height": "2688"
       },
       {
-        "url": "/assets/projects/anyleft/anyleft-icon.jpg",
-        "alt": "anyleft-icon",
-        "width": "1024",
-        "height": "1024"
+        "url": "/assets/projects/anyleft-v1/screenshots/screenshot2.png",
+        "alt": "anyleft-v1-screenshot-2",
+        "width": "1242",
+        "height": "2688"
       },
       {
-        "url": "/assets/projects/anyleft/anyleft-icon.jpg",
-        "alt": "anyleft-icon",
-        "width": "1024",
-        "height": "1024"
+        "url": "/assets/projects/anyleft-v1/screenshots/screenshot3.png",
+        "alt": "anyleft-v1-screenshot-3",
+        "width": "1242",
+        "height": "2688"
+      },
+      {
+        "url": "/assets/projects/anyleft-v1/screenshots/screenshot4.png",
+        "alt": "anyleft-v1-screenshot-4",
+        "width": "1242",
+        "height": "2688"
+      },
+      {
+        "url": "/assets/projects/anyleft-v1/screenshots/screenshot5.png",
+        "alt": "anyleft-v1-screenshot-5",
+        "width": "1242",
+        "height": "2688"
       }
     ]
   }

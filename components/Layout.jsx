@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { CookieNotice } from "./page-layout/CookieNotice";
 import { Footer } from "./page-layout/Footer";
 import { Header } from "./page-layout/Header";
 
@@ -41,25 +40,13 @@ export const Layout = ({ children, ...customMeta }) => {
           <meta property="article:published_time" content={meta.date} />
         )}
         <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-              page_path: window.location.pathname,
-            });
-          `,
-          }}
-        />
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "44b0bd6055724843912a6c4e23689ddf"}'
+        ></script>
       </Head>
       <Header />
       <main className="container mx-auto flex-grow px-5 py-10">{children}</main>
-      <CookieNotice />
       <Footer />
     </div>
   );

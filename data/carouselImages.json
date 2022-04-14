@@ -91,5 +91,40 @@
         "height": "2688"
       }
     ]
+  },
+  {
+    "slug": "overview-city-guides-v1",
+    "images": [
+      {
+        "url": "/assets/projects/overview-city-guides-v1/screenshots/5.8-inch-screen1.png",
+        "alt": "overview-city-guides-v1-screenshot-1",
+        "width": "1125",
+        "height": "2436"
+      },
+      {
+        "url": "/assets/projects/overview-city-guides-v1/screenshots/5.8-inch-screen2.png",
+        "alt": "overview-city-guides-v1-screenshot-2",
+        "width": "1125",
+        "height": "2436"
+      },
+      {
+        "url": "/assets/projects/overview-city-guides-v1/screenshots/5.8-inch-screen3.png",
+        "alt": "overview-city-guides-v1-screenshot-3",
+        "width": "1125",
+        "height": "2436"
+      },
+      {
+        "url": "/assets/projects/overview-city-guides-v1/screenshots/5.8-inch-screen4.png",
+        "alt": "overview-city-guides-v1-screenshot-4",
+        "width": "1125",
+        "height": "2436"
+      },
+      {
+        "url": "/assets/projects/overview-city-guides-v1/screenshots/5.8-inch-screen5.png",
+        "alt": "overview-city-guides-v1-screenshot-5",
+        "width": "1125",
+        "height": "2436"
+      }
+    ]
   }
 ]

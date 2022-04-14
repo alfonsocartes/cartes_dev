@@ -1,0 +1,48 @@
+[
+  {
+    "slug": "anyleft-v1",
+    "images": [
+      {
+        "url": "/assets/projects/anyleft/anyleft-icon.jpg",
+        "alt": "anyleft-icon",
+        "width": "1024",
+        "height": "1024"
+      },
+      {
+        "url": "/assets/projects/anyleft/anyleft-icon.jpg",
+        "alt": "anyleft-icon",
+        "width": "1024",
+        "height": "1024"
+      },
+      {
+        "url": "/assets/projects/anyleft/anyleft-icon.jpg",
+        "alt": "anyleft-icon",
+        "width": "1024",
+        "height": "1024"
+      }
+    ]
+  },
+  {
+    "slug": "anyleft-v2",
+    "images": [
+      {
+        "url": "/assets/projects/anyleft/anyleft-icon.jpg",
+        "alt": "anyleft-icon",
+        "width": "1024",
+        "height": "1024"
+      },
+      {
+        "url": "/assets/projects/anyleft/anyleft-icon.jpg",
+        "alt": "anyleft-icon",
+        "width": "1024",
+        "height": "1024"
+      },
+      {
+        "url": "/assets/projects/anyleft/anyleft-icon.jpg",
+        "alt": "anyleft-icon",
+        "width": "1024",
+        "height": "1024"
+      }
+    ]
+  }
+]

@@ -17,7 +17,7 @@ author:
 type: "blog-post"
 ---
 
-# Remix Jokes with a decoupled Node API
+# Remix Jokes with a decoupled Node.js API
 
 This project came to be because of an excellent tutorial made by the [Remix Team](https://remix.run/) called [Jokes](https://remix.run/docs/en/v1/tutorials/jokes). I highly recommend it.
 
@@ -72,7 +72,7 @@ From this project we could also add more frontend apps that share to the same ba
 
 We could also have the Remix app deployed at the Edge using serverless and the backend in multi regions with replicas for the PostgreSQL DB and then completely change it to a different infrastructure in the future as the project scales and changes requirements.
 
-## Monorepo vs Multirepo
+## Monorepo and Multirepo
 
 I made two projects. One is a monorepo and the other is a multirepo.
 
@@ -80,8 +80,8 @@ I made two projects. One is a monorepo and the other is a multirepo.
 
 - The monorepo project shares Prisma generated Typescript types because it shares the Prisma Client dependency in the root node_modules folder.
 
-- GitHub Actions for remix-jokes-backend have not been tested since it's now a monorepo.
+- **TODO:** GitHub Actions for remix-jokes-backend have not been tested since it's now a monorepo.
 
 ### [Multirepo project](https://github.com/alfonsocartes/remix-jokes-decoupled-multirepo)
 
-Because this is not a monorepo, we cannot generate the types for
+- **TODO:** Because this is not a monorepo, we cannot generate the types for Prisma in the common root node_modules folder that includes @prisma/client. The current solution is to use the remix-jokes-frontend/app/prisma.d.ts file that contains a copy of the generated types but we hace to do this manually. There are multiple solutions for this that include things such as: npm package, git submodule, symlinks, and many more.

@@ -34,15 +34,17 @@ export const Carousel = ({ post }) => {
       {images.map((image, index) => (
         <li
           key={index}
-          className="my-4 w-5/6 shrink-0 snap-center marker:text-transparent"
+          className="my-4 shrink-0 snap-center marker:text-transparent"
         >
-          <Image
-            src={image.url}
-            width={image.width}
-            height={image.height}
-            alt={image.alt}
-            layout="responsive"
-          />
+          <div className="w-[40vh] sm:w-[20vh]">
+            <Image
+              src={image.url}
+              width={image.width}
+              height={image.height}
+              alt={image.alt}
+              layout="responsive"
+            />
+          </div>
         </li>
       ))}
     </ul>

@@ -9,11 +9,13 @@ export const Layout = ({ children, ...customMeta }) => {
     title:
       "cartes.dev | Cartes Development | Full-Stack Web Development | Mobile Development",
     description:
-      "Cartes Development, Full-Stack Web Development, Mobile DevelopmentFront-end developer, JavaScript, React, and so much more...",
+      "Cartes Development, Full-Stack Web Development, Mobile Development, Front-end developer, JavaScript, React, and so much more...",
     image: "https://www.cartes.dev/images/logo_cartes_dev.png",
     type: "website",
     ...customMeta,
   };
+
+  console.log("meta", meta);
 
   return (
     <div className="flex min-h-screen flex-col bg-white text-black dark:bg-black dark:text-gray-200 ">
@@ -31,6 +33,10 @@ export const Layout = ({ children, ...customMeta }) => {
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
+        <meta
+          property="og:url"
+          content={`https://www.cartes.dev${router.asPath}`}
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@cartes_dev" />
         <meta name="twitter:title" content={meta.title} />

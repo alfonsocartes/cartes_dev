@@ -10,3 +10,4 @@ node_modules
 **/dist/**
 **/__tmp__/**
 .github
+public

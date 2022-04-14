@@ -18,8 +18,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "npx prettier --check  \"**/*.{js, jsx, md, mdx}\"",
-    "format:fix": "npx prettier --write  \"**/*.{js, jsx, md, mdx}\""
+    "format": "npx prettier --check ./",
+    "format:fix": "npx prettier --write ./"
   },
   "dependencies": {
     "@headlessui/react": "^1.5.0",

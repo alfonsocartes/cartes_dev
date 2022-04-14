@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ContactUs } from "./cta/ContactUs";
 import { AppStoreButton } from "./cta/AppStoreButton";
 import { PlayStoreButton } from "./cta/PlayStoreButton";
+import { Carousel } from "./Carousel";
 
 const CustomLink = (props) => {
   const { href } = props;
@@ -25,4 +26,5 @@ export const MDXComponents = {
   ContactUs,
   AppStoreButton,
   PlayStoreButton,
+  Carousel,
 };

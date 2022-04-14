@@ -17,7 +17,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "npx prettier --check  \"**/*.{js, jsx, md, mdx}\"",
+    "format:fix": "npx prettier --write  \"**/*.{js, jsx, md, mdx}\""
   },
   "dependencies": {
     "@headlessui/react": "^1.5.0",

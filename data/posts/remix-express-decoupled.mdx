@@ -1,0 +1,87 @@
+---
+title: "Fullstack Remix - Express"
+excerpt: "In this post I would like to share my experience creating a Full-Stack application with a backend decoupled from Remix. Stack: Remix, Express, NodeJS, JWT, Refresh Tokens, Redis, Prisma, PostgreSQL, AWS Elastic Beanstalk, AWS RDS, and a few others."
+coverImage:
+  url: "/assets/blog/remix-decoupled/remix-logo.jpg"
+  width: 1200
+  height: 627
+ogImage:
+  url: "/assets/blog/remix-decoupled/remix-logo.jpg"
+date: "2022-04-14T00:00:00.322Z"
+author:
+  name: Alfonso Cartes
+  picture:
+    url: "/assets/blog/authors/alfonso-cartes.jpeg"
+    width: 700
+    height: 700
+type: "blog-post"
+---
+
+# Remix Jokes with a decoupled Node API
+
+This project came to be because of an excellent tutorial made by the [Remix Team](https://remix.run/) called [Jokes](https://remix.run/docs/en/v1/tutorials/jokes). I highly recommend it.
+
+I wanted to see if I could have an API running on a server and other front ends running on separate servers. This is the "boring and proven" way it has been done for years.
+
+### Why would I want a separate API?
+
+Even though [Remix](https://remix.run/) is a full-stack web framework and you can have an awesome experience deploying just one application that handles everything (including [Resource Routes](https://remix.run/docs/en/v1/guides/resource-routes#resource-routes)), I prefer to have the API decoupled from the frontend. This way I can have other frontend projects decoupled from Remix like a React Native app or maybe a Next.js admin app.
+
+Having a decoupled API also lets me deploy it on a different server or serverless functions.
+
+Another benefit of having the API/APIs decoupled is that there is no "vendor lock-in" to a particular front end stack. I'm excited about Remix and I see an amazing future for it, but I like to try new things and I love experimenting with the front end, so I want to have a reliable boring API and experiment with the front ends.
+
+### What's this project about?
+
+In the following example, we have a Remix app from the [Jokes Tutorial](https://remix.run/docs/en/v1/tutorials/jokes) that connects to the User and Jokes API made with Express + PostgreSQL.
+
+#### Auth
+
+I also included [JWT auth](https://jwt.io/) with Refresh Tokens in [Redis](https://redis.io/). Auth tokens are saved to the cookie session and refreshed through "authenticated loader API calls" in Remix. You can find how this is done in the [public GitHub repo](https://github.com/alfonsocartes/remix-jokes-decoupled-monorepo).
+
+The API also contains authorized routes for the user and joke models.
+
+#### Deployment
+
+The backend also contains config to deploy in [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/).
+
+The Postgres DB is deployed to [AWS RDS](https://aws.amazon.com/rds/).
+
+Even though I opted for this deployment, since it's one of the most common and proven technology stacks, you can probably deploy it anywhere you want.
+
+### Backend
+
+[Node.js](https://nodejs.org/) Backend deployed with AWS Elastic Beanstalk and RDS:
+
+- [Typescript](https://www.typescriptlang.org/)
+- Auth Server ([JWT](https://jwt.io/) with Access and Refresh tokens)
+- [Redis Server](https://redis.io/) (for refresh tokens blacklist)
+- Authenticated routes.
+- [Prisma](https://www.prisma.io/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) + [AWS RDS](https://aws.amazon.com/rds/) deployment (boring and proven)
+
+### Frontends
+
+We have a Remix app that connects to the backend. We can [deploy it to different places](https://remix.run/docs/en/v1/guides/deployment) since it's just a Remix project.
+
+- [Typescript](https://www.typescriptlang.org/)
+- [Remix](https://remix.run/)
+
+From this project we could also add more frontend apps that share to the same backend like a React Native app, giving us not only a lot of freedom to add, remove or change frontends but deploy each part in different technologies, like having the frontend in mobile app stores.
+
+We could also have the Remix app deployed at the Edge using serverless and the backend in multi regions with replicas for the PostgreSQL DB and then completely change it to a different infrastructure in the future as the project scales and changes requirements.
+
+## Monorepo vs Multirepo
+
+I made two projects. One is a monorepo and the other is a multirepo.
+
+### [Monorepo project](https://github.com/alfonsocartes/remix-jokes-decoupled-monorepo)
+
+- The monorepo project shares Prisma generated Typescript types because it shares the Prisma Client dependency in the root node_modules folder.
+
+- GitHub Actions for remix-jokes-backend have not been tested since it's now a monorepo.
+
+### [Multirepo project](https://github.com/alfonsocartes/remix-jokes-decoupled-multirepo)
+
+Because this is not a monorepo, we cannot generate the types for

@@ -1,5 +1,28 @@
 [
   {
+    "slug": "overview-webcams-v1",
+    "images": [
+      {
+        "url": "/assets/projects/overview-webcams-v1/screenshots/5.8-inch-screen1.png",
+        "alt": "overview-webcams-v1-screenshot-1",
+        "width": "1125",
+        "height": "2436"
+      },
+      {
+        "url": "/assets/projects/overview-webcams-v1/screenshots/5.8-inch-screen2.png",
+        "alt": "overview-webcams-v1-screenshot-2",
+        "width": "1125",
+        "height": "2436"
+      },
+      {
+        "url": "/assets/projects/overview-webcams-v1/screenshots/5.8-inch-screen3.png",
+        "alt": "overview-webcams-v1-screenshot-3",
+        "width": "1125",
+        "height": "2436"
+      }
+    ]
+  },
+  {
     "slug": "nomad-services-v1",
     "images": [
       {

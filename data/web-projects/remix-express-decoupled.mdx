@@ -1,0 +1,38 @@
+---
+title: "Fullstack Remix - Express"
+excerpt: "Full-Stack application with a backend decoupled from Remix. Stack: Remix, Express, NodeJS, JWT, Refresh Tokens, Redis, Prisma, PostgreSQL, AWS Elastic Beanstalk, AWS RDS, and a few others."
+# coverImage:
+#   url: "/assets/blog/remix-decoupled/remix-logo.jpg"
+#   width: 1200
+#   height: 627
+ogImage:
+  url: "/assets/blog/remix-decoupled/remix-logo.jpg"
+date: "2022-04-14T00:00:00.322Z"
+author:
+  name: Alfonso Cartes
+  picture:
+    url: "/assets/blog/authors/alfonso-cartes.jpeg"
+    width: 700
+    height: 700
+type: "blog-post"
+---
+
+# Remix Jokes with a decoupled Node.js API
+
+### What's this project about?
+
+You can take a look at the [blog post](https://cartes.dev/blog/posts/remix-express-decoupled) for more details.
+
+## Monorepo and Multirepo
+
+I made two projects. One is a monorepo and the other is a multirepo.
+
+### [Monorepo project](https://github.com/alfonsocartes/remix-jokes-decoupled-monorepo)
+
+- The monorepo project shares Prisma generated Typescript types because it shares the Prisma Client dependency in the root node_modules folder.
+
+- **TODO:** GitHub Actions for remix-jokes-backend have not been tested since it's now a monorepo.
+
+### [Multirepo project](https://github.com/alfonsocartes/remix-jokes-decoupled-multirepo)
+
+- **TODO:** Because this is not a monorepo, we cannot generate the types for Prisma in the common root node_modules folder that includes @prisma/client. The current solution is to use the remix-jokes-frontend/app/prisma.d.ts file that contains a copy of the generated types but we hace to do this manually. There are multiple solutions for this that include things such as: npm package, git submodule, symlinks, and many more.

@@ -25,7 +25,7 @@ export default function Post({ mdxSource, frontMatter }) {
       <article className="mx-auto max-w-2xl">
         <PostHeader frontMatter={frontMatter} />
         <div className="prose dark:prose-invert">
-          <MDXRemote {...mdxSource} components={MDXComponents} />;
+          <MDXRemote {...mdxSource} components={MDXComponents} />
         </div>
       </article>
       <ContactUs />

@@ -31,7 +31,7 @@ export default function Project({ mdxSource, frontMatter }) {
       </Head> */}
         <PostHeader frontMatter={frontMatter} />
         <div className="prose dark:prose-invert">
-          <MDXRemote {...mdxSource} components={MDXComponents} />;
+          <MDXRemote {...mdxSource} components={MDXComponents} />
         </div>
       </article>
       <ContactUs />

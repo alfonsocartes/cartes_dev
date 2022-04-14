@@ -126,5 +126,22 @@
         "height": "2436"
       }
     ]
+  },
+  {
+    "slug": "remember-the-car",
+    "images": [
+      {
+        "url": "/assets/projects/remember-the-car/screenshots/screenshot1.png",
+        "alt": "remember-the-car-screenshot-1",
+        "width": "1242",
+        "height": "2688"
+      },
+      {
+        "url": "/assets/projects/remember-the-car/screenshots/screenshot2.png",
+        "alt": "remember-the-car-screenshot-2",
+        "width": "1242",
+        "height": "2688"
+      }
+    ]
   }
 ]

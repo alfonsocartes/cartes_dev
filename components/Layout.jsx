@@ -47,7 +47,7 @@ export const Layout = ({ children, ...customMeta }) => {
           defer
           src="https://static.cloudflareinsights.com/beacon.min.js"
           data-cf-beacon='{"token": "44b0bd6055724843912a6c4e23689ddf"}'
-        ></script>
+        />
       </Head>
       <Header />
       <main className="container mx-auto flex-grow px-5 py-10">{children}</main>

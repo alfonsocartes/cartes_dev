@@ -23,7 +23,7 @@ This project came to be because of an excellent tutorial made by the [Remix Team
 
 I wanted to see if I could have an API running on a server and other front ends running on separate servers. This is the "boring and proven" way it has been done for years.
 
-### Why would I want a separate API?
+## Why would I want a separate API?
 
 Even though [Remix](https://remix.run/) is a full-stack web framework and you can have an awesome experience deploying just one application that handles everything (including [Resource Routes](https://remix.run/docs/en/v1/guides/resource-routes#resource-routes)), I prefer to have the API decoupled from the frontend. This way I can have other frontend projects decoupled from Remix like a React Native app or maybe a Next.js admin app.
 
@@ -31,17 +31,17 @@ Having a decoupled API also lets me deploy it on a different server or serverles
 
 Another benefit of having the API/APIs decoupled is that there is no "vendor lock-in" to a particular front end stack. I'm excited about Remix and I see an amazing future for it, but I like to try new things and I love experimenting with the front end, so I want to have a reliable boring API and experiment with the front ends.
 
-### What's this project about?
+## What's this project about?
 
 In the following example, we have a Remix app from the [Jokes Tutorial](https://remix.run/docs/en/v1/tutorials/jokes) that connects to the User and Jokes API made with Express + PostgreSQL.
 
-#### Auth
+### Auth
 
 I also included [JWT auth](https://jwt.io/) with Refresh Tokens in [Redis](https://redis.io/). Auth tokens are saved to the cookie session and refreshed through "authenticated loader API calls" in Remix. You can find how this is done in the [public GitHub repo](https://github.com/alfonsocartes/remix-jokes-decoupled-monorepo).
 
 The API also contains authorized routes for the user and joke models.
 
-#### Deployment
+### Deployment
 
 The backend also contains config to deploy in [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/).
 

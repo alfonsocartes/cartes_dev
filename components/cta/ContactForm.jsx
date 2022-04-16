@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { Alert } from "../Alert";
 
 export const ContactForm = () => {

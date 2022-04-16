@@ -10,6 +10,7 @@ export const CoverImage = ({ title, coverImage, slug }) => {
       height={coverImage.height}
       alt={`Cover Image for ${title}`}
       layout="responsive"
+      priority="true"
     />
   );
   return (

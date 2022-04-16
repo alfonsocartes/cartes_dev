@@ -10,6 +10,7 @@ export const Avatar = ({ name, picture }) => {
           width={picture.width}
           height={picture.height}
           alt={name}
+          layout="responsive"
         />
       </div>
       <div className="ml-4 text-lg font-bold">{name}</div>

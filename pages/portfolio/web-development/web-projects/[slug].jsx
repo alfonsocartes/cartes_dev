@@ -14,11 +14,15 @@ export default function Project({ mdxSource, frontMatter }) {
   if (!router.isFallback && !frontMatter?.slug) {
     return <ErrorPage statusCode={404} />;
   }
+
   return (
     <Layout
       title={`${frontMatter.title} | Desktop Portfolio | Cartes Development`}
       description={frontMatter.excerpt}
-      image={`https://www.cartes.dev${frontMatter.ogImage.url}`}
+      image={
+        frontMatter.ogImage?.url ??
+        `https://www.cartes.dev${frontMatter.ogImage?.url}`
+      }
       date={new Date(frontMatter.date).toISOString()}
       type="article"
     >

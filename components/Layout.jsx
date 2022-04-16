@@ -30,7 +30,7 @@ export const Layout = ({ children, ...customMeta }) => {
         <meta property="og:site_name" content="cartes.dev" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content={meta.image} />
+        {meta.image ?? <meta property="og:image" content={meta.image} />}
         <meta
           property="og:url"
           content={`https://www.cartes.dev${router.asPath}`}
@@ -39,7 +39,7 @@ export const Layout = ({ children, ...customMeta }) => {
         <meta name="twitter:site" content="@cartes_dev" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
-        <meta name="twitter:image" content={meta.image} />
+        {meta.image ?? <meta property="twitter:image" content={meta.image} />}
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}

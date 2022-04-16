@@ -19,17 +19,14 @@ export default function Project({ mdxSource, frontMatter }) {
     <Layout
       title={`${frontMatter.title} | Mobile Portfolio | Cartes Development`}
       description={frontMatter.excerpt}
-      image={`https://www.cartes.dev${frontMatter.ogImage.url}`}
+      image={
+        frontMatter.ogImage?.url ??
+        `https://www.cartes.dev${frontMatter.ogImage.url}`
+      }
       date={new Date(frontMatter.date).toISOString()}
       type="article"
     >
       <article className="mx-auto max-w-3xl">
-        {/* <Head>
-        <title>
-          {post.title} | Next.js Blog Example with {CMS_NAME}
-        </title>
-        <meta property="og:image" content={post.ogImage.url} />
-      </Head> */}
         <PostHeader frontMatter={frontMatter} />
         <div className="prose dark:prose-invert">
           <MDXRemote {...mdxSource} components={MDXComponents} />

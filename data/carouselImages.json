@@ -1,5 +1,40 @@
 [
   {
+    "slug": "overview-webcams-v2",
+    "images": [
+      {
+        "url": "/assets/projects/overview-webcams-v2/screenshots/screenshot1.png",
+        "alt": "overview-webcams-v2-screenshot-1",
+        "width": "1242",
+        "height": "2688"
+      },
+      {
+        "url": "/assets/projects/overview-webcams-v2/screenshots/screenshot2.png",
+        "alt": "overview-webcams-v2-screenshot-2",
+        "width": "1242",
+        "height": "2688"
+      },
+      {
+        "url": "/assets/projects/overview-webcams-v2/screenshots/screenshot3.png",
+        "alt": "overview-webcams-v2-screenshot-3",
+        "width": "1242",
+        "height": "2688"
+      },
+      {
+        "url": "/assets/projects/overview-webcams-v2/screenshots/screenshot4.png",
+        "alt": "overview-webcams-v2-screenshot-4",
+        "width": "1242",
+        "height": "2688"
+      },
+      {
+        "url": "/assets/projects/overview-webcams-v2/screenshots/screenshot5.png",
+        "alt": "overview-webcams-v2-screenshot-5",
+        "width": "1242",
+        "height": "2688"
+      }
+    ]
+  },
+  {
     "slug": "overview-webcams-v1",
     "images": [
       {

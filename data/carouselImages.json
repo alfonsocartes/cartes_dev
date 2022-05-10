@@ -1,5 +1,28 @@
 [
   {
+    "slug": "kukd-whitelabel",
+    "images": [
+      {
+        "url": "/assets/projects/kukd-whitelabel/screenshot-mobile-1.png",
+        "alt": "kukd-whitelabel-mobile-screenshot-1",
+        "width": "638",
+        "height": "1498"
+      },
+      {
+        "url": "/assets/projects/kukd-whitelabel/screenshot-mobile-2.png",
+        "alt": "kukd-whitelabel-mobile-screenshot-2",
+        "width": "638",
+        "height": "1498"
+      },
+      {
+        "url": "/assets/projects/kukd-whitelabel/screenshot-mobile-3.png",
+        "alt": "kukd-whitelabel-mobile-screenshot-3",
+        "width": "638",
+        "height": "1498"
+      }
+    ]
+  },
+  {
     "slug": "overview-webcams-v2",
     "images": [
       {

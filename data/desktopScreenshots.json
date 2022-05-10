@@ -1,5 +1,52 @@
 [
   {
+    "slug": "kukd-whitelabel",
+    "images": [
+      {
+        "url": "/assets/projects/kukd-whitelabel/screenshot-1.png",
+        "alt": "kukd-screenshot-1",
+        "width": "3011",
+        "height": "1668"
+      },
+      {
+        "url": "/assets/projects/kukd-whitelabel/screenshot-2.png",
+        "alt": "kukd-screenshot-2",
+        "width": "3011",
+        "height": "1668"
+      },
+      {
+        "url": "/assets/projects/kukd-whitelabel/screenshot-3.png",
+        "alt": "kukd-screenshot-3",
+        "width": "3011",
+        "height": "1668"
+      },
+      {
+        "url": "/assets/projects/kukd-whitelabel/screenshot-4.png",
+        "alt": "kukd-screenshot-4",
+        "width": "3011",
+        "height": "1668"
+      },
+      {
+        "url": "/assets/projects/kukd-whitelabel/screenshot-5.png",
+        "alt": "kukd-screenshot-5",
+        "width": "3011",
+        "height": "1668"
+      },
+      {
+        "url": "/assets/projects/kukd-whitelabel/screenshot-6.png",
+        "alt": "kukd-screenshot-6",
+        "width": "3011",
+        "height": "1668"
+      },
+      {
+        "url": "/assets/projects/kukd-whitelabel/screenshot-7.png",
+        "alt": "kukd-screenshot-7",
+        "width": "3011",
+        "height": "1668"
+      }
+    ]
+  },
+  {
     "slug": "kukd",
     "images": [
       {

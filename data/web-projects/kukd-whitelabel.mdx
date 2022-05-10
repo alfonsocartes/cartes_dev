@@ -1,0 +1,65 @@
+---
+title: "Kukd.com white-label"
+excerpt: "Food delivery and table booking websites made for customer restaurants as white-label websites."
+# coverImage:
+#   url: "/assets/projects/kukd-whitelabel/kukd_partner.png"
+#   width: 316
+#   height: 133
+#   containerWidth: 316
+#   containerHeight: 133
+tags: ["Next.js", "React.js", "Redux", "Node.js", "Rest API", "Checkout.com"]
+ogImage:
+  url: "/assets/projects/kukd-whitelabel/kukd_partner.png"
+date: "2020-05-12"
+author:
+  name: Alfonso Cartes
+  picture:
+    url: "/assets/blog/authors/alfonso-cartes.jpeg"
+    width: 700
+    height: 700
+type: "web-project"
+---
+
+# Kukd.com White-label Websites
+
+Kukd is a food delivery and table booking company based in the UK.
+
+During my involvement in the project, I worked on building a white-label system for Kukd partners. The project involved rendering different websites depending on the domain that was requesting the website.
+
+## How it works
+
+We built custom React components that were the building blocks for each website. Customers could select how their restaurant page would look like and the website would be rendered accordingly.
+
+Depending on the domain, we got the data from the SQL database and get back a json object from a RESTful API with the data that we needed to render the list of custom components that made each page. The data was fetched using [Next.js getServerSideProps](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props) and then passed to the page component as props. We also got other state management data that was dispatched to the [Redux](https://redux.js.org/) Store.
+
+Each custom component that built each page had intrinsic functionality and styling options possible.
+
+Each restaurant could have a complex menu with customizable menu item variants and prices, we had a cart that introduced discounts and options depending on delivery range and basket amounts.
+
+We had a checkout page that was a checkout form with a payment gateway.
+Restaurants could also use a table booking service through their custom white-label website.
+
+<Carousel post="kukd-whitelabel" />
+
+## Features
+
+- Page building with custom components.
+- Styling for each component.
+- User accounts.
+- Complex menu for each restaurant with customizable menu item variants and prices.
+- Basket with promotions and discounts.
+- Table booking.
+- Checkout integration with processing payments.
+- Order tracking.
+
+<DesktopScreenshots post="kukd-whitelabel" />
+
+## Technology Stack Used
+
+- [Javascript (ECMAScript)](https://tc39.es/ecma262/): ECMAScript (or ES) is a JavaScript standard meant to ensure the interoperability of web pages across different web browsers. It is standardized by Ecma International according to the document ECMA-262. ECMAScript is commonly used for client-side scripting on the World Wide Web, and it is increasingly being used for writing server applications and services using Node.js.
+- [Next.js](https://nextjs.org/): Next.js is an open-source web development framework built on top of Node.js enabling React based web applications functionalities such as server-side rendering and generating static websites. React documentation mentions Next.js among "Recommended Toolchains" advising it to developers as a solution when "Building a server-rendered website with Node.js". Where traditional React apps can only render their content in the client-side browser, Next.js extends this functionality to include applications rendered on the server side.
+- [React.js](https://reactjs.org/): React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta (formerly Facebook) and a community of individual developers and companies. React can be used as a base in the development of single-page, mobile, or server-rendered applications with frameworks like Next.js. However, React is only concerned with state management and rendering that state to the DOM, so creating React applications usually requires the use of additional libraries for routing, as well as certain client-side functionality.
+- [Redux](https://redux.js.org/): Redux is an open-source JavaScript library for managing and centralizing application state. It is most commonly used with libraries such as React or Angular for building user interfaces. Similar to (and inspired by) Facebook's Flux architecture.
+- [Node.js](https://nodejs.org/): Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js represents a "JavaScript everywhere" paradigm, unifying web-application development around a single programming language, rather than different languages for server-side and client-side scripts.
+- [RESTful API](https://restfulapi.net/): A web API that obeys the REST constraints is informally described as RESTful. RESTful web APIs are typically loosely based on HTTP methods to access resources via URL-encoded parameters and the use of JSON or XML to transmit data.
+- [Checkout.com](https://checkout.com/): A payment gateway that allows merchants to accept credit card payments online.

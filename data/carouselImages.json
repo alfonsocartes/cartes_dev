@@ -1,40 +1,5 @@
 [
   {
-    "slug": "kukd",
-    "images": [
-      {
-        "url": "/assets/projects/kukd/kukd_website1.png",
-        "alt": "kukd-screenshot-1",
-        "width": "3011",
-        "height": "1668"
-      },
-      {
-        "url": "/assets/projects/kukd/kukd_website2.png",
-        "alt": "kukd-screenshot-2",
-        "width": "3011",
-        "height": "1668"
-      },
-      {
-        "url": "/assets/projects/kukd/kukd_website3.png",
-        "alt": "kukd-screenshot-3",
-        "width": "3011",
-        "height": "1668"
-      },
-      {
-        "url": "/assets/projects/kukd/kukd_website4.png",
-        "alt": "kukd-screenshot-4",
-        "width": "3011",
-        "height": "1668"
-      },
-      {
-        "url": "/assets/projects/kukd/kukd_website5.png",
-        "alt": "kukd-screenshot-5",
-        "width": "3011",
-        "height": "1668"
-      }
-    ]
-  },
-  {
     "slug": "overview-webcams-v2",
     "images": [
       {

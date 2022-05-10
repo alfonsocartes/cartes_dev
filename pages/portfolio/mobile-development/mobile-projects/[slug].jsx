@@ -20,7 +20,7 @@ export default function Project({ mdxSource, frontMatter }) {
       title={`${frontMatter.title} | Mobile Portfolio | Cartes Development`}
       description={frontMatter.excerpt}
       image={
-        frontMatter.ogImage?.url ??
+        frontMatter.ogImage?.url &&
         `https://www.cartes.dev${frontMatter.ogImage.url}`
       }
       date={new Date(frontMatter.date).toISOString()}

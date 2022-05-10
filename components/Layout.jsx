@@ -30,7 +30,7 @@ export const Layout = ({ children, ...customMeta }) => {
         <meta property="og:site_name" content="cartes.dev" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
-        {meta.image ?? <meta property="og:image" content={meta.image} />}
+        {meta.image && <meta property="og:image" content={meta.image} />}
         <meta
           property="og:url"
           content={`https://www.cartes.dev${router.asPath}`}
@@ -39,15 +39,17 @@ export const Layout = ({ children, ...customMeta }) => {
         <meta name="twitter:site" content="@cartes_dev" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
-        {meta.image ?? <meta property="twitter:image" content={meta.image} />}
+        {meta.image && <meta property="twitter:image" content={meta.image} />}
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}
-        <script
-          defer
-          src="https://static.cloudflareinsights.com/beacon.min.js"
-          data-cf-beacon='{"token": "44b0bd6055724843912a6c4e23689ddf"}'
-        />
+        {process.env.NODE_ENV !== "development" && (
+          <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon='{"token": "44b0bd6055724843912a6c4e23689ddf"}'
+          />
+        )}
       </Head>
       <Header />
       <main className="container mx-auto flex-grow px-5 py-10">{children}</main>

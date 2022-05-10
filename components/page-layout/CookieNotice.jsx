@@ -5,7 +5,6 @@ import Cookies from "js-cookie";
 export const CookieNotice = () => {
   const [show, setShow] = React.useState(false);
   function handleCookieNotice() {
-    console.log("Cookie notice clicked");
     Cookies.set("cookie-notice", "accepted", { expires: 365 });
     setShow(false);
   }

@@ -5,8 +5,8 @@ export const BlurredImage = ({ image }) => {
   const [isLoading, setLoading] = useState(true);
   return (
     <div
-      className={`rounded-xl ${
-        isLoading ? "animate-pulse rounded-xl bg-slate-200" : ""
+      className={`overflow-clip rounded-xl ${
+        isLoading ? "animate-pulse bg-slate-200" : ""
       }`}
     >
       <Image

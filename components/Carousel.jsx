@@ -1,6 +1,5 @@
-import Image from "next/image";
-
 import carouselImages from "../data/carouselImages.json";
+import { BlurredImage } from "./BlurredImage";
 
 const getImagesForCarousel = (slug) => {
   if (carouselImages) {
@@ -36,14 +35,7 @@ export const Carousel = ({ post }) => {
           className="my-4 shrink-0 snap-center marker:text-transparent"
         >
           <div className="w-[25vh]">
-            <Image
-              className="rounded-xl"
-              src={image.url}
-              width={image.width}
-              height={image.height}
-              alt={image.alt}
-              layout="responsive"
-            />
+            <BlurredImage image={image} />
           </div>
         </li>
       ))}

@@ -1,6 +1,5 @@
-import Image from "next/image";
-
 import desktopScreenshots from "../data/desktopScreenshots.json";
+import { BlurredImage } from "./BlurredImage";
 
 const getImages = (slug) => {
   if (desktopScreenshots) {
@@ -33,13 +32,7 @@ export const DesktopScreenshots = ({ post }) => {
       {images.map((image, index) => (
         <div key={index} className="my-4 marker:text-transparent">
           <div className="mx-auto">
-            <Image
-              src={image.url}
-              width={image.width}
-              height={image.height}
-              alt={image.alt}
-              layout="responsive"
-            />
+            <BlurredImage image={image} />
           </div>
         </div>
       ))}

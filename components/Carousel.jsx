@@ -35,8 +35,9 @@ export const Carousel = ({ post }) => {
           key={index}
           className="my-4 shrink-0 snap-center marker:text-transparent"
         >
-          <div className="w-[25vh] xl:w-[15vh]">
+          <div className="w-[25vh]">
             <Image
+              className="rounded-xl"
               src={image.url}
               width={image.width}
               height={image.height}

@@ -10,7 +10,7 @@ export const BlurredImage = ({ image }) => {
       }`}
     >
       <Image
-        className={`rounded-xl duration-500 ease-in-out ${
+        className={`rounded-xl duration-300 ease-in-out ${
           isLoading
             ? "scale-110 blur-2xl grayscale"
             : "scale-100 blur-0 grayscale-0"

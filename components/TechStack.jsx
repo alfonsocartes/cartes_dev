@@ -20,14 +20,14 @@ export const TechStack = () => (
       </div>
       <div className="grid grid-cols-1">
         <TechStackItem
-          title="React Native"
-          url="https://reactnative.dev/"
-          imageUrl="/assets/technologies/reactjs-logo.svg"
+          title="Remix"
+          url="https://remix.run/"
+          imageUrl="/assets/technologies/remix-logo.svg"
         >
           <p>
-            React Native is an open-source mobile application framework. It is
-            used to develop applications for Android, Android TV, iOS, macOS,
-            tvOS, Web, Windows and UWP.
+            Remix is a full stack web framework that lets you focus on the user
+            interface and work back through web standards to deliver a fast,
+            slick, and resilient user experience.
           </p>
         </TechStackItem>
         <TechStackItem
@@ -50,6 +50,17 @@ export const TechStack = () => (
             TailwindCSS is an utility-first CSS framework packed with classes
             like <i>flex, pt-4, text-center</i> and <i>rotate-90</i> that can be
             composed to build any design, directly in your markup.
+          </p>
+        </TechStackItem>
+        <TechStackItem
+          title="React Native"
+          url="https://reactnative.dev/"
+          imageUrl="/assets/technologies/reactjs-logo.svg"
+        >
+          <p>
+            React Native is an open-source mobile application framework. It is
+            used to develop applications for Android, Android TV, iOS, macOS,
+            tvOS, Web, Windows and UWP.
           </p>
         </TechStackItem>
         <TechStackItem

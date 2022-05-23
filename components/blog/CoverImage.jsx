@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { BlurredImage } from "../BlurredImage";
+import { LazyImage } from "../LazyImage";
 
 export const CoverImage = ({ title, coverImage, slug }) => {
   if (!coverImage) return null;
-  const image = <BlurredImage image={coverImage} />;
+  const image = <LazyImage image={coverImage} />;
   return (
     <div
       className="visible mx-auto overflow-hidden rounded-xl object-cover object-center"

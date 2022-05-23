@@ -1,5 +1,5 @@
 import carouselImages from "../data/carouselImages.json";
-import { BlurredImage } from "./BlurredImage";
+import { LazyImage } from "./LazyImage";
 
 const getImagesForCarousel = (slug) => {
   if (carouselImages) {
@@ -35,7 +35,7 @@ export const Carousel = ({ post }) => {
           className="my-4 shrink-0 snap-center marker:text-transparent"
         >
           <div className="w-[25vh]">
-            <BlurredImage image={image} />
+            <LazyImage image={image} />
           </div>
         </li>
       ))}

@@ -1,5 +1,5 @@
 import desktopScreenshots from "../data/desktopScreenshots.json";
-import { BlurredImage } from "./BlurredImage";
+import { LazyImage } from "./LazyImage";
 
 const getImages = (slug) => {
   if (desktopScreenshots) {
@@ -32,7 +32,7 @@ export const DesktopScreenshots = ({ post }) => {
       {images.map((image, index) => (
         <div key={index} className="my-4 marker:text-transparent">
           <div className="mx-auto">
-            <BlurredImage image={image} />
+            <LazyImage image={image} />
           </div>
         </div>
       ))}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlurredImage } from "../BlurredImage";
+import { LazyImage } from "../LazyImage";
 import { Tag } from "../Tag";
 
 export const ProjectListItem = ({ post, path }) => {
@@ -19,7 +19,7 @@ export const ProjectListItem = ({ post, path }) => {
         <div className="grid grid-flow-row items-center md:grid-flow-col">
           {coverImage && (
             <figure className="m-8 h-40 w-40 justify-self-center overflow-hidden rounded-xl dark:bg-gray-500">
-              <BlurredImage image={image} />
+              <LazyImage image={image} />
             </figure>
           )}
           <div className="">

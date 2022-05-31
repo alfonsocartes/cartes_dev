@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang="en" className="dark:h-[100%] dark:overflow-hidden">
         <Head>
           <link href="/favicons/favicon.ico" rel="shortcut icon" />
           <link href="/favicons/site.webmanifest" rel="manifest" />
@@ -37,7 +37,7 @@ class MyDocument extends Document {
             name="msapplication-config"
           />
         </Head>
-        <body>
+        <body className="dark:h-[100%] dark:overflow-auto">
           <Main />
           <NextScript />
         </body>

@@ -42,12 +42,24 @@ const About = () => (
             </p>
             <br />
             <p>
-              I have experience working in large and small companies building
-              software solutions including Web apps, Mobile apps and e-commerce
-              stores.
+              Experience working in large and small companies building software
+              solutions including Web apps, Mobile apps and e-commerce stores.
             </p>
             <br />
-            <p>Strong focus on user experience, SEO and performance</p>
+            <p>
+              Full-stack development using React, Node.js, Express, PostgreSQL.
+            </p>
+            <br />
+            <p>
+              Focus on <b>frontend</b> taking user experience as the main metric
+              for success. Frameworks used for web and mobile development
+              include: Remix.run, Next.js, TailwindCSS and many more.
+            </p>
+            <br />
+            <p>
+              Experience in web performacnce for improvements in Core Web
+              Vitals, SEO and accessibility.
+            </p>
             <br />
             <p>
               I also have solid expertise in business development, customer
@@ -57,22 +69,24 @@ const About = () => (
         </div>
         <div className="mx-auto mb-10 flex flex-col  items-center justify-center px-14 pb-10 md:mb-0 md:w-1/2 md:py-8 md:pl-12">
           <h3 className="title-font mb-10 text-2xl font-bold sm:text-3xl">
-            Technologies
+            Technology Stack
           </h3>
           <div className="text-base leading-relaxed">
-            <ul>
-              <li>React</li>
+            <ul className="list-inside list-disc space-y-1">
+              <li>React.js</li>
+              <li>Remix.run</li>
+              <li>Next.js (SSR - SSG - ISR)</li>
               <li>React Native / Expo </li>
-              <li>NextJS (SSR – SSG - ISR)</li>
               <li>HTML / CSS / Javascript</li>
-              <li>TailWind CSS / Bootstrap</li>
+              <li>Tailwind CSS / Bootstrap / Styled Components</li>
               <li>RESTful APIs / GraphQL APIs</li>
-              <li>AWS Amplify / Firebase</li>
-              <li>ExpressJS / NodeJS</li>
-              <li>MongoDB / Mongoose / SQL</li>
+              <li>Serverless / AWS / Docker</li>
+              <li>Express.js / Node.js</li>
+              <li>PostgreSQL / MongoDB</li>
               <li>Headless CMS</li>
               <li>SEO / ASO / Core Web Vitals</li>
               <li>Serverless Deployment</li>
+              <li>Many more...</li>
             </ul>
           </div>
         </div>

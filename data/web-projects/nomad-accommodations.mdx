@@ -1,0 +1,55 @@
+---
+title: "Nomad Accommodations"
+excerpt: "Full-Stack application made with Remix and TailwindCSS with a SQLite database and Prisma. Deployes using GitHub Actions in Fly.io"
+# coverImage:
+#   url: "/assets/blog/remix-decoupled/remix-logo.jpg"
+#   width: 1200
+#   height: 627
+tags: ["Remix", "TailwindCSS", "Prisma", "SQLite", "Fly.io"]
+ogImage:
+  url: "/assets/blog/remix-decoupled/remix-logo.jpg"
+date: "2022-07-25T00:00:00.322Z"
+author:
+  name: Alfonso Cartes
+  picture:
+    url: "/assets/blog/authors/alfonso-cartes.jpeg"
+    width: 700
+    height: 700
+type: "blog-post"
+---
+
+# Nomad Accommodations
+
+[Nomad Accommodations](https://nomadaccommodations.com/)
+
+### What's this project about?
+
+A list of proven places added by nomads for nomads.
+
+Nomad accommodations is a database of places added by nomads so that other nomads can quickly find places that are suited for nomads: quiet, comfortable workspaces, good wifi, air conditioning...
+
+The goal of this website is to save you time from checking multiple accommodation booking websites tailored to tourists, reading so many reviews and inspecting each photo.
+
+## Software
+
+Nomad Accommodations is a full-stack application made with [Remix](https://remix.run/) and [TailwindCSS](https://tailwindcss.com/). with an [SQLite](https://www.sqlite.org/) database and [Prisma](https://prisma.io/). Deployed using [GitHub Actions](https://github.com/features/actions) in [Fly.io](https://fly.io/).
+
+The main feature is a fully server-side and client-side validated form using HTML elements and TailwindCSS. There are also some custom elements.
+
+### Frontend
+
+The website is Progressively Enhanced. It works without any JavaScript for speed and reliability, but if the user has JavaScript enabled, it will make use of React for a better UX.
+
+UI design supports for responsive and dark mode with TailwindCSS.
+
+### Backend
+
+The form then gets submitted and validated on the server. If everything is correct it will create a new submission in the SQLite database using Prisma.
+
+There are also routes for Updating, Reading and Deleting submissions through an admin panel only accessible to the admin.
+
+### Deployment
+
+The project is deployed to Fly.io either to a staging or a production environment using GitHub Actions after a series of checks and tests.
+
+<DesktopScreenshots post="nomad-accommodations" />

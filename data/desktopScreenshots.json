@@ -1,5 +1,22 @@
 [
   {
+    "slug": "nomad-accommodations",
+    "images": [
+      {
+        "url": "/assets/projects/nomad-accommodations/screenshots-1.png",
+        "alt": "nomad-accommodations-screenshot-1",
+        "width": "754",
+        "height": "1618"
+      },
+      {
+        "url": "/assets/projects/nomad-accommodations/screenshots-2.png",
+        "alt": "nomad-accommodations-screenshot-2",
+        "width": "824",
+        "height": "1558"
+      }
+    ]
+  },
+  {
     "slug": "kukd-whitelabel",
     "images": [
       {

@@ -29,4 +29,5 @@ export const MDXComponents = {
   PlayStoreButton,
   Carousel,
   DesktopScreenshots,
+  Image,
 };

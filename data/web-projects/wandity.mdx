@@ -38,12 +38,13 @@ type: "blog-post"
     marginBottom: "2rem",
   }}
 >
-  <Image
-    src="/assets/projects/wandity/wandity-logo.jpg"
-    width={256}
-    height={256}
-    alt="Wandity Logo"
-    layout="responsive"
+  <LazyImage
+    image={{
+      url: "/assets/projects/wandity/wandity-logo.jpg",
+      width: 1024,
+      height: 1024,
+      alt: "Wandity Logo",
+    }}
   />
 </div>
 

@@ -5,6 +5,7 @@ import { AppStoreButton } from "./cta/AppStoreButton";
 import { PlayStoreButton } from "./cta/PlayStoreButton";
 import { Carousel } from "./Carousel";
 import { DesktopScreenshots } from "./DesktopScreenshots";
+import { LazyImage } from "./LazyImage";
 
 const CustomLink = (props) => {
   const { href } = props;
@@ -29,5 +30,5 @@ export const MDXComponents = {
   PlayStoreButton,
   Carousel,
   DesktopScreenshots,
-  Image,
+  LazyImage,
 };

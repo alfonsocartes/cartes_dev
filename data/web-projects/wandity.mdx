@@ -1,6 +1,6 @@
 ---
 title: "Wandity"
-excerpt: "Full-Stack application with a backend decoupled from Remix. Stack: Remix, Express, Node.js, JWT, Refresh Tokens, Redis, Prisma, PostgreSQL, AWS S3, Amazon Rekognition, Stripe, and a few others."
+excerpt: "Full-Stack application with a backend decoupled from Remix. Stack: Remix, Express.js, Node.js, JWT, Refresh Tokens, Twilio, SendGrid, Redis, Prisma, PostgreSQL, AWS S3, Amazon Rekognition, Stripe, and a few others."
 # coverImage:
 #   url: "/assets/blog/remix-decoupled/remix-logo.jpg"
 #   width: 1200
@@ -82,15 +82,80 @@ Finally, the three projects are deployed using Docker containers with CI/CD to F
 
 ### What's the stack?
 
-Stack: Remix, React, TailwindCSS, Express.js, Node.js, JWT, Refresh Tokens, Redis, Prisma, PostgreSQL, AWS S3, Amazon Rekognition, Docker, CI/CD and a few others.
+Remix, React, TailwindCSS, Express.js, JWT, Refresh Tokens, Redis, Prisma, PostgreSQL, SendGrid, Twilio, AWS S3, Amazon Rekognition, Docker, GitHub Actions and a few others.
 
 ### Cool Features
 
+#### Authentication and authorization
+
+- API authorization using JWT Access Token verification.
+- Server side user session control through Refresh Tokens in Redis
+- User session stored JWT in cookies.
 - Authentication though Magic Links.
 - Sending emails using SendGrid.
-- Account verification through SMS verification code using Twilio.
-- API authorization using JWT Access Token verification.
-- User session stored JWT in cookies.
-- Server side User session control through Refresh Tokens in Redis
+- Account verification through SMS using Twilio.
 
+#### Community
 
+- Public feed system.
+- Post entries.
+- Comments only for subscribers.
+- Vote system.
+- User profiles.
+- Social networks linking.
+
+#### UI
+
+- TailwindCSS.
+- Remix.
+- React.
+- Web platform APIs.
+- Progressive Enhancement.
+
+#### Progressive Enhancement
+
+- React is only used for improving the user experience when Javascript is loaded in the browser.
+- Web platform APIs.
+- HTML input elements instead of custom JS components.
+- HTML form elements instead of custom JS components.
+- Form validation on the server and through HTML5 validation attributes.
+
+#### Image handling
+
+- Image uploads using HTML input elements.
+- Image optimization with Sharp.
+- Image caching cache control headers
+- Image storage on AWS S3.
+- Image analysis with AI using Amazon Rekognition.
+- Private images with authenticated Remix Resource Routes.
+
+#### Link previews
+
+- Link previews using Puppeteer and OpenGraph data.
+- Website scraping for OpenGraph data.
+- Link previews caching using Redis.
+
+#### Payments
+
+- Payments through Stripe.
+- Subscription to other users.
+- Membership system.
+- Credit system.
+
+#### Database
+
+- PostgreSQL database with read replicas.
+- Prisma ORM interface.
+- Redis cache layer.
+- NPM public packages for sharing Prisma Generated Client between backend APIs and Remix frontend.
+- Prisma Migrate for database migrations.
+- Prisma Studio for database management.
+- Prisma Generated Client for database queries.
+
+#### Deployment
+
+- Docker containers.
+- GitHub Actions
+- CI/CD to Fly.io for using microVMs and replication to multiple regions.
+- Auto scaling with Fly.io.
+- Clouflare CDN.

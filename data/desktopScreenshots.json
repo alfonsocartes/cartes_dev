@@ -131,5 +131,28 @@
         "height": "3340"
       }
     ]
+  },
+  {
+    "slug": "focus-day",
+    "images": [
+      {
+        "url": "/assets/projects/focus-day/focus-day-screenshot-2.png",
+        "alt": "focus-day-screenshot-1",
+        "width": "3024",
+        "height": "1796"
+      },
+      {
+        "url": "/assets/projects/focus-day/focus-day-screenshot-1.png",
+        "alt": "focus-day-screenshot-2",
+        "width": "3024",
+        "height": "1548"
+      },
+      {
+        "url": "/assets/projects/focus-day/focus-day-screenshot-3.png",
+        "alt": "focus-day-screenshot-3",
+        "width": "3024",
+        "height": "1716"
+      }
+    ]
   }
 ]

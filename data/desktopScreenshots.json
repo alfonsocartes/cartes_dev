@@ -154,5 +154,28 @@
         "height": "1716"
       }
     ]
+  },
+  {
+    "slug": "pokedex-example",
+    "images": [
+      {
+        "url": "/assets/projects/pokedex-example/pokedex-example-screenshot-1.png",
+        "alt": "pokedex-example-screenshot-1",
+        "width": "3024",
+        "height": "1676"
+      },
+      {
+        "url": "/assets/projects/pokedex-example/pokedex-example-screenshot-2.png",
+        "alt": "pokedex-example-screenshot-2",
+        "width": "3024",
+        "height": "1670"
+      },
+      {
+        "url": "/assets/projects/pokedex-example/pokedex-example-screenshot-3.png",
+        "alt": "pokedex-example-screenshot-3",
+        "width": "824",
+        "height": "3555"
+      }
+    ]
   }
 ]

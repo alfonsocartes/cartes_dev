@@ -108,5 +108,28 @@
         "height": "11892"
       }
     ]
+  },
+  {
+    "slug": "teist-aromas",
+    "images": [
+      {
+        "url": "/assets/projects/teist-aromas/teist-screenshot-1.png",
+        "alt": "teist-aromas-screenshot-1",
+        "width": "3024",
+        "height": "3566"
+      },
+      {
+        "url": "/assets/projects/teist-aromas/teist-screenshot-2.png",
+        "alt": "teist-aromas-screenshot-2",
+        "width": "3024",
+        "height": "4966"
+      },
+      {
+        "url": "/assets/projects/teist-aromas/teist-screenshot-3.png",
+        "alt": "teist-aromas-screenshot-3",
+        "width": "3024",
+        "height": "3340"
+      }
+    ]
   }
 ]

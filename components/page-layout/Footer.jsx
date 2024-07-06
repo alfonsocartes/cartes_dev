@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="frosted dark:bg-white-800 top-inner-shadow border-t border-white border-opacity-20 bg-gray-200 bg-opacity-20 p-4">
         <div className="container mx-auto flex flex-col flex-wrap py-4 px-5 sm:flex-row">
           <p className="mt-4 p-4 text-sm sm:ml-6 sm:mt-0">
-            © {new Date().getFullYear()} Cartes Ltd. —
+            © {new Date().getFullYear()} Alfonso Cartes. —
             <a
               href="https://twitter.com/cartes_dev"
               target="_blank"

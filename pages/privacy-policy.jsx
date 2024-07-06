@@ -9,7 +9,7 @@ const PrivacyPolicy = () => (
           <h1>PRIVACY POLICY - TERMS OF USE</h1>
           <h2>INTRODUCTION</h2>
           <p>
-            Cartes Ltd. (“we” or “us” or “our”) respects the privacy of our
+            Alfonso Cartes. (“we” or “us” or “our”) respects the privacy of our
             users (“user” or “you”). This Privacy Policy explains how we
             collect, use, disclose, and safeguard your information when you
             visit our website and our mobile applications, including any other
@@ -429,7 +429,7 @@ const PrivacyPolicy = () => (
             contact us at:
           </p>
           <small>
-            Cartes Ltd
+            Alfonso Cartes
             <br />
             Wareham Road Poole
             <br />

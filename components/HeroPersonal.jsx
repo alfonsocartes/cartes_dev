@@ -12,15 +12,10 @@ export const HeroPersonal = () => (
           <h2 className="title-font m-8 text-xl font-bold">
             Full-Stack Development | Software Engineering
           </h2>
-          <p className="leading-relaxed">
-            At
-            <a href="about">
-              <b> Cartes Ltd. </b>
-            </a>
-            we bring your ideas to life.
-          </p>
+          <p className="leading-relaxed">Let's bring your ideas to life.</p>
           <p className="mb-8 leading-relaxed">
-            We design and develop experiences that enrich people&apos;s lives.
+            Let's design and develop experiences that enrich people&apos;s
+            lives.
           </p>
         </div>
       </div>

@@ -12,9 +12,11 @@ export const HeroPersonal = () => (
           <h2 className="title-font m-8 text-xl font-bold">
             Full-Stack Development | Software Engineering
           </h2>
-          <p className="leading-relaxed">Let's bring your ideas to life.</p>
+          <p className="leading-relaxed">
+            Let&apos;s bring your ideas to life.
+          </p>
           <p className="mb-8 leading-relaxed">
-            Let's design and develop experiences that enrich people&apos;s
+            Let&apos;s design and develop experiences that enrich people&apos;s
             lives.
           </p>
         </div>

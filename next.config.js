@@ -1,5 +1,8 @@
-module.exports = {
-  images: {
-    domains: ["avatars1.githubusercontent.com", "upload.wikimedia.org"],
-  },
-};
+// @ts-check
+ 
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  /* config options here */
+}
+ 
+module.exports = nextConfig

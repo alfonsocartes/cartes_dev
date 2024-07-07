@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { ContactUs } from "../components/cta/ContactUs";
 import { Layout } from "../components/Layout";
 import { SocialNetworks } from "../components/SocialNetworks";

@@ -27,7 +27,7 @@ const About = () => (
             Alfonso Cartes
           </h1>
           <h2 className="text-md m-4 sm:text-xl">
-            Full-Stack Developer | Software Engineer
+            Principal Software Engineer | Senior Full-Stack Software Engineer
           </h2>
           <span className="wave text-3xl">👋</span>
         </div>
@@ -40,57 +40,75 @@ const About = () => (
           <h3 className="title-font mb-10 text-2xl font-bold sm:text-3xl">
             Expertise
           </h3>
-          <div className="text-base leading-relaxed">
-            <p>
-              Software Engineer with a passion for Web and Mobile development.
-            </p>
-            <br />
-            <p>
-              Experience working in large and small companies building software
-              solutions including Web apps, Mobile apps and e-commerce stores.
-            </p>
-            <br />
-            <p>
-              Full-stack development using React, Node.js, Express, PostgreSQL.
-            </p>
-            <br />
-            <p>
-              Focus on <b>frontend</b> taking user experience as the main metric
-              for success. Frameworks used for web and mobile development
-              include: Remix.run, Next.js, TailwindCSS and many more.
-            </p>
-            <br />
-            <p>
-              Experience in web performacnce for improvements in Core Web
-              Vitals, SEO and accessibility.
-            </p>
-            <br />
-            <p>
-              I also have solid expertise in business development, customer
-              service, tech support, and retail.
-            </p>
-          </div>
+          <p>
+            Software Engineer with a passion for Web and Mobile development.
+          </p>
+          <br />
+          <p>
+            Experience working in large and small companies building software
+            solutions including Web apps, Mobile apps and e-commerce stores.
+          </p>
+          <br />
+          <p>
+            Full-stack development mainly using Javascript/Typescript ecosystem.
+            Expertise in React.
+          </p>
+          <br />
+          <p>
+            Focus on <b>frontend</b> taking user experience as the main metric
+            for success. Frameworks used for web and mobile development include:
+            Expo, Remix.run, Next.js, TailwindCSS and many more.
+          </p>
+          <br />
+          <p>
+            Experience in web performacnce for improvements in Core Web Vitals,
+            SEO and accessibility.
+          </p>
+          <br />
+          <p>
+            I also have solid expertise in business development, customer
+            service, tech support, and retail.
+          </p>
         </div>
         <div className="mx-auto mb-10 flex flex-col  items-center justify-center px-14 pb-10 md:mb-0 md:w-1/2 md:py-8 md:pl-12">
           <h3 className="title-font mb-10 text-2xl font-bold sm:text-3xl">
             Technology Stack
           </h3>
           <div className="text-base leading-relaxed">
-            <ul className="list-inside list-disc space-y-1">
-              <li>React.js</li>
-              <li>Remix.run</li>
-              <li>Next.js (SSR - SSG - ISR)</li>
-              <li>React Native / Expo </li>
-              <li>HTML / CSS / Javascript</li>
-              <li>Tailwind CSS / Bootstrap / Styled Components</li>
-              <li>RESTful APIs / GraphQL APIs</li>
-              <li>Serverless / AWS / Docker</li>
-              <li>Express.js / Node.js</li>
-              <li>PostgreSQL / MongoDB</li>
-              <li>Headless CMS</li>
-              <li>SEO / ASO / Core Web Vitals</li>
-              <li>Serverless Deployment</li>
-              <li>Many more...</li>
+            <ul role="list" className="space-y-3">
+              <li className="overflow-hidden bg-slate-50 dark:bg-slate-900 px-4 py-2 shadow sm:rounded-md sm:px-6">
+                Expo | React Native
+              </li>
+              <li className="overflow-hidden bg-slate-50 dark:bg-slate-900 px-4 py-2 shadow sm:rounded-md sm:px-6">
+                Next.js | Remix
+              </li>
+              <li className="overflow-hidden bg-slate-50 dark:bg-slate-900 px-4 py-2 shadow sm:rounded-md sm:px-6">
+                React Server Components
+              </li>
+              <li className="overflow-hidden bg-slate-50 dark:bg-slate-900 px-4 py-2 shadow sm:rounded-md sm:px-6">
+                TailwindCSS | Nativewind
+              </li>
+              <li className="overflow-hidden bg-slate-50 dark:bg-slate-900 px-4 py-2 shadow sm:rounded-md sm:px-6">
+                HTML | CSS | Javascript | Typescript
+              </li>
+              <li className="overflow-hidden bg-slate-50 dark:bg-slate-900 px-4 py-2 shadow sm:rounded-md sm:px-6">
+                RESTful APIs | GraphQL APIs | tRPC
+              </li>
+              <li className="overflow-hidden bg-slate-50 dark:bg-slate-900 px-4 py-2 shadow sm:rounded-md sm:px-6">
+                Express.js | Node.js | Hono.js
+              </li>
+              <li className="overflow-hidden bg-slate-50 dark:bg-slate-900 px-4 py-2 shadow sm:rounded-md sm:px-6">
+                SQL | No SQL
+              </li>
+              <li className="overflow-hidden bg-slate-50 dark:bg-slate-900 px-4 py-2 shadow sm:rounded-md sm:px-6">
+                Serverless | AWS | Docker
+              </li>
+              <li className="overflow-hidden bg-slate-50 dark:bg-slate-900 px-4 py-2 shadow sm:rounded-md sm:px-6">
+                SEO | ASO | Core Web Vitals
+              </li>
+              <li className="overflow-hidden bg-slate-50 dark:bg-slate-900 px-4 py-2 shadow sm:rounded-md sm:px-6">
+                Many more...
+              </li>
             </ul>
           </div>
         </div>

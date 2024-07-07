@@ -14,7 +14,6 @@ export const LazyImage = ({ image, noStyle }) => {
     } else {
       return "";
     }
-    return style;
   };
 
   return (

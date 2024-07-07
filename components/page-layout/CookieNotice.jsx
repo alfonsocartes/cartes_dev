@@ -25,8 +25,8 @@ export const CookieNotice = () => {
               <div className="flex flex-1 items-center">
                 <p className="ml-3 font-medium text-white">
                   To continue, you must agree to our{" "}
-                  <Link href="/privacy-policy">
-                    <a className="underline">privacy policy.</a>
+                  <Link href="/privacy-policy" className="underline">
+                    privacy policy.
                   </Link>
                 </p>
               </div>

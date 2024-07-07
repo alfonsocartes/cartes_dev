@@ -16,8 +16,8 @@ export const Footer = () => {
             </a>
           </p>
           <span className="mt-2 inline-flex justify-center text-sm sm:ml-auto sm:mt-0 sm:justify-start">
-            <Link href="/privacy-policy" passHref>
-              <a className="p-4">Privacy Policy</a>
+            <Link href="/privacy-policy" passHref className="p-4">
+              Privacy Policy
             </Link>
           </span>
           <span className="mt-2 flex flex-wrap justify-center sm:ml-auto sm:mt-0 sm:justify-start">

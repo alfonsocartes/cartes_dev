@@ -17,8 +17,7 @@ const Portfolio = () => (
           <div className="-mx-4 -mb-10 flex flex-wrap text-center">
             <div className="mb-10 px-4 sm:w-1/2">
               <div className="visible mx-auto mb-8 overflow-hidden rounded-xl object-cover object-center sm:mx-0 md:mb-16">
-                <Link href="/portfolio/mobile-development">
-                  <a aria-label="mobile development">
+                <Link href="/portfolio/mobile-development" aria-label="mobile development">
                     <Image
                       src={mobilePortfolioImage}
                       alt="mobile development sample image"
@@ -26,7 +25,6 @@ const Portfolio = () => (
                       placeholder="blur"
                       priority
                     />
-                  </a>
                 </Link>
               </div>
 
@@ -50,15 +48,13 @@ const Portfolio = () => (
             </div>
             <div className="mb-10 px-4 sm:w-1/2">
               <div className="visible mx-auto mb-8 overflow-hidden rounded-xl object-cover object-center sm:mx-0 md:mb-16">
-                <Link href="/portfolio/web-development">
-                  <a aria-label="web development">
+                <Link href="/portfolio/web-development" aria-label="web development">
                     <Image
                       src={webPortfolioImage}
                       alt="web development sample image"
                       layout="responsive"
                       placeholder="blur"
                     />
-                  </a>
                 </Link>
               </div>
 

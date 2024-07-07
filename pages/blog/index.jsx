@@ -5,7 +5,7 @@ import { PostListItem } from "../../components/blog/PostListItem";
 
 const Blog = ({ allPosts }) => {
   const sortedPosts = allPosts.sort(
-    (a, b) => Number(new Date(b.date)) - Number(new Date(a.date))
+    (a, b) => Number(new Date(b.date)) - Number(new Date(a.date)),
   );
   return (
     <Layout title="Blog | Cartes Development">

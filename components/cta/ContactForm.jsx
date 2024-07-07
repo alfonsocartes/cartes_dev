@@ -10,7 +10,7 @@ export const ContactForm = () => {
     e.preventDefault();
 
     setAlert(
-      <Alert type="WARNING" title="Loading..." message="Please wait." />
+      <Alert type="WARNING" title="Loading..." message="Please wait." />,
     );
 
     // To get them from vercel to .env.local: vercel env pull .env.local
@@ -20,7 +20,7 @@ export const ContactForm = () => {
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         e.target,
-        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID,
       )
       .then(() => {
         setAlert(
@@ -28,7 +28,7 @@ export const ContactForm = () => {
             type="SUCCESS"
             title="Sent successfully!"
             message="Thank you, I will try to get back to you as soon as possible."
-          />
+          />,
         );
       })
       .catch((error) => {
@@ -39,7 +39,7 @@ export const ContactForm = () => {
               type="ERROR"
               title="Error"
               message="Please validate the reCAPTCHA."
-            />
+            />,
           );
         } else {
           setAlert(
@@ -47,7 +47,7 @@ export const ContactForm = () => {
               type="ERROR"
               title="Error"
               message="There was an error sending the message. Please try again."
-            />
+            />,
           );
         }
       });

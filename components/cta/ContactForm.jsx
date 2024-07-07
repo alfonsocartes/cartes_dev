@@ -68,7 +68,7 @@ export const ContactForm = () => {
                 name="from_name"
                 autoComplete="name"
                 required
-                className="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:border-gray-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200"
+                className="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:border-gray-500 focus:ring-2 focus:ring-indigo-200"
               />
             </div>
           </div>
@@ -83,7 +83,7 @@ export const ContactForm = () => {
                 type="email"
                 autoComplete="email"
                 required
-                className="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:border-gray-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200"
+                className="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:border-gray-500 focus:ring-2 focus:ring-indigo-200"
               />
             </div>
           </div>

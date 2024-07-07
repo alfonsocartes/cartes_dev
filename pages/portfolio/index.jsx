@@ -47,7 +47,7 @@ const Portfolio = () => (
               <Link href="/portfolio/mobile-development" passHref>
                 <button
                   type="button"
-                  className="mt-4 flex-shrink-0 rounded-lg bg-transparent bg-indigo-600 py-2 px-8 text-lg text-white shadow-lg hover:bg-indigo-400 focus:outline-none dark:bg-indigo-600 dark:hover:bg-indigo-900"
+                  className="mt-4 flex-shrink-0 rounded-lg bg-indigo-600 py-2 px-8 text-lg text-white shadow-lg hover:bg-indigo-400 focus:outline-none dark:bg-indigo-600 dark:hover:bg-indigo-900"
                 >
                   Mobile
                 </button>
@@ -83,7 +83,7 @@ const Portfolio = () => (
               <Link href="/portfolio/web-development" passHref>
                 <button
                   type="button"
-                  className="mt-4 flex-shrink-0 rounded-lg bg-transparent bg-indigo-600 py-2 px-8 text-lg text-white shadow-lg hover:bg-indigo-400 focus:outline-none dark:bg-indigo-600 dark:hover:bg-indigo-900"
+                  className="mt-4 flex-shrink-0 rounded-lg bg-indigo-600 py-2 px-8 text-lg text-white shadow-lg hover:bg-indigo-400 focus:outline-none dark:bg-indigo-600 dark:hover:bg-indigo-900"
                 >
                   Web
                 </button>

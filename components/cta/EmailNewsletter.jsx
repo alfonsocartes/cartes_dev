@@ -18,7 +18,7 @@ export const EmailNewsletter = () => (
             type="text"
             id="full-name"
             name="full-name"
-            className="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:border-gray-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200"
+            className="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:border-gray-500 focus:ring-2 focus:ring-indigo-200"
           />
         </div>
         <div className="relative w-full flex-grow">
@@ -29,10 +29,10 @@ export const EmailNewsletter = () => (
             type="email"
             id="email"
             name="email"
-            className="focus:gray-indigo-500 w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:bg-transparent focus:ring-2 focus:ring-indigo-200"
+            className="focus:gray-indigo-500 w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:ring-2 focus:ring-indigo-200"
           />
         </div>
-        <button className=" rounded-lg bg-transparent bg-indigo-600 py-2 px-8 text-lg text-white shadow-lg hover:bg-indigo-400 focus:outline-none dark:bg-indigo-600 dark:hover:bg-indigo-900 sm:mt-4">
+        <button className=" rounded-lg bg-indigo-600 py-2 px-8 text-lg text-white shadow-lg hover:bg-indigo-400 focus:outline-none dark:bg-indigo-600 dark:hover:bg-indigo-900 sm:mt-4">
           Subscribe
         </button>
       </div>

@@ -3,7 +3,7 @@ import { ContactUs } from "../components/cta/ContactUs";
 import { Layout } from "../components/Layout";
 import { SocialNetworks } from "../components/SocialNetworks";
 
-import ProfilePicture from "../public/images/alfonso-cartes.jpeg";
+import ProfilePicture from "../public/images/alfonso-cartes.png";
 
 const About = () => (
   <Layout title="About | Cartes Development | Full-Stack Web Development | Mobile Development">
@@ -36,7 +36,7 @@ const About = () => (
     </section>
     <section className="body-font">
       <div className="mx-auto flex flex-wrap items-start">
-        <div className="mx-auto mb-10 flex flex-col items-center justify-center border-b border-gray-200 px-14 pb-10 md:mb-0 md:w-1/2 md:border-r md:border-b-0 md:py-8">
+        <div className="mx-auto mb-10 flex flex-col items-center justify-center border-b border-gray-200 px-14 pb-10 md:mb-0 md:w-1/2 md:border-b-0 md:border-r md:py-8">
           <h3 className="title-font mb-10 text-2xl font-bold sm:text-3xl">
             Expertise
           </h3>

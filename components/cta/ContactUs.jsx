@@ -7,10 +7,10 @@ export const ContactUs = () => (
         <p className="title-font flex-grow text-lg font-medium sm:pr-16 sm:text-2xl">
           Tell us about your project.
         </p>
-        <Link href="/contact" passHref>
+        <Link href="/contact">
           <button
             type="button"
-            className="mt-4 flex-shrink-0 rounded-lg bg-transparent bg-indigo-600 py-2 px-8 text-lg text-white shadow-lg hover:bg-indigo-400 focus:outline-none dark:bg-indigo-600 dark:hover:bg-indigo-900"
+            className="mt-4 flex-shrink-0 rounded-lg bg-indigo-600 px-8 py-2 text-lg text-white shadow-lg hover:bg-indigo-400 focus:outline-none dark:bg-indigo-600 dark:hover:bg-indigo-900"
           >
             Contact
           </button>

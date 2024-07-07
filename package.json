@@ -22,7 +22,7 @@
     "format:fix": "npx prettier --write ./"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.6.2",
+    "@emailjs/browser": "^4.3.3",
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.4",
     "date-fns": "3.6.0",
@@ -32,7 +32,7 @@
     "next-mdx-remote": "^4.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-google-recaptcha": "^2.1.0",
+    "react-google-recaptcha": "^3.1.0",
     "reading-time": "^1.5.0",
     "remark": "^14.0.2",
     "sharp": "^0.30.3"

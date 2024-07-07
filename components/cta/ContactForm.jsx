@@ -105,7 +105,7 @@ export const ContactForm = () => {
             <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} />
             <button
               type="submit"
-              className="mx-auto mt-4 flex rounded-lg bg-transparent bg-indigo-600 py-2 px-8 text-lg text-white shadow-lg hover:bg-indigo-400 focus:outline-none dark:bg-indigo-600 dark:hover:bg-indigo-900 sm:mt-4"
+              className="mx-auto mt-4 flex rounded-lg bg-indigo-600 py-2 px-8 text-lg text-white shadow-lg hover:bg-indigo-400 focus:outline-none dark:bg-indigo-600 dark:hover:bg-indigo-900 sm:mt-4"
             >
               Send
             </button>

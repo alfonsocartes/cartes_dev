@@ -13,8 +13,9 @@ export const Avatar = ({ name, picture }) => {
           sizes="100vw"
           style={{
             width: "100%",
-            height: "auto"
-          }} />
+            height: "auto",
+          }}
+        />
       </div>
       <div className="ml-4 text-lg font-bold">{name}</div>
     </div>

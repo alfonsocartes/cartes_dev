@@ -28,8 +28,9 @@ export const LazyImage = ({ image, noStyle }) => {
         sizes="100vw"
         style={{
           width: "100%",
-          height: "auto"
-        }} />
+          height: "auto",
+        }}
+      />
     </div>
   );
 };

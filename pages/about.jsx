@@ -18,8 +18,9 @@ const About = () => (
             sizes="100vw"
             style={{
               width: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </figure>
         <div className="w-full text-center lg:w-2/3">
           <h1 className="title-font text-center text-2xl font-bold sm:text-3xl">

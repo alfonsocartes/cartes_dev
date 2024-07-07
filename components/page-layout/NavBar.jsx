@@ -28,24 +28,36 @@ export const NavBar = () => {
           }`}
         >
           <li className="nav-item my-3">
-            <Link href="/" className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
-                Home
+            <Link
+              href="/"
+              className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600"
+            >
+              Home
             </Link>
           </li>
           <li className="nav-item my-3">
-            <Link href="/portfolio" className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
-                Portfolio
+            <Link
+              href="/portfolio"
+              className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600"
+            >
+              Portfolio
             </Link>
           </li>
-        
+
           <li className="nav-item my-3">
-            <Link href="/about" className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600" >
-                About
+            <Link
+              href="/about"
+              className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600"
+            >
+              About
             </Link>
           </li>
           <li className="nav-item my-3">
-            <Link href="/blog" className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600">
-                Blog
+            <Link
+              href="/blog"
+              className="rounded-lg py-2 px-3 font-medium hover:bg-indigo-200 dark:hover:bg-gray-600"
+            >
+              Blog
             </Link>
           </li>
         </ul>

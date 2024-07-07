@@ -20,7 +20,7 @@ export const LazyImage = ({ image, noStyle }) => {
   return (
     <div className={handleLoad()}>
       <Image
-        onLoadingComplete={() => setLoaded(true)}
+        onLoad={() => setLoaded(true)}
         src={image.url}
         width={image.width}
         height={image.height}

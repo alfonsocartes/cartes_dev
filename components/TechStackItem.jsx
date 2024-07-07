@@ -1,4 +1,3 @@
-import Image from "next/legacy/image";
 import { LazyImage } from "./LazyImage";
 
 export const TechStackItem = ({ title, imageUrl, url, children }) => {

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import { Layout } from "../../components/Layout";
 
@@ -21,10 +21,13 @@ const Portfolio = () => (
                     <Image
                       src={mobilePortfolioImage}
                       alt="mobile development sample image"
-                      layout="responsive"
                       placeholder="blur"
                       priority
-                    />
+                      sizes="100vw"
+                      style={{
+                        width: "100%",
+                        height: "auto"
+                      }} />
                 </Link>
               </div>
 
@@ -52,9 +55,12 @@ const Portfolio = () => (
                     <Image
                       src={webPortfolioImage}
                       alt="web development sample image"
-                      layout="responsive"
                       placeholder="blur"
-                    />
+                      sizes="100vw"
+                      style={{
+                        width: "100%",
+                        height: "auto"
+                      }} />
                 </Link>
               </div>
 

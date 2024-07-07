@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useState } from "react";
 
 export const LazyImage = ({ image, noStyle }) => {
@@ -25,8 +25,11 @@ export const LazyImage = ({ image, noStyle }) => {
         width={image.width}
         height={image.height}
         alt={image.alt}
-        layout="responsive"
-      />
+        sizes="100vw"
+        style={{
+          width: "100%",
+          height: "auto"
+        }} />
     </div>
   );
 };

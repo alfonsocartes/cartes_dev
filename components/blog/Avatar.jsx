@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export const Avatar = ({ name, picture }) => {
   return (
@@ -10,8 +10,11 @@ export const Avatar = ({ name, picture }) => {
           width={picture.width}
           height={picture.height}
           alt={name}
-          layout="responsive"
-        />
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto"
+          }} />
       </div>
       <div className="ml-4 text-lg font-bold">{name}</div>
     </div>

@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { ContactUs } from "../components/cta/ContactUs";
 import { Layout } from "../components/Layout";
 import { SocialNetworks } from "../components/SocialNetworks";
@@ -13,10 +13,13 @@ const About = () => (
           <Image
             src={ProfilePicture}
             alt="Alfonso Cartes profile picture"
-            layout="responsive"
             priority
             placeholder="blur"
-          />
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto"
+            }} />
         </figure>
         <div className="w-full text-center lg:w-2/3">
           <h1 className="title-font text-center text-2xl font-bold sm:text-3xl">
